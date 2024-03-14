@@ -1,0 +1,8 @@
+INFO 2024-03-14 12:24:18,100 autoreload 25456 20624 Watching for file changes with StatReloader
+INFO 2024-03-14 12:27:38,133 autoreload 19128 23728 Watching for file changes with StatReloader
+INFO 2024-03-14 12:28:37,306 autoreload 1248 9260 Watching for file changes with StatReloader
+INFO 2024-03-14 12:30:34,729 autoreload 22548 15896 Watching for file changes with StatReloader
+INFO 2024-03-14 12:32:10,585 autoreload 17144 8128 Watching for file changes with StatReloader
+INFO 2024-03-14 12:37:14,726 autoreload 17144 8128 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-14 12:37:16,027 autoreload 12480 24648 Watching for file changes with StatReloader
+INFO 2024-03-14 13:18:32,248 autoreload 7452 19812 Watching for file changes with StatReloader

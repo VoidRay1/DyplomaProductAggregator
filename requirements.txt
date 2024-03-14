@@ -1,0 +1,32 @@
+Django==4.2
+django-environ
+djangorestframework
+social-auth-core
+social-auth-app-django
+djoser
+django-cors-headers==3.14.0
+graphene-django>=3
+graphene-file-upload
+django-graphql-jwt
+django-filter
+boto3
+django-storages
+Pillow
+redis
+django-celery-beat
+django-parler
+django-mptt
+django-rosetta
+django-taggit
+django-star-ratings
+django-dynamic-preferences
+django-templated-email
+django-debug-toolbar
+django-admin-inline-paginator
+
+# PostgreSQL
+psycopg2-binary
+
+# Telegram
+python-telegram-bot
+python-telegram-bot-pagination
