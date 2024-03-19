@@ -3,3 +3,140 @@ WARNING 2024-03-14 12:28:40,710 log 1248 25460 Not Found: /favicon.ico
 WARNING 2024-03-14 12:30:38,083 log 22548 25452 Not Found: /
 WARNING 2024-03-14 12:32:12,618 log 17144 16652 Not Found: /
 WARNING 2024-03-14 13:18:35,738 log 7452 24928 Not Found: /
+WARNING 2024-03-18 21:12:56,642 log 19044 24008 Not Found: /
+WARNING 2024-03-18 21:12:57,092 log 19044 23372 Not Found: /favicon.ico
+WARNING 2024-03-18 21:13:07,476 log 19044 23372 Not Found: /shops
+WARNING 2024-03-18 21:22:25,196 log 960 22828 Not Found: /
+WARNING 2024-03-18 21:22:29,512 log 960 22828 Not Found: /shops
+WARNING 2024-03-18 21:22:52,154 log 960 22828 Not Found: /shops
+WARNING 2024-03-18 21:25:16,693 log 960 22828 Not Found: /shops
+WARNING 2024-03-18 21:25:17,802 log 960 22828 Not Found: /shops
+WARNING 2024-03-18 21:30:43,263 log 960 23148 Not Found: /shops
+WARNING 2024-03-18 21:31:42,711 log 22372 11224 Not Found: /shops
+WARNING 2024-03-19 12:42:09,137 log 21832 5376 Not Found: /favicon.ico
+WARNING 2024-03-19 12:45:32,947 log 21832 13156 Not Found: /dashboard
+WARNING 2024-03-19 12:45:43,823 log 21832 4080 Not Found: /favicon.ico
+WARNING 2024-03-19 12:53:05,443 log 19380 9096 Bad Request: /admin/aggregator/product/
+WARNING 2024-03-19 12:56:12,360 log 19380 15464 Not Found: /dashboard
+WARNING 2024-03-19 12:58:35,768 log 19380 17104 Bad Request: /admin/aggregator/product/
+WARNING 2024-03-19 12:59:13,101 log 3252 15920 Not Found: /dashboard
+ERROR 2024-03-19 13:31:59,378 log 16012 23804 Internal Server Error: /admin/django_celery_beat/periodictask/3/change/
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django_celery_beat\admin.py", line 158, in changeform_view
+    return super().changeform_view(request, object_id,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django_celery_beat\models.py", line 604, in save
+    super().save(*args, **kwargs)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 861, in save_base
+    pre_save.send(
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 177, in send
+    (receiver, receiver(signal=self, sender=sender, **named))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django_celery_beat\models.py", line 394, in changed
+    cls.update_changed()
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django_celery_beat\models.py", line 398, in update_changed
+    cls.objects.update_or_create(ident=1, defaults={'last_update': now()})
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\query.py", line 970, in update_or_create
+    obj.save(using=self.db, update_fields=update_fields)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1982, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+WARNING 2024-03-19 22:15:08,707 log 22300 16868 Not Found: /register
+WARNING 2024-03-19 22:22:09,590 log 22300 23500 Not Found: /storage/images/empty_user.jpg
+WARNING 2024-03-19 22:22:12,617 log 22300 18188 Not Found: /favicon.ico
+WARNING 2024-03-19 22:22:14,675 log 22300 15716 Not Found: /storage/images/empty_user.jpg
+WARNING 2024-03-19 22:22:33,803 log 22300 1720 Not Found: /favicon.ico
+WARNING 2024-03-19 22:22:36,754 log 22300 1720 Not Found: /storage/images/empty_user.jpg
+WARNING 2024-03-19 22:22:38,686 log 22300 1720 Not Found: /storage/images/empty_user.jpg

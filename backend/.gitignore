@@ -1,0 +1,13 @@
+.DS_Store
+
+logs/*
+# exception to the rule
+!logs/.keep
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+db.sqlite3

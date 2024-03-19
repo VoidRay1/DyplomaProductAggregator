@@ -71,7 +71,8 @@ In a new terminal tab:
 
 2. Start Celery worker
   ```shell
-  celery -A backend worker --loglevel=INFO
+  MacOS: celery -A backend worker --loglevel=INFO
+  Windows: celery -A backend worker --loglevel=INFO -P gevent
   ```
 
 ## Starting Docker

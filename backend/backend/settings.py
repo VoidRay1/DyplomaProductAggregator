@@ -26,6 +26,8 @@ BASE_URL = 'http://localhost:8080'
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-16gw%urziwr2)!1k_a4%x=7his@)u7h51y)ro-6sch!u73^jc5'
 
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10_000
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -412,7 +414,7 @@ TELEGRAM_BOT_USERNAME = ''
 ENABLE_DECORATOR_LOGGING = False
 
 SILPO_ID = 1
-SILPO_CATEGORY = 'alkogol-22'
+SILPO_CATEGORY = 'susheni-frukty-gryby-gorikhy-382'
 SILPO_PRODUCTS_URL = 'uk/branches/00000000-0000-0000-0000-000000000000/products'
 SILPO_IMAGES_URL = 'https://images.silpo.ua/products/300x300/webp/'
 SILPO_MAX_PRODUCTS_LIMIT = 100

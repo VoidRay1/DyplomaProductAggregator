@@ -6,3 +6,1329 @@ INFO 2024-03-14 12:32:10,585 autoreload 17144 8128 Watching for file changes wit
 INFO 2024-03-14 12:37:14,726 autoreload 17144 8128 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
 INFO 2024-03-14 12:37:16,027 autoreload 12480 24648 Watching for file changes with StatReloader
 INFO 2024-03-14 13:18:32,248 autoreload 7452 19812 Watching for file changes with StatReloader
+INFO 2024-03-18 21:12:43,109 autoreload 19044 1912 Watching for file changes with StatReloader
+INFO 2024-03-18 21:22:01,634 autoreload 960 5332 Watching for file changes with StatReloader
+DEBUG 2024-03-18 21:28:41,697 functional 7956 17332 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,698 functional 7956 17332 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,699 functional 7956 17332 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 21:28:41,699 functional 7956 17332 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,700 functional 7956 17332 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,700 functional 7956 17332 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,701 functional 7956 17332 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,701 functional 7956 17332 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 21:28:41,702 functional 7956 17332 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+INFO 2024-03-18 21:31:10,111 autoreload 22372 23560 Watching for file changes with StatReloader
+DEBUG 2024-03-18 22:18:02,471 functional 24588 7204 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,472 functional 24588 7204 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,473 functional 24588 7204 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:18:02,473 functional 24588 7204 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,474 functional 24588 7204 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,474 functional 24588 7204 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,475 functional 24588 7204 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,475 functional 24588 7204 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:18:02,476 functional 24588 7204 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,050 functional 13996 22172 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,051 functional 13996 22172 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,051 functional 13996 22172 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:24:43,052 functional 13996 22172 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,053 functional 13996 22172 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,053 functional 13996 22172 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,054 functional 13996 22172 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,054 functional 13996 22172 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:24:43,055 functional 13996 22172 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,581 functional 25196 21204 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,581 functional 25196 21204 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,582 functional 25196 21204 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:26:40,583 functional 25196 21204 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,583 functional 25196 21204 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,584 functional 25196 21204 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,584 functional 25196 21204 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,585 functional 25196 21204 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:26:40,586 functional 25196 21204 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,373 functional 12956 580 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,374 functional 12956 580 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,374 functional 12956 580 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:28:06,375 functional 12956 580 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,375 functional 12956 580 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,376 functional 12956 580 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,376 functional 12956 580 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,377 functional 12956 580 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:28:06,378 functional 12956 580 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,715 functional 17440 9700 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,716 functional 17440 9700 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,716 functional 17440 9700 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:31:41,717 functional 17440 9700 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,717 functional 17440 9700 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,718 functional 17440 9700 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,718 functional 17440 9700 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,719 functional 17440 9700 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:31:41,719 functional 17440 9700 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,686 functional 8240 11040 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,686 functional 8240 11040 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,687 functional 8240 11040 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:31:51,688 functional 8240 11040 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,688 functional 8240 11040 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,689 functional 8240 11040 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,689 functional 8240 11040 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,690 functional 8240 11040 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:31:51,691 functional 8240 11040 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,139 functional 13476 1356 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,140 functional 13476 1356 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,140 functional 13476 1356 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:37:59,141 functional 13476 1356 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,141 functional 13476 1356 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,142 functional 13476 1356 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,142 functional 13476 1356 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,143 functional 13476 1356 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:37:59,143 functional 13476 1356 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,145 functional 1600 19536 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,145 functional 1600 19536 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,146 functional 1600 19536 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:38:08,147 functional 1600 19536 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,147 functional 1600 19536 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,148 functional 1600 19536 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,148 functional 1600 19536 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,149 functional 1600 19536 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:38:08,149 functional 1600 19536 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+INFO 2024-03-18 22:38:42,481 autoreload 22372 23560 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-18 22:38:44,527 autoreload 24900 2100 Watching for file changes with StatReloader
+DEBUG 2024-03-18 22:38:56,094 functional 17380 25416 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,095 functional 17380 25416 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,096 functional 17380 25416 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:38:56,096 functional 17380 25416 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,097 functional 17380 25416 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,097 functional 17380 25416 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,098 functional 17380 25416 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,098 functional 17380 25416 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:38:56,099 functional 17380 25416 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+INFO 2024-03-18 22:39:30,724 autoreload 24900 2100 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-18 22:39:32,559 autoreload 11256 23076 Watching for file changes with StatReloader
+DEBUG 2024-03-18 22:39:35,353 functional 24728 5332 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,354 functional 24728 5332 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,355 functional 24728 5332 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:39:35,355 functional 24728 5332 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,356 functional 24728 5332 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,356 functional 24728 5332 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,357 functional 24728 5332 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,357 functional 24728 5332 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:39:35,358 functional 24728 5332 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,434 functional 9668 11320 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,435 functional 9668 11320 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,435 functional 9668 11320 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:40:13,436 functional 9668 11320 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,437 functional 9668 11320 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,437 functional 9668 11320 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,438 functional 9668 11320 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,438 functional 9668 11320 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:40:13,439 functional 9668 11320 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+INFO 2024-03-18 22:40:25,309 autoreload 11256 23076 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-18 22:40:27,157 autoreload 18732 24540 Watching for file changes with StatReloader
+DEBUG 2024-03-18 22:40:29,289 functional 8712 24844 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,289 functional 8712 24844 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,290 functional 8712 24844 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-18 22:40:29,290 functional 8712 24844 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,291 functional 8712 24844 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,291 functional 8712 24844 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,292 functional 8712 24844 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,293 functional 8712 24844 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-18 22:40:29,294 functional 8712 24844 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+INFO 2024-03-19 12:37:16,075 autoreload 21832 25356 Watching for file changes with StatReloader
+DEBUG 2024-03-19 12:38:01,657 functional 17304 7796 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,658 functional 17304 7796 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,658 functional 17304 7796 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 12:38:01,659 functional 17304 7796 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,659 functional 17304 7796 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,660 functional 17304 7796 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,661 functional 17304 7796 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,661 functional 17304 7796 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 12:38:01,662 functional 17304 7796 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,072 functional 10508 18836 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,073 functional 10508 18836 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,073 functional 10508 18836 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 12:38:44,074 functional 10508 18836 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,074 functional 10508 18836 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,075 functional 10508 18836 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,076 functional 10508 18836 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,076 functional 10508 18836 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 12:38:44,077 functional 10508 18836 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,907 functional 4560 23572 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,908 functional 4560 23572 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,908 functional 4560 23572 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 12:41:42,909 functional 4560 23572 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,909 functional 4560 23572 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,910 functional 4560 23572 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,910 functional 4560 23572 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,911 functional 4560 23572 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 12:41:42,912 functional 4560 23572 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,408 GetText 21832 10508 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 12:50:25,414 GetText 21832 10508 Attempting to load en_US as fallback
+DEBUG 2024-03-19 12:50:25,441 GetText 21832 10508 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 12:50:25,444 GetText 21832 10508 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 12:50:25,450 GetText 21832 10508 Attempting to load en_US as fallback
+DEBUG 2024-03-19 12:50:25,464 GetText 21832 10508 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 12:50:25,632 functional 21832 10508 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,638 functional 21832 10508 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,645 functional 21832 10508 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,651 functional 21832 10508 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,656 functional 21832 10508 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,658 functional 21832 10508 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 12:50:25,664 functional 21832 10508 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,671 functional 21832 10508 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 12:50:25,675 functional 21832 10508 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-19 12:52:54,340 autoreload 19380 22696 Watching for file changes with StatReloader
+ERROR 2024-03-19 12:53:04,502 exception 19380 9096 The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\http\request.py", line 531, in __init__
+    for key, value in parse_qsl(query_string, **parse_qsl_kwargs):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py", line 778, in parse_qsl
+    raise ValueError('Max number of fields exceeded')
+ValueError: Max number of fields exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = middleware_method(
+               ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\middleware\csrf.py", line 470, in process_view
+    self._check_token(request)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\middleware\csrf.py", line 373, in _check_token
+    request_csrf_token = request.POST.get("csrfmiddlewaretoken", "")
+                         ^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\wsgi.py", line 103, in _get_post
+    self._load_post_and_files()
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\http\request.py", line 400, in _load_post_and_files
+    QueryDict(self.body, encoding=self._encoding),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\http\request.py", line 538, in __init__
+    raise TooManyFieldsSent(
+django.core.exceptions.TooManyFieldsSent: The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+ERROR 2024-03-19 12:58:35,688 exception 19380 17104 The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\http\request.py", line 531, in __init__
+    for key, value in parse_qsl(query_string, **parse_qsl_kwargs):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py", line 778, in parse_qsl
+    raise ValueError('Max number of fields exceeded')
+ValueError: Max number of fields exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = middleware_method(
+               ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\middleware\csrf.py", line 470, in process_view
+    self._check_token(request)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\middleware\csrf.py", line 373, in _check_token
+    request_csrf_token = request.POST.get("csrfmiddlewaretoken", "")
+                         ^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\wsgi.py", line 103, in _get_post
+    self._load_post_and_files()
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\http\request.py", line 400, in _load_post_and_files
+    QueryDict(self.body, encoding=self._encoding),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\http\request.py", line 538, in __init__
+    raise TooManyFieldsSent(
+django.core.exceptions.TooManyFieldsSent: The number of GET/POST parameters exceeded settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.
+INFO 2024-03-19 12:59:02,813 autoreload 19380 22696 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-19 12:59:06,434 autoreload 3252 8688 Watching for file changes with StatReloader
+DEBUG 2024-03-19 13:04:44,098 functional 24692 24860 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,099 functional 24692 24860 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,099 functional 24692 24860 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:04:44,100 functional 24692 24860 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,100 functional 24692 24860 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,101 functional 24692 24860 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,101 functional 24692 24860 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,102 functional 24692 24860 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:04:44,103 functional 24692 24860 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,376 GetText 3252 15920 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:05:00,376 GetText 3252 15920 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:05:00,377 GetText 3252 15920 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:05:00,378 GetText 3252 15920 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:05:00,378 GetText 3252 15920 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:05:00,379 GetText 3252 15920 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:05:00,396 functional 3252 15920 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,397 functional 3252 15920 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,397 functional 3252 15920 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,398 functional 3252 15920 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,398 functional 3252 15920 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,399 functional 3252 15920 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:05:00,399 functional 3252 15920 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,400 functional 3252 15920 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:05:00,400 functional 3252 15920 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:05:05,082 GetText 3252 15920 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:05:05,082 GetText 3252 15920 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:05:05,083 GetText 3252 15920 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:05:05,083 GetText 3252 15920 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:05:05,084 GetText 3252 15920 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:05:05,084 GetText 3252 15920 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+INFO 2024-03-19 13:08:56,241 autoreload 3252 8688 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-19 13:08:59,750 autoreload 16012 23204 Watching for file changes with StatReloader
+DEBUG 2024-03-19 13:09:08,268 functional 14376 19544 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,269 functional 14376 19544 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,270 functional 14376 19544 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:09:08,270 functional 14376 19544 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,271 functional 14376 19544 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,271 functional 14376 19544 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,272 functional 14376 19544 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,272 functional 14376 19544 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:09:08,273 functional 14376 19544 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,968 functional 5104 21292 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,969 functional 5104 21292 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,970 functional 5104 21292 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:14:24,970 functional 5104 21292 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:14:24,971 functional 5104 21292 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,971 functional 5104 21292 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,972 functional 5104 21292 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,972 functional 5104 21292 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,973 functional 5104 21292 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,973 functional 5104 21292 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:14:24,974 functional 5104 21292 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:16:33,286 GetText 16012 11296 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:16:33,287 GetText 16012 11296 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:16:33,287 GetText 16012 11296 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:16:33,288 GetText 16012 11296 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:16:33,288 GetText 16012 11296 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:16:33,289 GetText 16012 11296 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:16:33,305 functional 16012 11296 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,305 functional 16012 11296 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,306 functional 16012 11296 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,306 functional 16012 11296 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,307 functional 16012 11296 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,308 functional 16012 11296 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:16:33,308 functional 16012 11296 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,308 functional 16012 11296 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:16:33,309 functional 16012 11296 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:45,618 GetText 16012 11296 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:16:45,619 GetText 16012 11296 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:16:45,619 GetText 16012 11296 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:16:45,620 GetText 16012 11296 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:16:45,620 GetText 16012 11296 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:16:45,620 GetText 16012 11296 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:16:58,417 functional 22256 21140 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,417 functional 22256 21140 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,418 functional 22256 21140 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:16:58,418 functional 22256 21140 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,419 functional 22256 21140 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,420 functional 22256 21140 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,420 functional 22256 21140 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:16:58,421 functional 22256 21140 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,421 functional 22256 21140 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,422 functional 22256 21140 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:16:58,422 functional 22256 21140 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:18:16,611 functional 2776 9888 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,612 functional 2776 9888 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,612 functional 2776 9888 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:18:16,613 functional 2776 9888 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,613 functional 2776 9888 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,615 functional 2776 9888 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,615 functional 2776 9888 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:18:16,615 functional 2776 9888 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,616 functional 2776 9888 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,617 functional 2776 9888 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:18:16,617 functional 2776 9888 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:24:43,564 functional 9108 2021566592960 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:24:43,565 functional 9108 2021566592960 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:24:43,566 functional 9108 2021566592960 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,566 functional 9108 2021566592960 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:24:43,567 functional 9108 2021566592960 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,567 functional 9108 2021566592960 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,568 functional 9108 2021566592960 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:24:43,568 functional 9108 2021566592960 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,569 functional 9108 2021566592960 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:24:43,569 functional 9108 2021566592960 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,570 functional 9108 2021566592960 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,571 functional 9108 2021566592960 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:24:43,571 functional 9108 2021566592960 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:26:16,110 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:16,110 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:16,111 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:16,111 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:16,112 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:16,112 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:19,597 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:19,597 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:19,598 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:19,599 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:19,599 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:19,600 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:21,692 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:21,692 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:21,693 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:21,693 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:21,693 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:21,694 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:36,959 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:36,959 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:36,960 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:36,960 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:36,960 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:36,961 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:41,845 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:41,846 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:41,846 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:41,847 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:41,847 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:41,847 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:52,732 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:52,733 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:52,733 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:26:52,734 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:26:52,734 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:26:52,735 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:28:02,120 functional 19792 1577264065088 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:28:02,121 functional 19792 1577264065088 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:28:02,122 functional 19792 1577264065088 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,122 functional 19792 1577264065088 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:28:02,123 functional 19792 1577264065088 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,123 functional 19792 1577264065088 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,124 functional 19792 1577264065088 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,125 functional 19792 1577264065088 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,125 functional 19792 1577264065088 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,126 functional 19792 1577264065088 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:28:02,126 functional 19792 1577264065088 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:28:02,127 functional 19792 1577264065088 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:28:02,127 functional 19792 1577264065088 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,001 functional 6964 2157551005888 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:31:22,002 functional 6964 2157551005888 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:31:22,002 functional 6964 2157551005888 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,003 functional 6964 2157551005888 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 13:31:22,003 functional 6964 2157551005888 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 13:31:22,004 functional 6964 2157551005888 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 13:31:22,004 functional 6964 2157551005888 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,005 functional 6964 2157551005888 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,005 functional 6964 2157551005888 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,006 functional 6964 2157551005888 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,006 functional 6964 2157551005888 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,007 functional 6964 2157551005888 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 13:31:22,008 functional 6964 2157551005888 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 13:31:40,766 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:40,766 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:40,767 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:40,767 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:40,767 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:40,768 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:48,508 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:48,508 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:48,509 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:48,509 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:48,509 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:48,510 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:54,250 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:54,250 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:54,250 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:54,251 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:54,251 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:54,252 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:58,933 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:58,934 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:58,934 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:31:58,935 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:31:58,935 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:31:58,936 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:32:03,716 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:32:03,716 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:32:03,717 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:32:03,718 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:32:03,718 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:32:03,719 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:35:02,415 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:35:02,415 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:35:02,416 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:35:02,416 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:35:02,416 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:35:02,417 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:35:05,869 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:35:05,869 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:35:05,870 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+DEBUG 2024-03-19 13:35:05,870 GetText 16012 23804 Failed to find locale Russian_Ukraine
+DEBUG 2024-03-19 13:35:05,871 GetText 16012 23804 Attempting to load en_US as fallback
+DEBUG 2024-03-19 13:35:05,871 GetText 16012 23804 c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\cron_descriptor\locale\en_US.mo Loaded
+INFO 2024-03-19 22:12:39,408 autoreload 22300 17504 Watching for file changes with StatReloader
+DEBUG 2024-03-19 22:13:54,536 functional 8804 5812 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,537 functional 8804 5812 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,538 functional 8804 5812 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 22:13:54,538 functional 8804 5812 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 22:13:54,539 functional 8804 5812 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,539 functional 8804 5812 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,540 functional 8804 5812 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,541 functional 8804 5812 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 22:13:54,541 functional 8804 5812 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,542 functional 8804 5812 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 22:13:54,543 functional 8804 5812 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,518 functional 6644 1714144229312 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 22:14:25,519 functional 6644 1714144229312 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 22:14:25,519 functional 6644 1714144229312 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,520 functional 6644 1714144229312 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-19 22:14:25,520 functional 6644 1714144229312 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,521 functional 6644 1714144229312 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,522 functional 6644 1714144229312 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,522 functional 6644 1714144229312 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,523 functional 6644 1714144229312 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,523 functional 6644 1714144229312 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-19 22:14:25,524 functional 6644 1714144229312 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-19 22:14:25,524 functional 6644 1714144229312 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-19 22:14:25,525 functional 6644 1714144229312 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
