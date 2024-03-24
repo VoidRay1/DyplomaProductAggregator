@@ -30,7 +30,7 @@
           color="orange"
           v-model="formData.email"
           :label="__('Email')"
-          :hint="__('Email hint')"
+          :hint="__('')"
           @blur="v$.email.$touch"
           :error="v$.email.$dirty && v$.email.$invalid"
         >
@@ -48,7 +48,7 @@
           v-model="formData.password"
           :type="isPwd ? 'password' : 'text'"
           :label="__('Password')"
-          :hint="__('Password hint')"
+          :hint="__('')"
           @blur="v$.password.$touch"
           :error="v$.password.$dirty && v$.password.$invalid"
         >

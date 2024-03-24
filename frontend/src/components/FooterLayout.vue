@@ -6,7 +6,7 @@
   >
     <div class="text-center q-mt-md">
       <p class="rights">
-        <span>Aggregator</span>
+        <span>Product Aggregator</span>
         <span>&nbsp;©&nbsp;</span>
         <span class="copyright-year">{{ currentDate.getFullYear() }}</span>
         <span>&nbsp;•&nbsp;</span>

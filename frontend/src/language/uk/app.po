@@ -11,21 +11,21 @@ msgstr ""
 
 #: src/components/SortSelect.vue:64
 msgid "A - Z"
-msgstr ""
+msgstr "А - Я"
 
 #: src/components/FooterLayout.vue:13 src/components/FooterLayout.vue:8
 #: src/components/FooterLayout.vue:9 src/layouts/MainLayout.vue:68
 msgid "About"
-msgstr ""
+msgstr "Про сайт"
 
 #: src/components/ShopCategory.vue:17 src/components/ShopCategory.vue:24
 #: src/components/ShopCategory.vue:7 src/components/ShopCategory.vue:8
 msgid "All"
-msgstr ""
+msgstr "Всі"
 
 #: src/components/ShopCategory.vue:11
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: src/components/ShopProductFilter.vue:106
 #: src/components/ShopProductFilter.vue:115
@@ -34,26 +34,26 @@ msgstr ""
 #: src/components/ShopProductFilter.vue:81
 #: src/components/ShopProductFilter.vue:88
 msgid "Brands"
-msgstr ""
+msgstr "Виробники"
 
 #: src/components/UserProfile.vue:130 src/components/UserProfile.vue:131
 #: src/components/UserProfile.vue:169 src/components/UserProfile.vue:212
 #: src/components/UserProfile.vue:224
 msgid "Country"
-msgstr ""
+msgstr "Країна"
 
 #: src/components/UserProfile.vue:122 src/components/UserProfile.vue:138
 #: src/components/UserProfile.vue:145 src/components/UserProfile.vue:83
 #: src/components/UserProfile.vue:84
 msgid "Date of birth"
-msgstr ""
+msgstr "Дата народження"
 
 #: src/components/ForgotPassword.vue:18 src/components/LoginForm.vue:32
 #: src/components/RegisterForm.vue:35 src/components/UserProfile.vue:104
 #: src/components/UserProfile.vue:105 src/components/UserProfile.vue:143
 #: src/components/UserProfile.vue:170 src/components/UserProfile.vue:177
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: src/components/ForgotPassword.vue:19 src/components/LoginForm.vue:33
 #: src/components/RegisterForm.vue:36
@@ -66,97 +66,97 @@ msgstr ""
 #: src/components/ShopProductFilter.vue:3
 #: src/components/ShopProductFilter.vue:4
 msgid "Filters"
-msgstr ""
+msgstr "Фільтри"
 
 #: src/components/ForgotPassword.vue:6 src/components/ForgotPassword.vue:7
 #: src/components/LoginForm.vue:41 src/components/LoginForm.vue:42
 #: src/components/LoginForm.vue:48 src/components/LoginForm.vue:75
 #: src/components/LoginForm.vue:83
 msgid "Forgot password?"
-msgstr ""
+msgstr "Забули пароль?"
 
 #: src/pages/ErrorNotFound.vue:16
 msgid "Go Home"
-msgstr ""
+msgstr "Повернутися на головну сторінку"
 
 #: src/components/UserProfile.vue:42 src/components/UserProfile.vue:43
 #: src/components/UserProfile.vue:77 src/components/UserProfile.vue:81
 msgid "Hide profile"
-msgstr ""
+msgstr "Приховати профіль"
 
 #: src/components/HeaderLayout.vue:63 src/layouts/MainLayout.vue:56
 msgid "Home"
-msgstr ""
+msgstr "Головна"
 
 #: src/components/UserProfile.vue:112 src/components/UserProfile.vue:120
 #: src/components/UserProfile.vue:128 src/components/UserProfile.vue:73
 #: src/components/UserProfile.vue:74
 msgid "Last name"
-msgstr ""
+msgstr "Прізвище"
 
 #: src/components/LoadingSpinner.vue:3 src/components/LoadingSpinner.vue:4
 #: src/components/LoadingSpinner.vue:7
 msgid "Loading..."
-msgstr ""
+msgstr "Завантаження..."
 
 #: src/components/HeaderLayout.vue:22 src/components/HeaderLayout.vue:23
 #: src/components/HeaderLayout.vue:27 src/components/HeaderLayout.vue:35
 #: src/components/HeaderLayout.vue:47 src/components/HeaderLayout.vue:53
 #: src/components/LoginForm.vue:76
 msgid "Login"
-msgstr ""
+msgstr "Вхід"
 
 #: src/components/LoginForm.vue:5 src/components/LoginForm.vue:6
 msgid "Login form"
-msgstr ""
+msgstr "Форма входу"
 
 #: src/components/LoginForm.vue:152
 msgid "Login successful"
-msgstr ""
+msgstr "Успішний вхід у систему"
 
 #: src/components/UserMenu.vue:23 src/components/UserMenu.vue:24
 #: src/components/UserMenu.vue:27 src/components/UserMenu.vue:35
 #: src/components/UserMenu.vue:39
 msgid "Logout"
-msgstr ""
+msgstr "Вихід"
 
 #: src/components/UserMenu.vue:79
 msgid "Logout successful"
-msgstr ""
+msgstr "Успішний вихід з системи"
 
 #: src/components/SortSelect.vue:36
 msgid "Max discount"
-msgstr ""
+msgstr "Максимальна знижка"
 
 #: src/components/SortSelect.vue:57
 msgid "Max price"
-msgstr ""
+msgstr "Максимальна ціна"
 
 #: src/layouts/MainLayout.vue:12 src/layouts/MainLayout.vue:7
 #: src/layouts/MainLayout.vue:8
 msgid "Menu"
-msgstr ""
+msgstr "Меню"
 
 #: src/components/SortSelect.vue:43
 msgid "Min discount"
-msgstr ""
+msgstr "Мінімальна знижка"
 
 #: src/components/SortSelect.vue:50
 msgid "Min price"
-msgstr ""
+msgstr "Мінімальна ціна"
 
 #: src/components/UserProfile.vue:102 src/components/UserProfile.vue:110
 #: src/components/UserProfile.vue:63 src/components/UserProfile.vue:64
 msgid "Name"
-msgstr ""
+msgstr "Ім'я"
 
 #: src/pages/ErrorNotFound.vue:7 src/pages/ErrorNotFound.vue:8
 msgid "Page not found"
-msgstr ""
+msgstr "Сторінку не знайдено"
 
 #: src/components/LoginForm.vue:50 src/components/RegisterForm.vue:53
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: src/components/LoginForm.vue:51 src/components/RegisterForm.vue:54
 msgid "Password hint"
@@ -166,27 +166,27 @@ msgstr ""
 #: src/components/UserProfile.vue:156 src/components/UserProfile.vue:190
 #: src/components/UserProfile.vue:199
 msgid "Phone number"
-msgstr ""
+msgstr "Номер телефону"
 
 #: src/components/UserSettings.vue:105
 msgid "Preferences update successful"
-msgstr ""
+msgstr "Оновлення налаштувань успішно засосовано"
 
 #: src/components/ShopProductFilter.vue:25
 #: src/components/ShopProductFilter.vue:33
 #: src/components/ShopProductFilter.vue:40
 msgid "Price"
-msgstr ""
+msgstr "Ціна"
 
 #: src/components/UserMenu.vue:10 src/components/UserMenu.vue:11
 #: src/components/UserMenu.vue:14 src/components/UserMenu.vue:18
 #: src/components/UserProfile.vue:4 src/components/UserProfile.vue:5
 msgid "Profile"
-msgstr ""
+msgstr "Профіль"
 
 #: src/components/UserProfile.vue:391
 msgid "Profile update successful"
-msgstr ""
+msgstr "Профіль успішно оновлен"
 
 #: src/components/ShopProductFilter.vue:103
 #: src/components/ShopProductFilter.vue:110
@@ -196,47 +196,47 @@ msgstr ""
 #: src/components/ShopProductFilter.vue:160
 #: src/components/ShopProductFilter.vue:95
 msgid "Promotions"
-msgstr ""
+msgstr "Акції"
 
 #: src/components/LoginForm.vue:101 src/components/LoginForm.vue:113
 #: src/components/LoginForm.vue:56 src/components/LoginForm.vue:57
 #: src/components/LoginForm.vue:63 src/components/RegisterForm.vue:6
 #: src/components/RegisterForm.vue:7 src/components/RegisterForm.vue:79
 msgid "Register"
-msgstr ""
+msgstr "Реєстрація"
 
 #: src/components/FormGenerator.vue:19 src/components/UserProfile.vue:255
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: src/components/SearchForm.vue:11
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: src/components/LanguageSelect.vue:10 src/components/LanguageSelect.vue:3
 #: src/components/LanguageSelect.vue:4 src/components/LanguageSelect.vue:7
 msgid "Select your language"
-msgstr ""
+msgstr "Обрати мову"
 
 #: src/components/ForgotPassword.vue:37
 msgid "Send"
-msgstr ""
+msgstr "Надіслати"
 
 #: src/components/UserMenu.vue:16 src/components/UserMenu.vue:17
 #: src/components/UserMenu.vue:20 src/components/UserMenu.vue:24
 #: src/components/UserMenu.vue:28 src/components/UserSettings.vue:4
 #: src/components/UserSettings.vue:5
 msgid "Settings"
-msgstr ""
+msgstr "Налаштування"
 
 #: src/components/HeaderLayout.vue:64 src/layouts/MainLayout.vue:62
 #: src/pages/ShopsPage.vue:4 src/pages/ShopsPage.vue:5
 msgid "Shops"
-msgstr ""
+msgstr "Магазини"
 
 #: src/components/ShopProductList.vue:32
 msgid "Show more"
-msgstr ""
+msgstr "Показати більше"
 
 #: src/components/ShopProductFilter.vue:117
 #: src/components/ShopProductFilter.vue:125
@@ -247,18 +247,18 @@ msgstr ""
 #: src/components/ShopProductFilter.vue:182
 #: src/components/ShopProductFilter.vue:191
 msgid "Submit"
-msgstr ""
+msgstr "Застосувати"
 
 #: src/components/UserProfile.vue:16 src/components/UserProfile.vue:17
 #: src/components/UserProfile.vue:23
 msgid "Upload a photo"
-msgstr ""
+msgstr "Завантажити фото"
 
 #: src/components/RegisterForm.vue:18 src/components/UserProfile.vue:30
 #: src/components/UserProfile.vue:31 src/components/UserProfile.vue:57
 #: src/components/UserProfile.vue:65
 msgid "Username"
-msgstr ""
+msgstr "Ім'я користувача"
 
 #: src/components/RegisterForm.vue:19
 msgid "Username hint"
@@ -269,8 +269,8 @@ msgstr ""
 #: src/components/ShopProductFilter.vue:64
 #: src/components/ShopProductFilter.vue:82
 msgid "Volume"
-msgstr ""
+msgstr "Об'єм"
 
 #: src/components/SortSelect.vue:71
 msgid "Z - A"
-msgstr ""
+msgstr "Я - А"

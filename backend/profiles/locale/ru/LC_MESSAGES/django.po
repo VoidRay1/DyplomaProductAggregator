@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-21 15:02+0200\n"
+"PO-Revision-Date: 2024-02-06 15:03+0000\n"
+"Last-Translator: Anonymous User <admin@homebar.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: profiles/apps.py:7
+msgid "profiles"
+msgstr "профили"
+
+#: profiles/models.py:9
+msgid "User"
+msgstr "Пользователь"
+
+#: profiles/models.py:11
+msgid "Avatar"
+msgstr "Аватар"
+
+#: profiles/models.py:12
+msgid "First name"
+msgstr "Имя"
+
+#: profiles/models.py:13
+msgid "Last name"
+msgstr "Фамилия"
+
+#: profiles/models.py:14
+msgid "Date of birth"
+msgstr "Дата рождения"
+
+#: profiles/models.py:15
+msgid "Country"
+msgstr "Страна"
+
+#: profiles/models.py:16
+msgid "Telegram username"
+msgstr "Имя в telegram"
+
+#: profiles/models.py:22
+msgid "Profile"
+msgstr "Профиль"
+
+#: profiles/models.py:23
+msgid "Profiles"
+msgstr "Профили"
+
+#~ msgid "Enabled cocktail comments"
+#~ msgstr "Отображать комментарии коктейлей"
+
+#~ msgid "Show similar cocktails"
+#~ msgstr "Показывать похожие коктейли"
+
+#~ msgid "Show statistics"
+#~ msgstr "Показывать статистику"
+
+#~ msgid "Enable show price bottles"
+#~ msgstr "Включить показ цен на бутылки"
+
+#~ msgid "Enable receive emails"
+#~ msgstr "Включить получение писем"
+
+#~ msgid "ABOUT US"
+#~ msgstr "О ПРОЕКТЕ"
+
+#~ msgid "COCKTAILS"
+#~ msgstr "КОКТЕЙЛИ"
+
+#~ msgid "INGREDIENTS"
+#~ msgstr "ИНГРЕДИЕНТЫ"
+
+#~ msgid "Dear"
+#~ msgstr "Уважаемый "
+
+#~ msgid "Unsubscribe notification"
+#~ msgstr "Вы успешно отписались от рассылки почтовых сообщений"

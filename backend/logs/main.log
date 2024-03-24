@@ -1332,3 +1332,17 @@ DEBUG 2024-03-19 22:14:25,525 functional 6644 1714144229312
 def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
     return 1
 
+INFO 2024-03-21 22:18:46,280 autoreload 22472 21272 Watching for file changes with StatReloader
+INFO 2024-03-21 22:29:19,335 autoreload 22472 21272 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-21 22:29:21,339 autoreload 23128 25236 Watching for file changes with StatReloader
+INFO 2024-03-21 22:29:30,377 autoreload 23128 25236 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-21 22:29:32,276 autoreload 21828 20756 Watching for file changes with StatReloader
+INFO 2024-03-21 22:38:43,852 autoreload 11960 17272 Watching for file changes with StatReloader
+INFO 2024-03-21 22:43:13,374 autoreload 3240 5848 Watching for file changes with StatReloader
+INFO 2024-03-24 14:20:47,479 autoreload 19208 11544 Watching for file changes with StatReloader
+INFO 2024-03-24 17:55:23,799 autoreload 19208 11544 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\urls.py changed, reloading.
+INFO 2024-03-24 17:55:26,455 autoreload 4904 13296 Watching for file changes with StatReloader
+INFO 2024-03-24 18:00:21,732 autoreload 4904 13296 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\urls.py changed, reloading.
+INFO 2024-03-24 18:00:23,650 autoreload 21896 21516 Watching for file changes with StatReloader
+INFO 2024-03-24 18:02:52,348 autoreload 21896 21516 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\urls.py changed, reloading.
+INFO 2024-03-24 18:02:54,208 autoreload 21692 19880 Watching for file changes with StatReloader

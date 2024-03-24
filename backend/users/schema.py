@@ -6,12 +6,12 @@ from django.contrib.auth import get_user_model
 from django.utils.translation import activate
 from graphene_django import DjangoObjectType
 from graphene_file_upload.scalars import Upload
-# from profiles.models import Profile
+from profiles.models import Profile
 from dynamic_preferences.users.models import UserPreferenceModel
 
 class ProfileType(DjangoObjectType):
     class Meta:
-        # model = Profile
+        model = Profile
         fields = ['first_name', 'last_name', 'avatar', 'date_of_birth', 'country']
 
 

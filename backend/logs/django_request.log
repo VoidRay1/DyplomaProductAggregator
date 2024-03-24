@@ -140,3 +140,721 @@ WARNING 2024-03-19 22:22:14,675 log 22300 15716 Not Found: /storage/images/empty
 WARNING 2024-03-19 22:22:33,803 log 22300 1720 Not Found: /favicon.ico
 WARNING 2024-03-19 22:22:36,754 log 22300 1720 Not Found: /storage/images/empty_user.jpg
 WARNING 2024-03-19 22:22:38,686 log 22300 1720 Not Found: /storage/images/empty_user.jpg
+ERROR 2024-03-21 22:19:35,066 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:23:19,361 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:23:26,920 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:23:28,484 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:23:43,190 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:24:26,628 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:24:59,622 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:25:17,819 log 22472 17176 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+WARNING 2024-03-21 22:25:41,955 log 22472 19200 Not Found: /grapql
+WARNING 2024-03-21 22:25:42,381 log 22472 1892 Not Found: /favicon.ico
+ERROR 2024-03-21 22:25:50,852 log 22472 1892 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:27:44,715 log 22472 1892 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:28:00,416 log 22472 1892 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+WARNING 2024-03-21 22:28:04,706 log 22472 1892 Not Found: /gtdsd
+ERROR 2024-03-21 22:28:08,906 log 22472 1892 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 12, in <module>
+    class ProfileType(DjangoObjectType):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\types\objecttype.py", line 30, in __new__
+    base_cls = super().__new__(
+               ^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene\utils\subclass_with_meta.py", line 46, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\types.py", line 153, in __init_subclass_with_meta__
+    assert is_valid_django_model(model), (
+AssertionError: You need to pass a valid Django Model in ProfileType.Meta, received "None".
+ERROR 2024-03-21 22:28:21,601 log 22472 1892 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 9, in <module>
+    from profiles.models import Profile
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\profiles\models.py", line 5, in <module>
+    class Profile(models.Model):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class profiles.models.Profile doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+ERROR 2024-03-21 22:29:14,015 log 22472 1892 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 9, in <module>
+    from profiles.models import Profile
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\profiles\models.py", line 5, in <module>
+    class Profile(models.Model):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class profiles.models.Profile doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+ERROR 2024-03-21 22:29:21,972 log 23128 9108 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1381, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\schema.py", line 4, in <module>
+    import users.schema
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py", line 9, in <module>
+    from profiles.models import Profile
+  File "C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\profiles\models.py", line 5, in <module>
+    class Profile(models.Model):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\db\models\base.py", line 134, in __new__
+    raise RuntimeError(
+RuntimeError: Model class profiles.models.Profile doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+WARNING 2024-03-24 14:51:42,422 log 19208 3892 Not Found: /api/v1/users/
+WARNING 2024-03-24 14:51:57,718 log 19208 1152 Not Found: /favicon.ico
+WARNING 2024-03-24 14:56:57,834 log 19208 22768 Not Found: /api/v1/users/
+WARNING 2024-03-24 14:58:04,619 log 19208 22448 Not Found: /users
+WARNING 2024-03-24 15:04:21,951 log 19208 22768 Not Found: /api/v1/users/
+WARNING 2024-03-24 15:04:28,726 log 19208 16884 Not Found: /media/
+WARNING 2024-03-24 15:04:52,833 log 19208 8876 Not Found: /media/
+WARNING 2024-03-24 15:05:08,822 log 19208 5332 Not Found: /media/
+WARNING 2024-03-24 17:41:18,171 log 19208 15732 Not Found: /media/
+WARNING 2024-03-24 17:42:39,805 log 19208 20316 Not Found: /media/
+WARNING 2024-03-24 17:48:22,576 log 19208 24988 Not Found: /media/
+WARNING 2024-03-24 17:48:56,546 log 19208 14476 Bad Request: /graphql
+WARNING 2024-03-24 17:49:17,820 log 19208 14476 Bad Request: /graphql
+WARNING 2024-03-24 17:50:14,542 log 19208 19384 Not Found: /media/
+WARNING 2024-03-24 17:51:51,053 log 19208 5428 Not Found: /media/
+WARNING 2024-03-24 17:52:06,866 log 19208 16160 Bad Request: /graphql
+WARNING 2024-03-24 17:52:20,697 log 19208 16160 Bad Request: /graphql
+WARNING 2024-03-24 17:58:43,621 log 4904 1696 Not Found: /api/v1/users/
+WARNING 2024-03-24 18:00:08,742 log 4904 1696 Not Found: /api/v1/users/

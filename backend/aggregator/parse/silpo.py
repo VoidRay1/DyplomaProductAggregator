@@ -16,7 +16,7 @@ def get_products():
         'includeChildCategories': 'true',
         'sortBy': 'popularity',
         'sortDirection': 'desc',
-        'mustHavePromotion': 'true',
+        'mustHavePromotion': 'false',
     }
     res = requests.get(shop.api + settings.SILPO_PRODUCTS_URL, params)
     logger.info(res)

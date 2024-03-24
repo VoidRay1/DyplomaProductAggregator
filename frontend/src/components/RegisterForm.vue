@@ -16,7 +16,7 @@
             color="orange"
             v-model="username"
             :label="__('Username')"
-            :hint="__('Username hint')"
+            :hint="__('')"
             @blur="v$.username.$touch"
             :error="v$.username.$invalid"
           >
@@ -33,7 +33,7 @@
             color="orange"
             v-model.trim="email"
             :label="__('Email')"
-            :hint="__('Email hint')"
+            :hint="__('')"
             @blur="v$.email.$touch"
             :error="v$.email.$dirty && v$.email.$invalid"
           >
@@ -51,7 +51,7 @@
             v-model="password"
             :type="isPwd ? 'password' : 'text'"
             :label="__('Password')"
-            :hint="__('Password hint')"
+            :hint="__('')"
             @blur="v$.password.$touch"
             :error="v$.password.$dirty && v$.password.$invalid"
           >

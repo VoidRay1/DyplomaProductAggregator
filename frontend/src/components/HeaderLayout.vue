@@ -94,9 +94,6 @@ const toggleLeftDrawer = () => { emit('my-switchLeftDrawer') }
 <style lang="sass" scoped>
 .header
   background-color: $blue-grey-10
-  // -background-image: url("assets/header-background.webp")
-  // -background-size: contain
-  // -background-position: center
 .logo
   width: 80px
   @media (max-width: $breakpoint-sm-max)
