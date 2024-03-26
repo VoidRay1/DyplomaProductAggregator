@@ -145,12 +145,16 @@ class ShopProductNode(DjangoParlerObjectType):
             return settings.SILPO_IMAGES_URL + root.image
         if root.shop.id == settings.ROZETKA_ID:
             return root.image
+        if root.shop.id == settings.TAVRIA_ID:
+            return root.image
 
     def resolve_url(root, info, **kwargs):
         if root.shop.id == settings.SILPO_ID:
             return root.shop.url + 'product/' + root.product_slug
         if root.shop.id == settings.ROZETKA_ID:
             return root.shop.url + 'product/p' + root.product_slug
+        if root.shop.id == settings.TAVRIA_ID:
+            return root.shop.url + 'product/' + root.product_slug
 
     def resolve_price(root, info, **kwargs):
         return root.prices.first()

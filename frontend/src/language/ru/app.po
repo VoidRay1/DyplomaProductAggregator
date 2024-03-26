@@ -274,3 +274,7 @@ msgstr "Объем"
 #: src/components/SortSelect.vue:71
 msgid "Z - A"
 msgstr "Я - А"
+
+#: src/components/UserProfile.vue:137
+msgid "Telegram username"
+msgstr "Имя в Telegram"

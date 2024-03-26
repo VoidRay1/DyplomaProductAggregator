@@ -425,6 +425,9 @@ ROZETKA_CATEGORY = '4649148'
 ROZETKA_LIST_PRODUCTS_URL = 'goods/get'
 ROZETKA_PRODUCTS_URL = 'goods/getDetails'
 
+TAVRIA_ID = 3
+TAVRIA_PRODUCTS_URL = 'product'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

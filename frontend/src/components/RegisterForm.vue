@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex flex-center">
+  <!-- <q-page class="flex flex-center"> -->
     <q-dialog v-model="registerDialog">
       <q-card class="register-card">
         <q-card-section class="row items-center">
@@ -85,7 +85,7 @@
         <inner-loading :loading="loading"/>
       </q-card>
     </q-dialog>
-  </q-page>
+  <!-- </q-page> -->
 </template>
 
 <script>

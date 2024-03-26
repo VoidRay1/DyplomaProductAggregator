@@ -1,6 +1,6 @@
 <template>
   <q-dialog> 
-    <q-card class="login-card">
+    <q-card class="login-card" v-if="!registerForm">
       <q-form @submit.prevent="loginUser()">
       <q-card-section class="row items-center">
         <div class="text-h6">{{ __('Login form') }}</div>
@@ -74,7 +74,6 @@
           no-caps
           color="orange"
           :label="__('Login')"
-          :disabled="v$.$invalid"
           type="submit"
           style="width: 120px;"
         />
@@ -109,15 +108,22 @@
       <q-separator />
 
       <q-card-actions align="center">
-        <router-link
+        <q-btn
+          flat
+          color="orange"
+          :label="__('Register')"
+          @click="registerForm = true"
+        />
+        <!-- <router-link
           class="q-my-sm text-center text-body2 text-weight-bold text-orange no-underline"
           to="/register"
         >
           {{ __('Register') }}
-        </router-link>
+        </router-link> -->
       </q-card-actions>
       </q-form>
     </q-card>
+    <RegisterForm v-model="registerForm" />
   </q-dialog>
 </template>
 
@@ -131,10 +137,13 @@ import { required, email, minLength } from '../utils/i18n-validators'
 import { useGettext } from 'vue3-gettext'
 import { useMutation } from '@vue/apollo-composable'
 import { TOKEN_AUTH } from '../constants/graphql'
+import RegisterForm from 'components/RegisterForm.vue'
 
 const $q = useQuasar()
 const store = useTokenStore()
 const { $gettext } = useGettext()
+
+const registerForm = ref(false)
 
 const formData = reactive({
   email: '',

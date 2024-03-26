@@ -38,6 +38,7 @@ export const profileFragment = gql`
     lastName
     dateOfBirth
     country
+    telegramUsername
   }
 `;
 
@@ -49,7 +50,6 @@ export const GET_USER = gql`
       email
       phone
       locale
-      isActive
       profile {
         ...ProfileFields
       }

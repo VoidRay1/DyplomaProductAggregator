@@ -21,26 +21,6 @@
           </router-link>
         </div>
         <div class="flex items-center q-pt-sm q-gutter-sm">
-          <q-form
-            :action="`/cocktails/${language}`"
-            method="GET"
-          >
-            <q-input
-              dark
-              rounded
-              dense
-              standout
-              v-model="searchText"
-              name="q"
-              input-class="text-left"
-              class=""
-            >
-              <template v-slot:prepend>
-                <q-icon v-if="searchText === ''" name="search" />
-                <q-icon v-else name="clear" class="cursor-pointer" @click="searchText = ''" />
-              </template>
-            </q-input>
-          </q-form>
           <!--q-btn flat round icon="settings_brightness" class="q-mr-xs" @click="toggleDark" /-->
           <UserMenu v-if="token.isAuthenticated" />
           <q-btn v-show="!token.isAuthenticated"

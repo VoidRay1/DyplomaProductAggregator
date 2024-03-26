@@ -1346,3 +1346,171 @@ INFO 2024-03-24 18:00:21,732 autoreload 4904 13296 C:\Users\Sergey Trosenko\Dypl
 INFO 2024-03-24 18:00:23,650 autoreload 21896 21516 Watching for file changes with StatReloader
 INFO 2024-03-24 18:02:52,348 autoreload 21896 21516 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\urls.py changed, reloading.
 INFO 2024-03-24 18:02:54,208 autoreload 21692 19880 Watching for file changes with StatReloader
+INFO 2024-03-25 18:19:16,211 autoreload 14048 1816 Watching for file changes with StatReloader
+WARNING 2024-03-25 18:20:43,236 log 14048 19820 Forbidden (CSRF cookie not set.): /admin/login/
+INFO 2024-03-25 18:25:01,362 autoreload 6912 10944 Watching for file changes with StatReloader
+INFO 2024-03-25 20:07:54,796 autoreload 6912 10944 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\backend\settings.py changed, reloading.
+INFO 2024-03-25 20:07:57,117 autoreload 5436 2620 Watching for file changes with StatReloader
+DEBUG 2024-03-25 20:11:32,644 functional 11620 16024 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,644 functional 11620 16024 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:32,645 functional 11620 16024 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,646 functional 11620 16024 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:32,646 functional 11620 16024 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,647 functional 11620 16024 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,647 functional 11620 16024 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-25 20:11:32,648 functional 11620 16024 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:32,648 functional 11620 16024 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,649 functional 11620 16024 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,649 functional 11620 16024 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:32,650 functional 11620 16024 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,918 functional 5572 1705759632768 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,918 functional 5572 1705759632768 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,919 functional 5572 1705759632768 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,920 functional 5572 1705759632768 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,920 functional 5572 1705759632768 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,920 functional 5572 1705759632768 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,921 functional 5572 1705759632768 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,921 functional 5572 1705759632768 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,922 functional 5572 1705759632768 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,922 functional 5572 1705759632768 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,922 functional 5572 1705759632768 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,923 functional 5572 1705759632768 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,923 functional 5572 1705759632768 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-25 20:11:42,924 functional 5572 1705759632768 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-25 20:11:42,924 functional 5572 1705759632768 
+def chunks(task, it, n):
+    return 1
+
+INFO 2024-03-25 20:33:55,216 autoreload 5436 2620 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 20:33:56,981 autoreload 3872 6532 Watching for file changes with StatReloader
+INFO 2024-03-25 20:36:30,111 autoreload 3872 6532 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 20:36:31,684 autoreload 7500 9352 Watching for file changes with StatReloader
+INFO 2024-03-25 20:49:30,916 autoreload 7500 9352 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 20:49:32,490 autoreload 2180 13880 Watching for file changes with StatReloader
+INFO 2024-03-25 20:51:20,174 autoreload 2180 13880 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 20:51:21,765 autoreload 20872 11248 Watching for file changes with StatReloader
+INFO 2024-03-25 21:28:43,760 autoreload 6544 10796 Watching for file changes with StatReloader
+INFO 2024-03-25 21:32:45,690 autoreload 6544 10796 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 21:32:47,343 autoreload 17748 11252 Watching for file changes with StatReloader
+INFO 2024-03-25 21:33:16,604 autoreload 17748 11252 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 21:33:18,193 autoreload 17628 9128 Watching for file changes with StatReloader
+INFO 2024-03-25 21:37:48,212 autoreload 17628 9128 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 21:37:49,834 autoreload 8328 13076 Watching for file changes with StatReloader
+INFO 2024-03-25 21:38:47,077 autoreload 8328 13076 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 21:38:48,643 autoreload 19968 13352 Watching for file changes with StatReloader
+INFO 2024-03-25 21:42:25,509 autoreload 19968 13352 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 21:42:27,166 autoreload 2924 11428 Watching for file changes with StatReloader
+INFO 2024-03-25 21:42:56,143 autoreload 2924 11428 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 21:42:57,765 autoreload 16432 21236 Watching for file changes with StatReloader
+INFO 2024-03-25 22:29:39,393 autoreload 16432 21236 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:29:41,260 autoreload 10884 20412 Watching for file changes with StatReloader
+INFO 2024-03-25 22:30:15,426 autoreload 10884 20412 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:30:16,989 autoreload 12592 22572 Watching for file changes with StatReloader
+INFO 2024-03-25 22:30:43,714 autoreload 12592 22572 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:30:45,307 autoreload 23572 18280 Watching for file changes with StatReloader
+INFO 2024-03-25 22:31:37,519 autoreload 23572 18280 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:31:39,054 autoreload 23756 24396 Watching for file changes with StatReloader
+INFO 2024-03-25 22:45:37,104 autoreload 23756 24396 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:45:38,739 autoreload 14284 21240 Watching for file changes with StatReloader
+INFO 2024-03-25 22:47:28,983 autoreload 14284 21240 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:47:30,597 autoreload 22952 24036 Watching for file changes with StatReloader
+INFO 2024-03-25 22:48:58,114 autoreload 22952 24036 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:48:59,740 autoreload 20776 11768 Watching for file changes with StatReloader
+INFO 2024-03-25 22:49:26,957 autoreload 20776 11768 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:49:28,673 autoreload 16816 17528 Watching for file changes with StatReloader
+INFO 2024-03-25 22:51:28,804 autoreload 16816 17528 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:51:30,500 autoreload 11624 21368 Watching for file changes with StatReloader
+INFO 2024-03-25 22:54:30,982 autoreload 11624 21368 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:54:32,548 autoreload 22868 14572 Watching for file changes with StatReloader
+INFO 2024-03-25 22:55:03,774 autoreload 22868 14572 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:55:05,421 autoreload 16244 17052 Watching for file changes with StatReloader
+INFO 2024-03-25 22:56:18,325 autoreload 16244 17052 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:56:19,978 autoreload 22084 24140 Watching for file changes with StatReloader
+INFO 2024-03-25 22:56:31,752 autoreload 22084 24140 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-25 22:56:33,515 autoreload 21984 19536 Watching for file changes with StatReloader
+INFO 2024-03-26 12:07:17,217 autoreload 21984 19536 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-26 12:07:19,073 autoreload 23768 1212 Watching for file changes with StatReloader
+INFO 2024-03-26 12:22:10,350 autoreload 23768 1212 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\urls.py changed, reloading.
+INFO 2024-03-26 12:22:11,989 autoreload 22356 22748 Watching for file changes with StatReloader
+INFO 2024-03-26 12:27:51,485 autoreload 22356 22748 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-26 12:27:53,426 autoreload 5444 8516 Watching for file changes with StatReloader
+INFO 2024-03-26 12:28:15,084 autoreload 5444 8516 C:\Users\Sergey Trosenko\DyplomaProductAggregator\backend\users\schema.py changed, reloading.
+INFO 2024-03-26 12:28:16,673 autoreload 23040 13252 Watching for file changes with StatReloader

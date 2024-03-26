@@ -2,6 +2,14 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 
+#: src/components/LoginForm.vue:33
+#: src/components/LoginForm.vue:51
+#: src/components/RegisterForm.vue:19
+#: src/components/RegisterForm.vue:36
+#: src/components/RegisterForm.vue:54
+msgid ""
+msgstr ""
+
 #: src/components/SortSelect.vue:64
 msgid "A - Z"
 msgstr ""
@@ -33,36 +41,34 @@ msgstr ""
 msgid "Brands"
 msgstr ""
 
-#: src/components/UserProfile.vue:130
-#: src/components/UserProfile.vue:131
-#: src/components/UserProfile.vue:169
-#: src/components/UserProfile.vue:212
-#: src/components/UserProfile.vue:224
+#: src/components/UserProfile.vue:135
+#: src/components/UserProfile.vue:136
+#: src/components/UserProfile.vue:170
+#: src/components/UserProfile.vue:222
+#: src/components/UserProfile.vue:234
 msgid "Country"
 msgstr ""
 
-#: src/components/UserProfile.vue:122
-#: src/components/UserProfile.vue:138
-#: src/components/UserProfile.vue:145
-#: src/components/UserProfile.vue:83
-#: src/components/UserProfile.vue:84
+#: src/components/UserProfile.vue:123
+#: src/components/UserProfile.vue:147
+#: src/components/UserProfile.vue:154
+#: src/components/UserProfile.vue:88
+#: src/components/UserProfile.vue:89
 msgid "Date of birth"
 msgstr ""
 
 #: src/components/ForgotPassword.vue:18
 #: src/components/LoginForm.vue:32
 #: src/components/RegisterForm.vue:35
-#: src/components/UserProfile.vue:104
-#: src/components/UserProfile.vue:105
-#: src/components/UserProfile.vue:143
-#: src/components/UserProfile.vue:170
-#: src/components/UserProfile.vue:177
+#: src/components/UserProfile.vue:109
+#: src/components/UserProfile.vue:110
+#: src/components/UserProfile.vue:144
+#: src/components/UserProfile.vue:179
+#: src/components/UserProfile.vue:187
 msgid "Email"
 msgstr ""
 
 #: src/components/ForgotPassword.vue:19
-#: src/components/LoginForm.vue:33
-#: src/components/RegisterForm.vue:36
 msgid "Email hint"
 msgstr ""
 
@@ -80,7 +86,7 @@ msgstr ""
 #: src/components/LoginForm.vue:42
 #: src/components/LoginForm.vue:48
 #: src/components/LoginForm.vue:75
-#: src/components/LoginForm.vue:83
+#: src/components/LoginForm.vue:82
 msgid "Forgot password?"
 msgstr ""
 
@@ -88,23 +94,16 @@ msgstr ""
 msgid "Go Home"
 msgstr ""
 
-#: src/components/UserProfile.vue:42
-#: src/components/UserProfile.vue:43
-#: src/components/UserProfile.vue:77
-#: src/components/UserProfile.vue:81
-msgid "Hide profile"
-msgstr ""
-
-#: src/components/HeaderLayout.vue:63
+#: src/components/HeaderLayout.vue:43
 #: src/layouts/MainLayout.vue:56
 msgid "Home"
 msgstr ""
 
-#: src/components/UserProfile.vue:112
-#: src/components/UserProfile.vue:120
-#: src/components/UserProfile.vue:128
-#: src/components/UserProfile.vue:73
-#: src/components/UserProfile.vue:74
+#: src/components/UserProfile.vue:103
+#: src/components/UserProfile.vue:111
+#: src/components/UserProfile.vue:119
+#: src/components/UserProfile.vue:68
+#: src/components/UserProfile.vue:69
 msgid "Last name"
 msgstr ""
 
@@ -114,12 +113,11 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: src/components/HeaderLayout.vue:22
-#: src/components/HeaderLayout.vue:23
+#: src/components/HeaderLayout.vue:14
+#: src/components/HeaderLayout.vue:15
+#: src/components/HeaderLayout.vue:19
 #: src/components/HeaderLayout.vue:27
-#: src/components/HeaderLayout.vue:35
-#: src/components/HeaderLayout.vue:47
-#: src/components/HeaderLayout.vue:53
+#: src/components/HeaderLayout.vue:33
 #: src/components/LoginForm.vue:76
 msgid "Login"
 msgstr ""
@@ -129,7 +127,7 @@ msgstr ""
 msgid "Login form"
 msgstr ""
 
-#: src/components/LoginForm.vue:152
+#: src/components/LoginForm.vue:161
 msgid "Login successful"
 msgstr ""
 
@@ -167,10 +165,10 @@ msgstr ""
 msgid "Min price"
 msgstr ""
 
-#: src/components/UserProfile.vue:102
-#: src/components/UserProfile.vue:110
-#: src/components/UserProfile.vue:63
-#: src/components/UserProfile.vue:64
+#: src/components/UserProfile.vue:101
+#: src/components/UserProfile.vue:58
+#: src/components/UserProfile.vue:59
+#: src/components/UserProfile.vue:93
 msgid "Name"
 msgstr ""
 
@@ -184,16 +182,11 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: src/components/LoginForm.vue:51
-#: src/components/RegisterForm.vue:54
-msgid "Password hint"
-msgstr ""
-
-#: src/components/UserProfile.vue:117
-#: src/components/UserProfile.vue:118
-#: src/components/UserProfile.vue:156
-#: src/components/UserProfile.vue:190
-#: src/components/UserProfile.vue:199
+#: src/components/UserProfile.vue:122
+#: src/components/UserProfile.vue:123
+#: src/components/UserProfile.vue:157
+#: src/components/UserProfile.vue:200
+#: src/components/UserProfile.vue:209
 msgid "Phone number"
 msgstr ""
 
@@ -216,7 +209,7 @@ msgstr ""
 msgid "Profile"
 msgstr ""
 
-#: src/components/UserProfile.vue:391
+#: src/components/UserProfile.vue:402
 msgid "Profile update successful"
 msgstr ""
 
@@ -230,19 +223,20 @@ msgstr ""
 msgid "Promotions"
 msgstr ""
 
-#: src/components/LoginForm.vue:101
-#: src/components/LoginForm.vue:113
-#: src/components/LoginForm.vue:56
-#: src/components/LoginForm.vue:57
-#: src/components/LoginForm.vue:63
-#: src/components/RegisterForm.vue:6
+#: src/components/LoginForm.vue:104
+#: src/components/LoginForm.vue:114
+#: src/components/LoginForm.vue:116
+#: src/components/LoginForm.vue:60
+#: src/components/LoginForm.vue:61
+#: src/components/LoginForm.vue:67
+#: src/components/RegisterForm.vue:5
 #: src/components/RegisterForm.vue:7
 #: src/components/RegisterForm.vue:79
 msgid "Register"
 msgstr ""
 
 #: src/components/FormGenerator.vue:19
-#: src/components/UserProfile.vue:255
+#: src/components/UserProfile.vue:265
 msgid "Save"
 msgstr ""
 
@@ -271,7 +265,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: src/components/HeaderLayout.vue:64
+#: src/components/HeaderLayout.vue:44
 #: src/layouts/MainLayout.vue:62
 #: src/pages/ShopsPage.vue:4
 #: src/pages/ShopsPage.vue:5
@@ -293,6 +287,14 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+#: src/components/UserProfile.vue:113
+#: src/components/UserProfile.vue:129
+#: src/components/UserProfile.vue:137
+#: src/components/UserProfile.vue:78
+#: src/components/UserProfile.vue:79
+msgid "Telegram username"
+msgstr ""
+
 #: src/components/UserProfile.vue:16
 #: src/components/UserProfile.vue:17
 #: src/components/UserProfile.vue:23
@@ -305,10 +307,6 @@ msgstr ""
 #: src/components/UserProfile.vue:57
 #: src/components/UserProfile.vue:65
 msgid "Username"
-msgstr ""
-
-#: src/components/RegisterForm.vue:19
-msgid "Username hint"
 msgstr ""
 
 #: src/components/ShopProductFilter.vue:49

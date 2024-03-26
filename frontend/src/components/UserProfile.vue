@@ -72,15 +72,6 @@
             </template>
           </q-input>
         </div>
-        <div class="flex flex-center row">
-          <q-toggle
-            v-model="formData.hide"
-            color="orange"
-            left-label
-          >
-            <span class="text-subtitle1 label" style="opacity: 0.54;">{{ __('Hide profile') }}</span>
-          </q-toggle>
-        </div>
       </q-card-section>
 
       <q-card-section class="justify-center q-pa-none">
@@ -133,6 +124,24 @@
           </q-input>
         </div>
         <div class="flex flex-center row">
+          <q-input
+            outlined
+            dense
+            color="orange"
+            v-model="formData.telegramUsername"
+            @blur="v$.telegramUsername.$touch"
+            :error="v$.telegramUsername.$invalid"
+            style="width: 390px;"
+          >
+            <template v-slot:before>
+              <div class="text-subtitle1 label">{{ __('Telegram username') }}</div>
+            </template>
+            <template v-slot:error>
+              <p v-for="error in v$.telegramUsername.$errors" :key="error.$uid">{{ error.$message }}</p>
+            </template>
+          </q-input>
+        </div>
+        <div class="flex flex-center row">
         <q-input
           outlined
           dense
@@ -166,6 +175,7 @@
         </div>
         <div class="flex flex-center row">
           <q-input
+            disable
             outlined
             dense
             color="orange"
@@ -240,7 +250,7 @@
       </q-card-section>
 
       <q-separator />
-      <q-card-actions class="justify-center">
+      <q-card-actions v-if="!formChanged" class="justify-center">
         <div class="q-py-sm">
           <!--q-btn
             no-caps
@@ -253,7 +263,6 @@
           <q-btn
             no-caps
             :label="__('Save')"
-            :disabled="false"
             @click="submitForm"
             color="orange"
             class="my-btn"
@@ -281,6 +290,8 @@ const $q = useQuasar()
 const gettext = useGettext()
 const { $gettext } = useGettext()
 const language = localStorage.getItem('language') || gettext.current
+const formChanged = ref(false)
+
 if (gettext.current != language) {
   gettext.current = language
 }
@@ -317,7 +328,7 @@ const formData = reactive(JSON.parse(localStorage.getItem('userData')) ?? {
   email: '',
   phone: '',
   country: '',
-  hide: '',
+  telegramUsername: '',
 //  password: '',
 })
 const rules = {
@@ -329,7 +340,7 @@ const rules = {
   email: { required, email },
   phone: { required: false },
   country: { required: false },
-  hide: { required: false },
+  telegramUsername: {required: false},
 //  password: { required, minLength: minLength(8) }
 }
 const v$ = useVuelidate(rules,formData)
@@ -367,12 +378,12 @@ watch(user, (user) => {
   formData.avatar = user.profile.avatar
   formData.firstName = user.profile.firstName
   formData.lastName = user.profile.lastName
+  formData.telegramUsername = user.profile.telegramUsername
   formData.dateOfBirth = user.profile.dateOfBirth
   formData.country = user.profile.country
   formData.username = user.username
   formData.email = user.email
   formData.phone = user.phone
-  formData.hide = !user.isActive
   if (formData.avatar) {
     avatar.value = imageUrl(formData.avatar)
   }

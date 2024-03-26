@@ -12,7 +12,7 @@ from dynamic_preferences.users.models import UserPreferenceModel
 class ProfileType(DjangoObjectType):
     class Meta:
         model = Profile
-        fields = ['first_name', 'last_name', 'avatar', 'date_of_birth', 'country']
+        fields = ['first_name', 'last_name', 'avatar', 'date_of_birth', 'country', 'telegram_username']
 
 
 class FieldType(graphene.ObjectType):
@@ -45,7 +45,7 @@ class UserType(DjangoObjectType):
     preferences = graphene.List(PreferencesType)
     class Meta:
         model = get_user_model()
-        fields = ['id', 'username', 'email', 'phone', 'locale', 'is_active']
+        fields = ['id', 'username', 'email', 'phone', 'locale']
 
     @classmethod
     def resolve_preferences(cls, root, info, **kwargs):
@@ -84,7 +84,7 @@ class UserInput(graphene.InputObjectType):
     email = graphene.String(required=True)
     phone = graphene.String()
     country = graphene.String()
-    hide = graphene.Boolean()
+    telegramUsername = graphene.String()
 
 
 class UpdateProfile(graphene.Mutation):
@@ -104,8 +104,6 @@ class UpdateProfile(graphene.Mutation):
         user.username = input.username
         user.email = input.email
         user.phone = input.phone
-        if input.hide:
-            user.is_active = 0
         user.save()
 
         if not input.avatar:
@@ -114,6 +112,7 @@ class UpdateProfile(graphene.Mutation):
         user.profile.last_name = input.lastName
         user.profile.date_of_birth = datetime.strptime(input.dateOfBirth, '%Y-%m-%d')
         user.profile.country = input.country
+        user.profile.telegram_username = input.telegramUsername
         user.profile.save()
         return UpdateProfile(user=user, ok=ok)
 

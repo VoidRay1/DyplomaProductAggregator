@@ -858,3 +858,400 @@ WARNING 2024-03-24 17:52:06,866 log 19208 16160 Bad Request: /graphql
 WARNING 2024-03-24 17:52:20,697 log 19208 16160 Bad Request: /graphql
 WARNING 2024-03-24 17:58:43,621 log 4904 1696 Not Found: /api/v1/users/
 WARNING 2024-03-24 18:00:08,742 log 4904 1696 Not Found: /api/v1/users/
+WARNING 2024-03-25 18:19:41,378 log 14048 19820 Not Found: /favicon.ico
+WARNING 2024-03-25 20:20:30,495 log 5436 2144 Not Found: /media/
+WARNING 2024-03-25 20:21:30,715 log 5436 2388 Not Found: /media/
+WARNING 2024-03-25 20:22:33,149 log 5436 13300 Not Found: /media/
+WARNING 2024-03-25 20:22:48,770 log 5436 20544 Not Found: /media/
+WARNING 2024-03-25 20:22:56,354 log 5436 21368 Not Found: /media/
+WARNING 2024-03-25 20:27:25,944 log 5436 11844 Not Found: /media/
+WARNING 2024-03-25 20:29:00,240 log 5436 5796 Not Found: /media/
+WARNING 2024-03-25 20:29:56,255 log 5436 8288 Not Found: /media/
+WARNING 2024-03-25 20:29:58,215 log 5436 19160 Not Found: /media/
+WARNING 2024-03-25 20:33:57,588 log 3872 9104 Not Found: /media/
+WARNING 2024-03-25 20:34:13,491 log 3872 12872 Bad Request: /graphql
+WARNING 2024-03-25 20:35:26,403 log 3872 10368 Not Found: /media/
+WARNING 2024-03-25 20:35:33,678 log 3872 12872 Bad Request: /graphql
+WARNING 2024-03-25 20:35:50,682 log 3872 7140 Not Found: /media/
+WARNING 2024-03-25 20:36:02,006 log 3872 12872 Bad Request: /graphql
+WARNING 2024-03-25 20:36:33,912 log 7500 14012 Not Found: /media/
+WARNING 2024-03-25 20:36:39,061 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:38:59,988 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:39:00,423 log 7500 12868 Not Found: /media/
+WARNING 2024-03-25 20:39:03,310 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:39:03,391 log 7500 1424 Not Found: /media/
+WARNING 2024-03-25 20:39:14,872 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:39:40,664 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:39:41,089 log 7500 6440 Not Found: /media/
+WARNING 2024-03-25 20:40:14,764 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:40:14,804 log 7500 13768 Not Found: /media/
+WARNING 2024-03-25 20:40:17,466 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:40:17,850 log 7500 14236 Not Found: /media/
+WARNING 2024-03-25 20:40:31,834 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:42:30,829 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:42:31,243 log 7500 19788 Not Found: /media/
+WARNING 2024-03-25 20:42:38,733 log 7500 1744 Bad Request: /graphql
+WARNING 2024-03-25 20:43:51,231 log 7500 21188 Bad Request: /graphql
+WARNING 2024-03-25 20:43:51,283 log 7500 20800 Not Found: /media/
+WARNING 2024-03-25 20:43:52,365 log 7500 21188 Bad Request: /graphql
+WARNING 2024-03-25 20:43:52,477 log 7500 740 Not Found: /media/
+WARNING 2024-03-25 20:44:06,101 log 7500 8544 Bad Request: /graphql
+WARNING 2024-03-25 20:44:06,104 log 7500 20284 Bad Request: /graphql
+WARNING 2024-03-25 20:44:15,427 log 7500 17048 Bad Request: /graphql
+WARNING 2024-03-25 20:44:15,530 log 7500 8524 Not Found: /media/
+WARNING 2024-03-25 20:44:20,112 log 7500 17048 Bad Request: /graphql
+WARNING 2024-03-25 20:44:48,873 log 7500 17048 Bad Request: /graphql
+WARNING 2024-03-25 20:44:48,973 log 7500 20720 Not Found: /media/
+WARNING 2024-03-25 20:44:50,847 log 7500 17048 Bad Request: /graphql
+WARNING 2024-03-25 20:44:51,183 log 7500 8516 Not Found: /media/
+WARNING 2024-03-25 20:44:52,528 log 7500 17048 Bad Request: /graphql
+WARNING 2024-03-25 20:44:52,607 log 7500 6120 Not Found: /media/
+WARNING 2024-03-25 20:44:58,001 log 7500 17048 Bad Request: /graphql
+WARNING 2024-03-25 20:45:13,401 log 7500 18344 Not Found: /media/
+WARNING 2024-03-25 20:45:19,589 log 7500 964 Bad Request: /graphql
+WARNING 2024-03-25 20:46:48,014 log 7500 20824 Not Found: /media/
+WARNING 2024-03-25 20:46:50,121 log 7500 9448 Not Found: /media/
+WARNING 2024-03-25 20:46:54,850 log 7500 19048 Not Found: /media/
+WARNING 2024-03-25 20:47:02,996 log 7500 9580 Bad Request: /graphql
+WARNING 2024-03-25 20:49:57,732 log 2180 4832 Not Found: /media/
+WARNING 2024-03-25 20:50:01,583 log 2180 9728 Bad Request: /graphql
+WARNING 2024-03-25 20:50:56,576 log 2180 6412 Not Found: /media/
+WARNING 2024-03-25 20:51:00,954 log 2180 9728 Bad Request: /graphql
+WARNING 2024-03-25 20:51:22,788 log 20872 1008 Not Found: /media/
+WARNING 2024-03-25 20:51:23,868 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:52:24,739 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:52:25,153 log 20872 1308 Not Found: /media/
+WARNING 2024-03-25 20:52:26,213 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:52:26,296 log 20872 10936 Not Found: /media/
+WARNING 2024-03-25 20:52:31,242 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:53:27,165 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:53:27,564 log 20872 4144 Not Found: /media/
+WARNING 2024-03-25 20:53:37,143 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:53:41,697 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:53:44,302 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 20:53:44,405 log 20872 19524 Not Found: /media/
+WARNING 2024-03-25 20:53:58,412 log 20872 16276 Bad Request: /graphql
+WARNING 2024-03-25 21:28:52,499 log 6544 9424 Not Found: /media/
+WARNING 2024-03-25 21:29:04,771 log 6544 14236 Bad Request: /graphql
+WARNING 2024-03-25 21:30:11,687 log 6544 21332 Not Found: /media/
+WARNING 2024-03-25 21:30:16,348 log 6544 23092 Bad Request: /graphql
+WARNING 2024-03-25 21:31:10,276 log 6544 9812 Not Found: /media/
+WARNING 2024-03-25 21:31:32,366 log 6544 16568 Not Found: /media/
+WARNING 2024-03-25 21:31:37,410 log 6544 22524 Not Found: /media/
+WARNING 2024-03-25 21:31:45,224 log 6544 23092 Bad Request: /graphql
+WARNING 2024-03-25 21:32:47,823 log 17748 3292 Not Found: /media/
+WARNING 2024-03-25 21:33:19,946 log 17628 20828 Not Found: /media/
+WARNING 2024-03-25 21:33:25,185 log 17628 1308 Bad Request: /graphql
+WARNING 2024-03-25 21:35:25,658 log 17628 22032 Not Found: /media/
+WARNING 2024-03-25 21:35:26,752 log 17628 3020 Not Found: /media/
+WARNING 2024-03-25 21:35:32,346 log 17628 1308 Bad Request: /graphql
+WARNING 2024-03-25 21:37:50,392 log 8328 20260 Not Found: /media/
+WARNING 2024-03-25 21:37:54,214 log 8328 20580 Bad Request: /graphql
+WARNING 2024-03-25 21:38:26,047 log 8328 13620 Not Found: /media/
+WARNING 2024-03-25 21:38:28,651 log 8328 9360 Not Found: /media/
+WARNING 2024-03-25 21:38:33,217 log 8328 20580 Bad Request: /graphql
+WARNING 2024-03-25 21:38:59,921 log 19968 11836 Not Found: /media/
+WARNING 2024-03-25 21:39:01,199 log 19968 17744 Bad Request: /graphql
+WARNING 2024-03-25 21:39:03,264 log 19968 21996 Not Found: /media/
+WARNING 2024-03-25 21:39:08,501 log 19968 17744 Bad Request: /graphql
+WARNING 2024-03-25 21:40:28,066 log 19968 22128 Not Found: /media/
+WARNING 2024-03-25 21:40:31,354 log 19968 17744 Bad Request: /graphql
+WARNING 2024-03-25 21:41:17,797 log 19968 7200 Not Found: /media/
+WARNING 2024-03-25 21:41:19,484 log 19968 21104 Not Found: /media/
+WARNING 2024-03-25 21:41:24,249 log 19968 17744 Bad Request: /graphql
+WARNING 2024-03-25 21:42:04,359 log 19968 6060 Not Found: /media/
+WARNING 2024-03-25 21:42:08,167 log 19968 17744 Bad Request: /graphql
+WARNING 2024-03-25 21:42:19,981 log 19968 23076 Not Found: /media/
+WARNING 2024-03-25 21:42:21,141 log 19968 17744 Bad Request: /graphql
+WARNING 2024-03-25 21:42:27,723 log 2924 14524 Not Found: /media/
+WARNING 2024-03-25 21:42:58,363 log 16432 7308 Not Found: /media/
+WARNING 2024-03-25 21:44:43,003 log 16432 2196 Not Found: /favicon.ico
+WARNING 2024-03-25 21:45:13,004 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:45:13,124 log 16432 2196 Not Found: /media/
+WARNING 2024-03-25 21:45:14,623 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:45:14,699 log 16432 11364 Not Found: /media/
+WARNING 2024-03-25 21:45:19,872 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:47:04,913 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:47:05,268 log 16432 22992 Not Found: /media/
+WARNING 2024-03-25 21:47:07,044 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:47:07,125 log 16432 8468 Not Found: /media/
+WARNING 2024-03-25 21:47:15,651 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:47:41,306 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:47:41,719 log 16432 2940 Not Found: /media/
+WARNING 2024-03-25 21:47:43,683 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:47:43,766 log 16432 13300 Not Found: /media/
+WARNING 2024-03-25 21:48:07,447 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:48:07,848 log 16432 23356 Not Found: /media/
+WARNING 2024-03-25 21:48:16,685 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:48:37,114 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:48:37,196 log 16432 16088 Not Found: /media/
+WARNING 2024-03-25 21:48:49,072 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:48:49,167 log 16432 19844 Not Found: /media/
+WARNING 2024-03-25 21:49:59,220 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:49:59,572 log 16432 4484 Not Found: /media/
+WARNING 2024-03-25 21:50:01,670 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:50:01,768 log 16432 23072 Not Found: /media/
+WARNING 2024-03-25 21:50:17,985 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:50:33,485 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:50:33,902 log 16432 8552 Not Found: /media/
+WARNING 2024-03-25 21:51:55,853 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:51:56,301 log 16432 22668 Not Found: /media/
+WARNING 2024-03-25 21:52:16,762 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:52:16,875 log 16432 10556 Not Found: /media/
+WARNING 2024-03-25 21:52:18,953 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:52:19,307 log 16432 20892 Not Found: /media/
+WARNING 2024-03-25 21:52:21,718 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:52:21,826 log 16432 6452 Not Found: /media/
+WARNING 2024-03-25 21:52:32,909 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:53:00,257 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:53:00,619 log 16432 6356 Not Found: /media/
+WARNING 2024-03-25 21:53:02,172 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:53:02,281 log 16432 15216 Not Found: /media/
+WARNING 2024-03-25 21:53:14,509 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:53:42,832 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:53:43,183 log 16432 3736 Not Found: /media/
+WARNING 2024-03-25 21:53:45,913 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:53:46,010 log 16432 21272 Not Found: /media/
+WARNING 2024-03-25 21:53:49,751 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:54:39,380 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:54:39,812 log 16432 8132 Not Found: /media/
+WARNING 2024-03-25 21:54:50,173 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:55:16,563 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:55:16,665 log 16432 1364 Not Found: /media/
+WARNING 2024-03-25 21:55:29,758 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:55:30,147 log 16432 9820 Not Found: /media/
+WARNING 2024-03-25 21:55:46,029 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:55:46,117 log 16432 21104 Not Found: /media/
+WARNING 2024-03-25 21:55:53,386 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:56:16,765 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:56:17,155 log 16432 8528 Not Found: /media/
+WARNING 2024-03-25 21:56:35,403 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:56:35,443 log 16432 8544 Not Found: /media/
+WARNING 2024-03-25 21:56:37,815 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:56:38,220 log 16432 22032 Not Found: /media/
+WARNING 2024-03-25 21:56:50,650 log 16432 5084 Bad Request: /graphql
+WARNING 2024-03-25 21:57:34,627 log 16432 21800 Not Found: /media/
+WARNING 2024-03-25 21:57:35,960 log 16432 11392 Not Found: /media/
+WARNING 2024-03-25 21:58:12,379 log 16432 22412 Not Found: /media/
+WARNING 2024-03-25 21:58:15,751 log 16432 21732 Not Found: /media/
+WARNING 2024-03-25 21:58:27,835 log 16432 8528 Not Found: /favicon.ico
+WARNING 2024-03-25 22:26:43,895 log 16432 16164 Not Found: /media/
+WARNING 2024-03-25 22:27:44,918 log 16432 21560 Not Found: /media/
+WARNING 2024-03-25 22:30:47,410 log 23572 1396 Not Found: /media/
+WARNING 2024-03-25 22:31:44,621 log 23756 19204 Not Found: /media/
+WARNING 2024-03-25 22:31:56,749 log 23756 10140 Not Found: /media/
+WARNING 2024-03-25 22:32:53,962 log 23756 1876 Not Found: /media/
+WARNING 2024-03-25 22:35:46,803 log 23756 13528 Not Found: /media/
+WARNING 2024-03-25 22:36:39,009 log 23756 13236 Not Found: /media/
+WARNING 2024-03-25 22:41:11,898 log 23756 18404 Not Found: /media/
+WARNING 2024-03-25 22:43:43,250 log 23756 7628 Not Found: /media/
+WARNING 2024-03-25 22:43:45,654 log 23756 14364 Not Found: /media/
+WARNING 2024-03-25 22:45:40,120 log 14284 14628 Not Found: /media/
+WARNING 2024-03-25 22:45:42,965 log 14284 21812 Not Found: /media/
+WARNING 2024-03-25 22:46:32,435 log 14284 3680 Not Found: /media/
+WARNING 2024-03-25 22:47:33,681 log 22952 21432 Not Found: /media/
+WARNING 2024-03-25 22:47:59,303 log 22952 13812 Not Found: /media/
+WARNING 2024-03-25 22:48:21,487 log 22952 10180 Not Found: /media/
+WARNING 2024-03-25 22:48:35,740 log 22952 17916 Not Found: /media/
+WARNING 2024-03-25 22:49:00,335 log 20776 21916 Not Found: /media/
+WARNING 2024-03-25 22:49:08,906 log 20776 17424 Not Found: /media/
+WARNING 2024-03-25 22:49:29,237 log 16816 16828 Not Found: /media/
+WARNING 2024-03-25 22:49:29,366 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:49:50,046 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:49:53,880 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:49:53,919 log 16816 10328 Not Found: /media/
+WARNING 2024-03-25 22:50:14,072 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:50:14,473 log 16816 23736 Not Found: /media/
+WARNING 2024-03-25 22:50:33,237 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:50:33,324 log 16816 24436 Not Found: /media/
+WARNING 2024-03-25 22:50:35,979 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:50:36,385 log 16816 23276 Not Found: /media/
+WARNING 2024-03-25 22:50:38,604 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:50:38,686 log 16816 3364 Not Found: /media/
+WARNING 2024-03-25 22:51:05,830 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:51:08,444 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:51:08,808 log 16816 22696 Not Found: /media/
+WARNING 2024-03-25 22:51:12,821 log 16816 21332 Bad Request: /graphql
+WARNING 2024-03-25 22:51:12,907 log 16816 18760 Not Found: /media/
+WARNING 2024-03-25 22:51:31,134 log 11624 21632 Not Found: /media/
+WARNING 2024-03-25 22:51:32,079 log 11624 13584 Not Found: /media/
+WARNING 2024-03-25 22:54:34,199 log 22868 23872 Not Found: /media/
+WARNING 2024-03-25 22:54:41,005 log 22868 23992 Bad Request: /graphql
+WARNING 2024-03-25 22:55:06,116 log 16244 13236 Bad Request: /graphql
+WARNING 2024-03-25 22:55:06,125 log 16244 6544 Not Found: /media/
+WARNING 2024-03-25 22:55:10,556 log 16244 13236 Bad Request: /graphql
+WARNING 2024-03-25 22:55:51,470 log 16244 13236 Bad Request: /graphql
+WARNING 2024-03-25 22:55:51,522 log 16244 6288 Not Found: /media/
+WARNING 2024-03-25 22:55:52,942 log 16244 13236 Bad Request: /graphql
+WARNING 2024-03-25 22:55:53,340 log 16244 18596 Not Found: /media/
+WARNING 2024-03-25 22:56:03,285 log 16244 13236 Bad Request: /graphql
+WARNING 2024-03-25 22:56:20,646 log 22084 14068 Not Found: /media/
+WARNING 2024-03-25 22:56:23,618 log 22084 11188 Bad Request: /graphql
+WARNING 2024-03-25 22:56:34,179 log 21984 7884 Bad Request: /graphql
+WARNING 2024-03-25 22:56:34,185 log 21984 12196 Not Found: /media/
+WARNING 2024-03-25 22:56:37,057 log 21984 7884 Bad Request: /graphql
+WARNING 2024-03-25 22:57:00,347 log 21984 7884 Bad Request: /graphql
+WARNING 2024-03-25 22:57:00,382 log 21984 22212 Not Found: /media/
+WARNING 2024-03-25 22:57:01,635 log 21984 7884 Bad Request: /graphql
+WARNING 2024-03-25 22:57:02,034 log 21984 23904 Not Found: /media/
+WARNING 2024-03-25 22:57:05,299 log 21984 7884 Bad Request: /graphql
+WARNING 2024-03-26 12:03:59,602 log 21984 21644 Bad Request: /graphql
+WARNING 2024-03-26 12:03:59,676 log 21984 13244 Not Found: /media/
+WARNING 2024-03-26 12:06:27,283 log 21984 24104 Bad Request: /graphql
+WARNING 2024-03-26 12:06:27,334 log 21984 8200 Not Found: /media/
+WARNING 2024-03-26 12:06:42,216 log 21984 24104 Bad Request: /graphql
+WARNING 2024-03-26 12:07:23,628 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:07:23,632 log 23768 22600 Not Found: /media/
+WARNING 2024-03-26 12:07:28,199 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:07:40,997 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:07:44,919 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:07:45,005 log 23768 24184 Not Found: /media/
+WARNING 2024-03-26 12:09:24,617 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:09:25,045 log 23768 20244 Not Found: /media/
+WARNING 2024-03-26 12:11:57,849 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:11:58,205 log 23768 13088 Not Found: /media/
+WARNING 2024-03-26 12:11:59,083 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:11:59,176 log 23768 3596 Not Found: /media/
+WARNING 2024-03-26 12:12:33,722 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:12:34,112 log 23768 8828 Not Found: /media/
+WARNING 2024-03-26 12:14:49,717 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:14:50,132 log 23768 3976 Not Found: /media/
+WARNING 2024-03-26 12:18:01,698 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:18:02,124 log 23768 3344 Not Found: /media/
+WARNING 2024-03-26 12:18:04,529 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:18:04,605 log 23768 22840 Not Found: /media/
+WARNING 2024-03-26 12:18:16,802 log 23768 23116 Not Found: /favicon.ico
+WARNING 2024-03-26 12:18:20,075 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:18:20,149 log 23768 23116 Not Found: /media/
+WARNING 2024-03-26 12:18:21,664 log 23768 9056 Bad Request: /graphql
+WARNING 2024-03-26 12:18:21,744 log 23768 20044 Not Found: /media/
+WARNING 2024-03-26 12:18:28,546 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:18:28,565 log 23768 17396 Not Found: /media/
+WARNING 2024-03-26 12:18:53,600 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:18:56,745 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:18:56,773 log 23768 22584 Not Found: /media/
+WARNING 2024-03-26 12:19:00,996 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:01,080 log 23768 16988 Not Found: /media/
+WARNING 2024-03-26 12:19:24,005 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:24,421 log 23768 21940 Not Found: /media/
+WARNING 2024-03-26 12:19:47,423 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:50,114 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:50,130 log 23768 9604 Not Found: /media/
+WARNING 2024-03-26 12:19:52,970 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:53,385 log 23768 16244 Not Found: /media/
+WARNING 2024-03-26 12:19:56,312 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:56,385 log 23768 21868 Not Found: /media/
+WARNING 2024-03-26 12:19:57,182 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:57,593 log 23768 12384 Not Found: /media/
+WARNING 2024-03-26 12:19:58,806 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:19:58,877 log 23768 19756 Not Found: /media/
+WARNING 2024-03-26 12:20:02,698 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:20:03,103 log 23768 21948 Not Found: /media/
+WARNING 2024-03-26 12:20:06,645 log 23768 3604 Not Found: /favicon.ico
+WARNING 2024-03-26 12:20:10,937 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:20:11,007 log 23768 3604 Not Found: /media/
+WARNING 2024-03-26 12:20:22,521 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:20:22,533 log 23768 10140 Not Found: /media/
+WARNING 2024-03-26 12:20:25,051 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:20:25,440 log 23768 23572 Not Found: /media/
+WARNING 2024-03-26 12:20:27,832 log 23768 22240 Bad Request: /graphql
+WARNING 2024-03-26 12:20:27,908 log 23768 5572 Not Found: /media/
+WARNING 2024-03-26 12:20:57,658 log 23768 22240 Not Found: /api/v1/users/
+WARNING 2024-03-26 12:21:42,329 log 23768 22240 Not Found: /api/v1/users/
+ERROR 2024-03-26 12:22:41,220 log 22356 22436 Internal Server Error: /api/v1/users/
+Traceback (most recent call last):
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\djoser\views.py", line 140, in perform_create
+    settings.EMAIL.activation(self.request, context).send(to)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\templated_mail\mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\DyplomaProductAggregator\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 85, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "c:\Users\Sergey Trosenko\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+WARNING 2024-03-26 12:22:46,964 log 22356 13088 Not Found: /favicon.ico
+WARNING 2024-03-26 12:23:33,346 log 22356 13088 Not Found: /favicon.ico
+WARNING 2024-03-26 12:23:51,842 log 22356 23220 Bad Request: /graphql
+WARNING 2024-03-26 12:23:58,084 log 22356 23220 Bad Request: /graphql
+WARNING 2024-03-26 12:23:58,113 log 22356 13088 Not Found: /media/
+WARNING 2024-03-26 12:24:01,534 log 22356 23220 Bad Request: /graphql
+WARNING 2024-03-26 12:24:01,916 log 22356 1172 Not Found: /media/
+WARNING 2024-03-26 12:24:15,038 log 22356 23220 Bad Request: /graphql
+WARNING 2024-03-26 12:24:15,133 log 22356 10544 Not Found: /media/
+WARNING 2024-03-26 12:24:16,113 log 22356 23220 Bad Request: /graphql
+WARNING 2024-03-26 12:24:16,500 log 22356 14536 Not Found: /media/
+WARNING 2024-03-26 12:25:50,188 log 22356 20852 Not Found: /media/
+WARNING 2024-03-26 12:25:57,189 log 22356 23768 Not Found: /media/
+WARNING 2024-03-26 12:26:19,362 log 22356 14676 Not Found: /media/
+WARNING 2024-03-26 12:26:26,408 log 22356 23740 Not Found: /media/
+WARNING 2024-03-26 12:26:39,918 log 22356 11884 Not Found: /media/
+WARNING 2024-03-26 12:26:41,493 log 22356 22260 Not Found: /media/
+WARNING 2024-03-26 12:26:43,097 log 22356 14488 Not Found: /media/
+WARNING 2024-03-26 12:26:48,422 log 22356 23724 Not Found: /media/
+WARNING 2024-03-26 12:27:54,333 log 5444 7884 Not Found: /media/
+WARNING 2024-03-26 12:28:17,239 log 23040 22136 Not Found: /media/
+WARNING 2024-03-26 12:29:00,438 log 23040 19844 Not Found: /media/
+WARNING 2024-03-26 12:29:04,239 log 23040 5488 Not Found: /media/
+WARNING 2024-03-26 12:29:15,964 log 23040 18956 Not Found: /media/
+WARNING 2024-03-26 12:29:17,570 log 23040 1520 Not Found: /media/
+WARNING 2024-03-26 12:29:46,330 log 23040 3960 Not Found: /media/
+WARNING 2024-03-26 12:29:53,477 log 23040 6516 Not Found: /media/
+WARNING 2024-03-26 12:30:12,910 log 23040 10040 Not Found: /media/
+WARNING 2024-03-26 12:30:15,292 log 23040 2168 Not Found: /media/
+WARNING 2024-03-26 12:30:25,082 log 23040 24052 Not Found: /media/
+WARNING 2024-03-26 12:31:18,176 log 23040 12396 Not Found: /media/
+WARNING 2024-03-26 12:32:01,414 log 23040 12300 Not Found: /media/
+WARNING 2024-03-26 12:32:07,722 log 23040 388 Not Found: /media/
+WARNING 2024-03-26 12:33:51,121 log 23040 24048 Not Found: /media/
+WARNING 2024-03-26 12:34:08,115 log 23040 21860 Not Found: /media/
+WARNING 2024-03-26 12:34:46,433 log 23040 8436 Not Found: /media/
+WARNING 2024-03-26 12:34:47,615 log 23040 6560 Not Found: /media/
+WARNING 2024-03-26 12:34:51,706 log 23040 3736 Not Found: /media/
+WARNING 2024-03-26 12:34:53,050 log 23040 22104 Not Found: /media/
+WARNING 2024-03-26 12:35:04,909 log 23040 8164 Not Found: /media/
+WARNING 2024-03-26 12:35:07,313 log 23040 2528 Not Found: /media/
+WARNING 2024-03-26 12:36:18,007 log 23040 22364 Not Found: /media/
+WARNING 2024-03-26 12:36:40,864 log 23040 11844 Not Found: /media/
+WARNING 2024-03-26 12:36:43,463 log 23040 8516 Not Found: /media/
