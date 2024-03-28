@@ -183,10 +183,6 @@ msgstr "Внешний ID"
 msgid "Volume"
 msgstr "Объем"
 
-#: aggregator/models.py:140
-msgid "Alcohol"
-msgstr "Крепость"
-
 #: aggregator/models.py:142
 msgid "Promoted"
 msgstr "Рекламируемый"

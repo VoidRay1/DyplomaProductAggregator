@@ -1,9 +1,9 @@
 {
-  "name": "home-bar",
+  "name": "product-aggregator",
   "version": "0.0.1",
-  "description": "A HomeBar Project",
-  "productName": "HomeBar App",
-  "author": "Sergey Trotsenko <sergey.trotsenko@gmail.com>",
+  "description": "Product Aggregator Project",
+  "productName": "Aggregator App",
+  "author": "Daniil Trotsenko <daniil.trotsenko@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

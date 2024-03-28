@@ -8,8 +8,10 @@ from backend.graphene import DjangoParlerObjectType
 from parler.models import TranslatableModel
 from parler.utils import get_active_language_choices
 from django.db.models import Q, F, Count, Min, Max
+from graphql_jwt.decorators import login_required
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity, TrigramDistance
 
-from .models import Shop, Category, Promotion, Product, Price
+from .models import Shop, Category, Promotion, Product, Price, Track
 
 
 class ShopNode(DjangoParlerObjectType):
@@ -152,7 +154,7 @@ class ShopProductNode(DjangoParlerObjectType):
         if root.shop.id == settings.SILPO_ID:
             return root.shop.url + 'product/' + root.product_slug
         if root.shop.id == settings.ROZETKA_ID:
-            return root.shop.url + 'product/p' + root.product_slug
+            return root.shop.url + 'product/p' + root.external_id
         if root.shop.id == settings.TAVRIA_ID:
             return root.shop.url + 'product/' + root.product_slug
 
@@ -201,7 +203,22 @@ class Query(ObjectType):
     )
     category = graphene.Field(ShopCategoryNode, slug=graphene.String(), language=graphene.String())
     product = graphene.Field(ShopProductNode, slug=graphene.String(required=True), language=graphene.String())
-
+    new_products = graphene.List(
+        ShopProductNode,
+        language=graphene.String(),
+        description="Get new shop products"
+    )
+    track_products = DjangoFilterConnectionField(
+        ShopProductNode,
+        language=graphene.String(),
+        description="Get my products"
+    )
+    similar_products = DjangoFilterConnectionField(
+        ShopProductNode,
+        product=graphene.ID(required=True, description="Product ID"),
+        language=graphene.String(),
+        description="Get similar products"
+    )
  
     def resolve_shops(root, info, country=None, language=None):
         if issubclass(Shop, TranslatableModel):
@@ -295,6 +312,22 @@ class Query(ObjectType):
             product = Product.objects.get(product_slug=slug)
         return product
 
-
+    def resolve_new_products(root, info, language=None, **kwargs):
+        return Product.objects.filter(available=True, prices__available=True).order_by('-date_created')[:20]
+    
+    @login_required
+    def resolve_track_products(root, info, language=None, **kwargs):
+        return Product.objects.filter(id__in=info.context.user.tracks.all().values_list('product', flat=True))
+    
+    def resolve_similar_products(root, info, product=None, language=None, **kwargs):
+        product = graphene.Node.get_node_from_global_id(info, product)
+        similar_products = Product.objects.annotate(
+            similarity=TrigramSimilarity('translations__name', product.name),
+        ).filter(
+            similarity__gt=0.2
+        ).order_by('-similarity').distinct()
+        print(similar_products)
+        return similar_products[:12]
+    
 class Mutation(ObjectType):
     pass

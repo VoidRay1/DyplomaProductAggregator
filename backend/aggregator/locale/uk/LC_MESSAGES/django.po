@@ -184,10 +184,6 @@ msgstr "Зовнішній ID"
 msgid "Volume"
 msgstr "Об'єм"
 
-#: aggregator/models.py:140
-msgid "Alcohol"
-msgstr "Міцність"
-
 #: aggregator/models.py:142
 msgid "Promoted"
 msgstr "Рекламований"

@@ -109,6 +109,9 @@ module.exports = configure(function (/* ctx */) {
 //        const cors = require('cors')
 //        app.use(cors())
 //      }
+      watchOptions: {
+        poll: 1000
+      }
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
@@ -227,7 +230,7 @@ module.exports = configure(function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'home-bar-project'
+        appId: 'product-aggregator-project'
       }
     },
 

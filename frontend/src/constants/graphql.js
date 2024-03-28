@@ -228,3 +228,66 @@ query getShopFilters ($shop: ID!, $category: String, $language: String) {
   }
 }
 `;
+
+export const productFragment = gql`
+  fragment CoreProductFields on ShopProductNode {
+    id
+    name
+    brand
+    url
+    image
+    volume
+    price {
+      price
+      currency
+    }
+    shop {
+      image
+    }
+  }
+`;
+
+export const NEW_PRODUCTS = gql`
+  query newProducts {
+    newProducts {
+      ...CoreProductFields
+    }
+  }
+  ${productFragment}
+`;
+
+export const GET_TRACK_PRODUCTS = gql`
+  query getTrackProducts {
+    trackProducts {
+      edges {
+        cursor
+        node {
+          ...CoreProductFields
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+  ${productFragment}
+`;
+
+export const GET_SIMILAR_PRODUCTS = gql`
+  query getSimilarProducts ($product: ID!) {
+    similarProducts (product: $product) {
+      edges {
+        cursor
+        node {
+          ...CoreProductFields
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+  ${productFragment}
+`;

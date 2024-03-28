@@ -81,7 +81,7 @@ INSTALLED_APPS = [
     'dynamic_preferences.users.apps.UserPreferencesConfig',
     'debug_toolbar',
     'django_celery_beat',
-    'storages',
+    # 'storages',
     'django_admin_inline_paginator',
 
     # Project apps:
@@ -250,20 +250,20 @@ DYNAMIC_PREFERENCES = {
 }
 
 # AMAZON S3
-AWS_ACCESS_KEY_ID = 'AWS_ACCESS_KEY_ID'
-AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY'
-AWS_STORAGE_BUCKET_NAME = 'product.aggregator'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+#AWS_ACCESS_KEY_ID = 'AWS_ACCESS_KEY_ID'
+#AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY'
+#AWS_STORAGE_BUCKET_NAME = 'product.aggregator'
+#AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
+#AWS_S3_OBJECT_PARAMETERS = {
+#    'CacheControl': 'max-age=86400',
+#}
 
-AWS_STATIC_LOCATION = 'static'
+#AWS_STATIC_LOCATION = 'static'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_STATIC_LOCATION)
 
-DEFAULT_FILE_STORAGE = 'backend.storage_backends.MediaStorage'
+#DEFAULT_FILE_STORAGE = 'backend.storage_backends.MediaStorage'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -398,7 +398,7 @@ SIMPLE_JWT = {
 }
 
 # CELERY
-REDIS_URL = 'redis://localhost:6379/0'
+REDIS_URL = 'redis://redis7_container:6379/0'
 BROKER_URL = REDIS_URL
 CELERY_BROKER_URL = REDIS_URL
 CELERY_RESULT_BACKEND = REDIS_URL

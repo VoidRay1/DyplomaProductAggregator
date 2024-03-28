@@ -137,7 +137,6 @@ class Product(TranslatableModel):
     external_id = models.CharField(max_length=255, blank=True, verbose_name=_('External ID'))
     image = models.TextField(blank=True, verbose_name=_('Image'))
     volume = models.CharField(max_length=16, blank=True, verbose_name=_('Volume'))
-    alcohol = models.CharField(max_length=16, blank=True, verbose_name=_('Alcohol'))
     available = models.BooleanField(default=True, verbose_name=_('Available'))
     promoted = models.BooleanField(default=False, verbose_name=_('Promoted'))
     date_created = models.DateTimeField(auto_now_add=True)

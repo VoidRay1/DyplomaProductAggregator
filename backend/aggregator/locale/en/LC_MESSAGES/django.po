@@ -181,10 +181,6 @@ msgstr "External ID"
 msgid "Volume"
 msgstr "Volume"
 
-#: aggregator/models.py:140
-msgid "Alcohol"
-msgstr "Alcohol"
-
 #: aggregator/models.py:142
 msgid "Promoted"
 msgstr "Promoted"

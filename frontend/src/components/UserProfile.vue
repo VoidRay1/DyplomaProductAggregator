@@ -19,7 +19,7 @@
             <label for="fileAvatar">
               <q-avatar size="164px" style="cursor: pointer;">
                 <q-img :src="avatar" fit="scale-down">
-                  <div class="absolute-center text-subtitle2 text-center" v-show="hover">
+                  <div class="absolute-center text-subtitle2 flex flex-center" v-show="hover">
                     {{ __('Upload a photo') }}
                   </div>
                 </q-img>            
@@ -295,9 +295,9 @@ const formChanged = ref(false)
 if (gettext.current != language) {
   gettext.current = language
 }
-import('../language/quasar_' + language).then(lang => {
-  $q.lang.set(lang.default)
-})
+//import('../language/quasar_' + language).then(lang => {
+//  $q.lang.set(lang.default)
+//})
 
 function addAvatar(newFiles) {
   file.value = newFiles[0]

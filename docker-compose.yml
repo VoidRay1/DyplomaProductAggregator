@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  django:
+    container_name: 'backend_container'
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./compose/django/Dockerfile
+    volumes:
+      - ./backend:/django_proj
+    ports:
+      - 8000:8000
+    expose:
+      - 8000
+    depends_on:
+      - redis
+    links:
+      - redis:redis
+    networks:
+      - postgres
+
+  quasar:
+    container_name: 'quasar_container'
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./compose/vue/Dockerfile
+    volumes:
+      - ./frontend:/vue_proj
+    environment: 
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    networks:
+      - postgres
+
+  redis:
+    container_name: 'redis7_container'
+    restart: unless-stopped
+    image: redis:7.2-alpine3.19
+    ports:
+      - "6379:6379"
+    networks:
+      - postgres
+
+volumes:
+  aggregatordb-data:
+
+networks:
+  postgres:
+    driver: bridge

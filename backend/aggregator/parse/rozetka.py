@@ -68,7 +68,6 @@ def update_data(shop, data = None):
                 'category_slug': item['category_id'] if item['category_id'] else '',
                 'image': item['image_main'],
                 'volume': volume,
-                'alcohol': '',
             }
         )
         product_ids.append(product.id)
