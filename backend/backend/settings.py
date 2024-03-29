@@ -141,11 +141,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': env('POSTGRES_NAME'),
-    #     'USER': env('POSTGRES_USER'),
-    #     'PASSWORD': env('POSTGRES_PASSWORD'),
-    #     'HOST': env('POSTGRES_HOST'),
-    #     'PORT': env('POSTGRES_PORT'),
+    #     'NAME': 'aggregatordb',
+    #     'USER': 'aggregatoruser',
+    #     'PASSWORD': 'qw12345',
+    #     'HOST': 'postgres14_container',
+    #     'PORT': 5432,
     # },
     # 'sqlite': {
     'default': {

@@ -2453,3 +2453,102 @@ INFO 2024-03-28 18:25:59,919 autoreload 202 139787747153728 /django_proj/aggrega
 INFO 2024-03-28 18:26:02,053 autoreload 240 140398727116608 Watching for file changes with StatReloader
 INFO 2024-03-28 18:39:46,720 autoreload 240 140398727116608 /django_proj/aggregator/schema.py changed, reloading.
 INFO 2024-03-28 18:39:48,335 autoreload 246 140662985369408 Watching for file changes with StatReloader
+DEBUG 2024-03-29 09:53:42,178 functional 10 140273760712512 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,179 functional 10 140273760712512 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,180 functional 10 140273760712512 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,181 functional 10 140273760712512 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,182 functional 10 140273760712512 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,182 functional 11 140443771516736 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,183 functional 10 140273760712512 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,183 functional 11 140443771516736 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,184 functional 10 140273760712512 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,184 functional 11 140443771516736 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,185 functional 10 140273760712512 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,185 functional 11 140443771516736 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,186 functional 10 140273760712512 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,186 functional 11 140443771516736 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,186 functional 10 140273760712512 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,187 functional 11 140443771516736 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,187 functional 10 140273760712512 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,188 functional 11 140443771516736 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,188 functional 10 140273760712512 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,189 functional 11 140443771516736 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,189 functional 11 140443771516736 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 09:53:42,190 functional 11 140443771516736 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,191 functional 11 140443771516736 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 09:53:42,192 functional 11 140443771516736 
+def get_rozetka_products():
+    return 1
+
+INFO 2024-03-29 09:53:43,413 autoreload 12 140229181441856 Watching for file changes with StatReloader
+INFO 2024-03-29 10:01:50,060 autoreload 12 140229181441856 /django_proj/backend/settings.py changed, reloading.
+INFO 2024-03-29 10:01:51,676 autoreload 48 140087510169408 Watching for file changes with StatReloader

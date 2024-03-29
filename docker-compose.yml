@@ -45,8 +45,51 @@ services:
     networks:
       - postgres
 
+  postgres:
+    container_name: postgres14_container
+    image: postgres:14.8-alpine3.18
+    environment:
+      POSTGRES_DB: "aggregatordb"
+      POSTGRES_USER: "aggregatoruser"
+      POSTGRES_PASSWORD: "qw12345"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - ./backend/fixtures:/docker-entrypoint-initdb.d
+      - aggregatordb-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G      
+    networks:
+      - postgres
+
+  pgadmin:
+    container_name: pgadmin8_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "pguser@habr.com"
+      PGADMIN_DEFAULT_PASSWORD: "pgadminpwd4"
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 0.5G
+    networks:
+      - postgres
+
 volumes:
   aggregatordb-data:
+  pgadmin-data:
 
 networks:
   postgres:
