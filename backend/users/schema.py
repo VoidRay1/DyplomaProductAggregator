@@ -2,6 +2,7 @@ import graphene
 import graphql_jwt
 from datetime import datetime
 from graphql_jwt.decorators import login_required
+
 from django.contrib.auth import get_user_model
 from django.utils.translation import activate
 from graphene_django import DjangoObjectType
@@ -149,9 +150,9 @@ class UploadPhoto(graphene.Mutation):
     ok = graphene.Boolean()
 
     def mutate(self, info, file=None, **kwargs):
-        # profile = Profile.objects.get(user=info.context.user)
-        # profile.avatar = file
-        # profile.save()
+        profile = Profile.objects.get(user=info.context.user)
+        profile.avatar = file
+        profile.save()
         return UploadPhoto(ok=True)
 
 

@@ -24,6 +24,7 @@ django-templated-email
 django-debug-toolbar
 django-admin-inline-paginator
 bs4
+aiohttp
 
 # PostgreSQL
 psycopg2-binary

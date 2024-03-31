@@ -1,44 +1,65 @@
-import logging
-import requests
+import asyncio
+import aiohttp
 import re
-from time import sleep
 from django.conf import settings
 from aggregator.models import Shop, Category, Product, Price, Promotion
 
-logger = logging.getLogger()
-
 def get_products():
     shop = Shop.objects.get(pk=settings.ROZETKA_ID)
-    for category in shop.categories.filter(available=True, parent__isnull=False):
-        print(f'🟢  {category}')
-        get_category_products(shop, category)
-    print(f'🟢  Rozetka end')
+    categories = list(shop.categories.filter(available=True, parent__isnull=False).values('id', 'translations__name', 'category_slug'))
+    results = asyncio.run(run(shop.api, categories))
+    products = [item for sublist in results for item in sublist]
+    print(f'🟢  Rozetka all products: {len(products)}')
+    product_ids = update_data(shop, products)
+    Product.objects.filter(shop=shop).exclude(id__in=product_ids).update(available=False)
+    result = Product.objects.filter(id__in=product_ids).update(available=True)
+    print(f'🟢  Rozetka available: {result}')
 
-def get_category_products(shop, category):
+async def run(url, categories=None):
+    tasks = [get_category_products(url, category) for category in categories]
+    return await asyncio.gather(*tasks)
+
+async def get_category_products(url, category):
     params = {
-        'category_id': category.category_slug,
+        'category_id': category['category_slug'],
         'page': 1,
     }
-    res = requests.get(shop.api + settings.ROZETKA_LIST_PRODUCTS_URL, params)
-    logger.info(res)
-    product_ids = []
-    if res.status_code == 200:
-        data = res.json()['data']
-        print(f'🟢  Rozetka total products: {data["ids_count"]}')
-        product_ids += update_data(shop, data)
-        for page in range(2, data['total_pages']+1):
-            params['page'] = page
-            res = requests.get(shop.api + settings.ROZETKA_LIST_PRODUCTS_URL, params)
-            logger.info(res)
-            if res.status_code == 200:
-                data = res.json()['data']
-                product_ids += update_data(shop, data)
-        print(f'🟢  Rozetka {category}: {len(product_ids)}')
+    products, pages = await api_request(url, params)
+    print(f'🟢  Rozetka {category["translations__name"]} pages: {pages}')
+    for page in range(2, pages+1):
+        params['page'] = page
+        next, _ = await api_request(url, params.copy())
+        available = sum(1 for product in next if product['sell_status'] == 'available')
+        print(f'🟢  Rozetka {category["translations__name"]} page: {page} available: {available}')
+        products += next
+        if not available:
+            break
+    print(f'🟢  Rozetka {category["translations__name"]}: {len(products)}')
+    return products
 
-def update_data(shop, data = None):
-    res = requests.get(shop.api + settings.ROZETKA_PRODUCTS_URL, {'product_ids': ','.join(str(id) for id in data['ids'])})
-    logger.info(res)
-    products = res.json()['data']
+async def api_request(url, params):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url + settings.ROZETKA_LIST_PRODUCTS_URL, params=params) as response:
+            if response.status == 200:
+                data = await response.json()
+                products = await get_products_data(url, data['data']['ids'])
+                return products, data['data']['total_pages']
+            else:
+                return None
+
+async def get_products_data(url, product_ids):
+    params = {
+        'product_ids': ','.join(str(id) for id in product_ids),
+    }
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url + settings.ROZETKA_PRODUCTS_URL, params=params) as response:
+            if response.status == 200:
+                data = await response.json()
+                return data['data']
+            else:
+                return None
+            
+def update_data(shop, products = None):
     items_updated = 0
     out_stock = 0
     product_ids = []
@@ -114,23 +135,19 @@ def update_data(shop, data = None):
                     }
                 )
                 price.promotions.add(promotion)
-    print(f'🟢  pull: {len(products)} updated: {items_updated} outStock: {out_stock}')
+    print(f'🟢  Rozetka updated: {items_updated} outStock: {out_stock}')
     return product_ids
 
 def parse_name(title):
     volume = ''
-    match = re.search(r'([\w\s\-\(\):№%ёЁЇїІіЄєҐґ\.\'`"]+)\s([\d\.]+\s?(г|g|гр|gr|кг|kg))\s([\w\s№ёЁЇїІіЄєҐґ\+\.\'`"]+)?\s(\([\w\s\-\/]+\))?', title)
-    if not match:
-        match = re.search(r'([\w\s\-\(\):№%ёЁЇїІіЄєҐґ\.\'`"]+)\s(\([\w\s\-\/]+\))', title)
-        if not match:
-            print(f'❗️  {title}')
-            return (title, volume, '')
-        return (title, volume, match.group(2))
-    else:
-        if match.group(2):
-            volume = match.group(2)
-    name = match.group(1)
-    if match.group(4):
-        name += match.group(4)
-    slug = match.group(5)
-    return (name, volume, slug)
+    slug = ''
+    match = re.search(r"(?P<slug>\([\w\s\-\/]+\)$)", title)
+    if match:
+        slug = match.group("slug")[1:-1]
+        title = title.replace(match.group("slug"), "")
+    match = re.search(r"(?P<volume>[\d\.]+\s*л)", title)
+    if match:
+        volume = match.group("volume")
+        title = title.replace(match.group("volume"), "")
+    title = re.sub(r"\s+", " ", title)
+    return (title, volume, slug)

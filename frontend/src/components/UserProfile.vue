@@ -13,13 +13,13 @@
             round
             no-caps
             color="white"
-            @mouseover="hover = true"
-            @mouseleave="hover = false"
+            @mouseover="isAvatarHovered = true"
+            @mouseleave="isAvatarHovered = false"
           >
             <label for="fileAvatar">
               <q-avatar size="164px" style="cursor: pointer;">
                 <q-img :src="avatar" fit="scale-down">
-                  <div class="absolute-center text-subtitle2 flex flex-center" v-show="hover">
+                  <div class="absolute-full text-subtitle2 flex flex-center" v-show="isAvatarHovered">
                     {{ __('Upload a photo') }}
                   </div>
                 </q-img>            
@@ -70,6 +70,27 @@
             <template v-slot:prepend>
               <q-icon name="person_outline" />
             </template>
+          </q-input>
+        </div>
+        <div class="flex flex-center row">
+          <q-input
+            outlined
+            dense
+            color="orange"
+            v-model="formData.telegramUsername"
+            @blur="v$.telegramUsername.$touch"
+            :error="v$.telegramUsername.$invalid"
+            style="width: 390px;"
+          >
+            <template v-slot:before>
+              <div class="text-subtitle1 label">{{ __('Telegram username') }}</div>
+            </template>
+            <template v-slot:error>
+              <p v-for="error in v$.telegramUsername.$errors" :key="error.$uid">{{ error.$message }}</p>
+            </template>
+            <template v-slot:prepend>
+              <i class="fa-brands fa-telegram"></i>
+          </template>
           </q-input>
         </div>
       </q-card-section>
@@ -124,24 +145,6 @@
           </q-input>
         </div>
         <div class="flex flex-center row">
-          <q-input
-            outlined
-            dense
-            color="orange"
-            v-model="formData.telegramUsername"
-            @blur="v$.telegramUsername.$touch"
-            :error="v$.telegramUsername.$invalid"
-            style="width: 390px;"
-          >
-            <template v-slot:before>
-              <div class="text-subtitle1 label">{{ __('Telegram username') }}</div>
-            </template>
-            <template v-slot:error>
-              <p v-for="error in v$.telegramUsername.$errors" :key="error.$uid">{{ error.$message }}</p>
-            </template>
-          </q-input>
-        </div>
-        <div class="flex flex-center row">
         <q-input
           outlined
           dense
@@ -164,9 +167,9 @@
                   mask="YYYY-MM-DD"
                   color="orange"
                 >
-                  <!--div class="row items-center justify-end">
-                    <q-btn v-close-popup label="Close" color="primary" flat />
-                  </div-->
+                  <div class="row items-center justify-end">
+                    <q-btn v-close-popup label="Close" color="black" flat />
+                  </div>
                 </q-date>
               </q-popup-proxy>
             </q-icon>
@@ -218,18 +221,25 @@
         </div>
         <div class="flex flex-center row">
           <q-select
-            outlined
-            dense
-            v-model="formData.country"
-            :options="options"
-            map-options
-            emit-value
-            @blur="v$.country.$touch"
-            :error="v$.country.$invalid"
-            options-selected-class="text-orange"
-            color="orange"
-            style="width: 390px;"
-          >
+          outlined
+          dense
+          v-model="formData.country"
+          use-input
+          hide-selected
+          fill-input
+          map-options
+          emit-value
+          input-debounce="0"
+          :options="countriesOptionsRef"
+          @filter="filterCountries"
+          @blur="v$.country.$touch"
+          :error="v$.country.$invalid"
+          options-selected-class="text-orange"
+          color="orange"
+          style="width: 390px;"
+          behavior="menu"
+      >
+
             <template v-slot:before>
               <span class="text-subtitle1 label">{{ __('Country') }}</span>
             </template>
@@ -250,7 +260,7 @@
       </q-card-section>
 
       <q-separator />
-      <q-card-actions v-if="!formChanged" class="justify-center">
+      <q-card-actions v-if="hasFormChanged" class="justify-center">
         <div class="q-py-sm">
           <!--q-btn
             no-caps
@@ -278,11 +288,12 @@ import { useQuasar } from 'quasar'
 import { reactive, computed, watch, ref } from 'vue'
 import { useGettext } from 'vue3-gettext'
 import { useVuelidate } from '@vuelidate/core'
-import { required, email, minLength } from '../utils/i18n-validators'
+import { required, email } from '../utils/i18n-validators'
 import { useQuery, useMutation } from '@vue/apollo-composable'
 import { GET_USER, SET_USER, UPLOAD_PHOTO } from '../constants/graphql'
 //import UserSettings from 'components/UserSettings.vue'
 import DropZone from 'components/DropZone.vue'
+import { minLength } from '@vuelidate/validators'
 
 //const emit = defineEmits(['update:model-value'])
 
@@ -290,7 +301,6 @@ const $q = useQuasar()
 const gettext = useGettext()
 const { $gettext } = useGettext()
 const language = localStorage.getItem('language') || gettext.current
-const formChanged = ref(false)
 
 if (gettext.current != language) {
   gettext.current = language
@@ -305,19 +315,27 @@ function addAvatar(newFiles) {
 
 //const isPwd = ref(true)
 const file = ref(null)
-const hover = ref(false)
+const isAvatarHovered = ref(false)
 const defaultAvatar = '/src/assets/avatar-icon.svg'
 //const tab = ref('account')
 
-const options = reactive([{label: '', value: null}])
+const countriesOptions = reactive([{label: 'None', value: null}])
 import(/* @vite-ignore */`../i18n/${language}/country.js`).then(country => {
-   for (var key in country.default) {
-    options.push({
+   for (let key in country.default) {
+    countriesOptions.push({
       label: country.default[key],
       value: key
     })
    }
 })
+const countriesOptionsRef = ref(countriesOptions)
+
+function filterCountries(value, update){
+  update(() => {
+    const needle = value.toLowerCase()
+    countriesOptionsRef.value = countriesOptions.filter(v => v.label.toLowerCase().indexOf(needle) > -1)
+  })
+}
 
 const formData = reactive(JSON.parse(localStorage.getItem('userData')) ?? {
   avatar: '',
@@ -329,7 +347,6 @@ const formData = reactive(JSON.parse(localStorage.getItem('userData')) ?? {
   phone: '',
   country: '',
   telegramUsername: '',
-//  password: '',
 })
 const rules = {
   avatar: { required: false },
@@ -338,15 +355,24 @@ const rules = {
   dateOfBirth: { required: false },
   username: { required: false },
   email: { required, email },
-  phone: { required: false },
+  phone: { required: false, minLength: minLength(10) },
   country: { required: false },
   telegramUsername: {required: false},
-//  password: { required, minLength: minLength(8) }
 }
-const v$ = useVuelidate(rules,formData)
+
+let defaultFormData = ref(JSON.stringify(formData))
+
+const hasFormChanged = computed(() => {
+    return JSON.stringify(formData) !== defaultFormData.value;
+});
+
+const v$ = useVuelidate(rules, formData)
 
 const imageUrl = (path) => { return process.env.MEDIA_URI + path }
-const avatar = ref(imageUrl(formData.avatar) ?? defaultAvatar)
+const avatar = ref(defaultAvatar)
+if (formData.avatar) {
+  avatar.value = imageUrl(formData.avatar)
+}
 const isDefault = computed(() => avatar.value == defaultAvatar)
 
 const clearAvatar = () => {
@@ -397,6 +423,8 @@ const { mutate: updateProfile, onDone, onError } = useMutation(SET_USER, () => (
 }))
 
 onDone((response) => {
+  defaultFormData.value = JSON.stringify(formData)
+  localStorage.setItem('userData', JSON.stringify(formData))
   $q.notify({
     type: 'positive',
     message: $gettext('Profile update successful')

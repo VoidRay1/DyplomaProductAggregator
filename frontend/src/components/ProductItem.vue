@@ -19,9 +19,9 @@
     <q-card-section class="flex flex-top q-pa-sm">
       <div v-for="item in similars"
         :key="item.node.id"
-        class="similar-item q-pb-md"
+        class="similar-product q-pb-md"
       >
-        <SimilarItem :product="item.node" />
+        <SimilarProduct :product="item.node" />
       </div>
     </q-card-section>
   </q-card-section>
@@ -30,7 +30,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useGettext } from 'vue3-gettext'
-import SimilarItem from 'components/SimilarItem.vue'
+import SimilarProduct from 'components/SimilarProduct.vue'
 import { useQuery } from '@vue/apollo-composable'
 import { GET_SIMILAR_PRODUCTS } from '../constants/graphql'
 
@@ -61,7 +61,7 @@ const imageUrl = (path) => { return process.env.MEDIA_URI + path }
   max-height: 240px
   min-width: 20px
   min-height: 20px
-.similar-item
+.similar-product
   position: relative
   display: inline-block
   vertical-align: top

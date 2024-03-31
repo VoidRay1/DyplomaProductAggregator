@@ -32,7 +32,6 @@
             class="text-orange"
           >
             <img
-              width="80"
               :src="imageUrl(shop.image)"
               :title="shop.title"
             />

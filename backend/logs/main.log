@@ -2552,3 +2552,1026 @@ def get_rozetka_products():
 INFO 2024-03-29 09:53:43,413 autoreload 12 140229181441856 Watching for file changes with StatReloader
 INFO 2024-03-29 10:01:50,060 autoreload 12 140229181441856 /django_proj/backend/settings.py changed, reloading.
 INFO 2024-03-29 10:01:51,676 autoreload 48 140087510169408 Watching for file changes with StatReloader
+DEBUG 2024-03-29 12:05:32,104 functional 10 140279380481856 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,104 functional 11 140079190312768 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,117 functional 11 140079190312768 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,117 functional 10 140279380481856 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,118 functional 11 140079190312768 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,118 functional 10 140279380481856 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,118 functional 11 140079190312768 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,119 functional 10 140279380481856 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,119 functional 11 140079190312768 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,120 functional 10 140279380481856 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,120 functional 11 140079190312768 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,121 functional 10 140279380481856 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,121 functional 11 140079190312768 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,122 functional 10 140279380481856 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,122 functional 11 140079190312768 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,123 functional 10 140279380481856 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,123 functional 11 140079190312768 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,124 functional 11 140079190312768 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,124 functional 10 140279380481856 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,125 functional 10 140279380481856 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,125 functional 11 140079190312768 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,126 functional 10 140279380481856 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:05:32,127 functional 10 140279380481856 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:05:32,127 functional 11 140079190312768 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 12:05:34,545 autoreload 12 140039721953088 Watching for file changes with StatReloader
+DEBUG 2024-03-29 12:13:17,518 functional 11 139624881940288 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,521 functional 10 139919370614592 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,524 functional 11 139624881940288 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,525 functional 10 139919370614592 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,525 functional 11 139624881940288 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,525 functional 10 139919370614592 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,526 functional 10 139919370614592 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,526 functional 11 139624881940288 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,526 functional 10 139919370614592 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,526 functional 11 139624881940288 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,527 functional 11 139624881940288 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,527 functional 10 139919370614592 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,528 functional 11 139624881940288 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,528 functional 10 139919370614592 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,528 functional 10 139919370614592 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,528 functional 11 139624881940288 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,529 functional 10 139919370614592 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,529 functional 11 139624881940288 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,529 functional 10 139919370614592 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,529 functional 11 139624881940288 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,530 functional 10 139919370614592 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,530 functional 11 139624881940288 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:13:17,531 functional 10 139919370614592 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:13:17,531 functional 11 139624881940288 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 12:13:18,698 autoreload 12 140630820042560 Watching for file changes with StatReloader
+INFO 2024-03-29 12:24:58,470 autoreload 12 140630820042560 /django_proj/backend/settings.py changed, reloading.
+INFO 2024-03-29 12:25:00,221 autoreload 38 139975469815616 Watching for file changes with StatReloader
+INFO 2024-03-29 12:25:17,942 autoreload 38 139975469815616 /django_proj/backend/settings.py changed, reloading.
+INFO 2024-03-29 12:25:19,612 autoreload 43 140185562789696 Watching for file changes with StatReloader
+INFO 2024-03-29 12:28:33,710 autoreload 43 140185562789696 /django_proj/backend/settings.py changed, reloading.
+INFO 2024-03-29 12:28:35,339 autoreload 49 139888519612224 Watching for file changes with StatReloader
+INFO 2024-03-29 12:28:42,900 autoreload 49 139888519612224 /django_proj/backend/settings.py changed, reloading.
+INFO 2024-03-29 12:28:44,626 autoreload 54 140146177259328 Watching for file changes with StatReloader
+DEBUG 2024-03-29 12:30:21,599 functional 10 139720116209472 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,601 functional 10 139720116209472 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,601 functional 10 139720116209472 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,602 functional 10 139720116209472 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,603 functional 10 139720116209472 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,603 functional 11 140067781904192 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,603 functional 10 139720116209472 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,603 functional 11 140067781904192 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,604 functional 10 139720116209472 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,604 functional 11 140067781904192 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,604 functional 10 139720116209472 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,605 functional 11 140067781904192 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,605 functional 10 139720116209472 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,605 functional 11 140067781904192 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,605 functional 10 139720116209472 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,606 functional 11 140067781904192 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,606 functional 10 139720116209472 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,606 functional 11 140067781904192 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,607 functional 10 139720116209472 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:30:21,607 functional 11 140067781904192 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,608 functional 11 140067781904192 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,608 functional 11 140067781904192 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,609 functional 11 140067781904192 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:30:21,609 functional 11 140067781904192 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 12:30:22,786 autoreload 12 139786006013760 Watching for file changes with StatReloader
+INFO 2024-03-29 12:40:22,065 autoreload 12 139786006013760 /django_proj/aggregator/managers.py changed, reloading.
+INFO 2024-03-29 12:40:23,869 autoreload 30 140023972009792 Watching for file changes with StatReloader
+DEBUG 2024-03-29 12:47:03,602 functional 10 139912652019520 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,603 functional 10 139912652019520 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,604 functional 10 139912652019520 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,604 functional 10 139912652019520 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,605 functional 10 139912652019520 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,605 functional 10 139912652019520 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,606 functional 10 139912652019520 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,606 functional 10 139912652019520 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,607 functional 10 139912652019520 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,607 functional 10 139912652019520 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,608 functional 10 139912652019520 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,608 functional 10 139912652019520 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,621 functional 11 139881191397184 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,622 functional 11 139881191397184 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,622 functional 11 139881191397184 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,623 functional 11 139881191397184 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,623 functional 11 139881191397184 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,624 functional 11 139881191397184 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:47:03,624 functional 11 139881191397184 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,625 functional 11 139881191397184 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,625 functional 11 139881191397184 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,626 functional 11 139881191397184 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,626 functional 11 139881191397184 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:47:03,627 functional 11 139881191397184 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 12:47:04,697 autoreload 12 139919851276096 Watching for file changes with StatReloader
+DEBUG 2024-03-29 12:49:16,366 functional 10 140681696372544 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,367 functional 10 140681696372544 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,368 functional 10 140681696372544 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,368 functional 10 140681696372544 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,369 functional 10 140681696372544 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,369 functional 10 140681696372544 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,370 functional 10 140681696372544 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,370 functional 10 140681696372544 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,371 functional 10 140681696372544 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,372 functional 10 140681696372544 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,372 functional 11 140155638851392 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,372 functional 10 140681696372544 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,373 functional 10 140681696372544 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,373 functional 11 140155638851392 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,373 functional 11 140155638851392 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,374 functional 11 140155638851392 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,375 functional 11 140155638851392 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,375 functional 11 140155638851392 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 12:49:16,376 functional 11 140155638851392 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,376 functional 11 140155638851392 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,377 functional 11 140155638851392 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,378 functional 11 140155638851392 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,378 functional 11 140155638851392 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 12:49:16,379 functional 11 140155638851392 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 12:49:17,493 autoreload 12 140235895367488 Watching for file changes with StatReloader
+DEBUG 2024-03-29 16:16:50,141 functional 10 140077007742784 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,142 functional 10 140077007742784 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,143 functional 10 140077007742784 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,143 functional 10 140077007742784 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,144 functional 11 139967580886848 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,144 functional 10 140077007742784 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,144 functional 11 139967580886848 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,144 functional 10 140077007742784 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,145 functional 11 139967580886848 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,145 functional 10 140077007742784 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,145 functional 11 139967580886848 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,145 functional 10 140077007742784 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,146 functional 11 139967580886848 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,146 functional 10 140077007742784 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,147 functional 11 139967580886848 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,147 functional 10 140077007742784 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,147 functional 10 140077007742784 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,147 functional 11 139967580886848 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,148 functional 10 140077007742784 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 16:16:50,148 functional 11 139967580886848 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,148 functional 11 139967580886848 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,149 functional 11 139967580886848 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,149 functional 11 139967580886848 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 16:16:50,150 functional 11 139967580886848 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 16:16:51,299 autoreload 12 140066080094016 Watching for file changes with StatReloader
+INFO 2024-03-29 16:18:52,498 autoreload 12 140066080094016 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-29 16:18:54,260 autoreload 29 139810465773376 Watching for file changes with StatReloader
+DEBUG 2024-03-29 18:17:55,848 functional 10 140537059895104 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,849 functional 10 140537059895104 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,849 functional 10 140537059895104 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,850 functional 10 140537059895104 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,850 functional 10 140537059895104 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,851 functional 10 140537059895104 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,852 functional 10 140537059895104 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,852 functional 10 140537059895104 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,853 functional 10 140537059895104 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,853 functional 10 140537059895104 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,854 functional 10 140537059895104 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,855 functional 10 140537059895104 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,863 functional 11 140151057082176 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,864 functional 11 140151057082176 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,865 functional 11 140151057082176 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,866 functional 11 140151057082176 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,866 functional 11 140151057082176 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,867 functional 11 140151057082176 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,867 functional 11 140151057082176 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,868 functional 11 140151057082176 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,869 functional 11 140151057082176 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-29 18:17:55,869 functional 11 140151057082176 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,870 functional 11 140151057082176 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-29 18:17:55,870 functional 11 140151057082176 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-29 18:17:57,063 autoreload 12 139876074202944 Watching for file changes with StatReloader
+INFO 2024-03-29 18:50:06,973 autoreload 12 139876074202944 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-29 18:50:08,721 autoreload 50 140706822965056 Watching for file changes with StatReloader
+INFO 2024-03-29 18:51:06,701 autoreload 50 140706822965056 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-29 18:51:08,402 autoreload 54 140575507449664 Watching for file changes with StatReloader
+INFO 2024-03-29 18:53:48,297 autoreload 54 140575507449664 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-29 18:53:50,110 autoreload 59 139978399954752 Watching for file changes with StatReloader
+INFO 2024-03-29 19:06:19,991 autoreload 59 139978399954752 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-29 19:06:21,723 autoreload 70 140650048534336 Watching for file changes with StatReloader
+INFO 2024-03-29 19:20:55,755 autoreload 70 140650048534336 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-29 19:20:57,504 autoreload 91 139853335934784 Watching for file changes with StatReloader
+DEBUG 2024-03-30 09:23:35,633 functional 10 140074186159936 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,634 functional 10 140074186159936 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,635 functional 11 139992856958784 
+def chunks(task, it, n):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,635 functional 10 140074186159936 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,636 functional 11 139992856958784 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,636 functional 10 140074186159936 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,636 functional 10 140074186159936 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,636 functional 11 139992856958784 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,637 functional 10 140074186159936 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,637 functional 11 139992856958784 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,638 functional 10 140074186159936 
+def get_tavria_products():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,638 functional 11 139992856958784 
+def backend_cleanup():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,638 functional 11 139992856958784 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,638 functional 10 140074186159936 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,639 functional 11 139992856958784 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,639 functional 10 140074186159936 
+def get_rozetka_products():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,640 functional 10 140074186159936 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,640 functional 11 139992856958784 
+def xmap(task, it):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,640 functional 11 139992856958784 
+def chain(*args, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,640 functional 10 140074186159936 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,641 functional 11 139992856958784 
+def xstarmap(task, it):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,641 functional 10 140074186159936 
+def get_silpo_products():
+    return 1
+
+DEBUG 2024-03-30 09:23:35,641 functional 11 139992856958784 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+DEBUG 2024-03-30 09:23:35,642 functional 11 139992856958784 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+INFO 2024-03-30 09:23:36,798 autoreload 12 139824668014400 Watching for file changes with StatReloader
+INFO 2024-03-30 15:15:27,544 autoreload 12 139824668014400 /django_proj/users/schema.py changed, reloading.
+INFO 2024-03-30 15:15:30,177 autoreload 57 140245104781120 Watching for file changes with StatReloader
+ERROR 2024-03-30 18:47:21,508 signal 11 140288021702464 Signal handler <promise@0x7f9758556a20 --> <bound method Celery._autodiscover_tasks of <Celery backend at 0x7f97594465c0>>> raised: ModuleNotFoundError("No module named 'aiohttp'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 161, in __call__
+    return self.throw()
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 692, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 701, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 696, in _autodiscover_tasks_from_names
+    return self.loader.autodiscover_tasks(
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 220, in autodiscover_tasks
+    mod.__name__ for mod in autodiscover_tasks(packages or (),
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in autodiscover_tasks
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in <listcomp>
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 278, in find_related_module
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 270, in find_related_module
+    return importlib.import_module(module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/aggregator/tasks.py", line 2, in <module>
+    from aggregator.parse import silpo, rozetka, tavria
+  File "/django_proj/aggregator/parse/silpo.py", line 2, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+ERROR 2024-03-30 18:47:21,509 signal 10 140428498888512 Signal handler <promise@0x7fb80d6d2a20 --> <bound method Celery._autodiscover_tasks of <Celery backend at 0x7fb80dad8ac0>>> raised: ModuleNotFoundError("No module named 'aiohttp'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 161, in __call__
+    return self.throw()
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 692, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 701, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 696, in _autodiscover_tasks_from_names
+    return self.loader.autodiscover_tasks(
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 220, in autodiscover_tasks
+    mod.__name__ for mod in autodiscover_tasks(packages or (),
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in autodiscover_tasks
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in <listcomp>
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 278, in find_related_module
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 270, in find_related_module
+    return importlib.import_module(module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/aggregator/tasks.py", line 2, in <module>
+    from aggregator.parse import silpo, rozetka, tavria
+  File "/django_proj/aggregator/parse/silpo.py", line 2, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+ERROR 2024-03-30 18:47:29,419 signal 10 139900476188480 Signal handler <promise@0x7f3d1cd22a20 --> <bound method Celery._autodiscover_tasks of <Celery backend at 0x7f3d1d128ac0>>> raised: ModuleNotFoundError("No module named 'aiohttp'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 161, in __call__
+    return self.throw()
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 692, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 701, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 696, in _autodiscover_tasks_from_names
+    return self.loader.autodiscover_tasks(
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 220, in autodiscover_tasks
+    mod.__name__ for mod in autodiscover_tasks(packages or (),
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in autodiscover_tasks
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in <listcomp>
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 278, in find_related_module
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 270, in find_related_module
+    return importlib.import_module(module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/aggregator/tasks.py", line 2, in <module>
+    from aggregator.parse import silpo, rozetka, tavria
+  File "/django_proj/aggregator/parse/silpo.py", line 2, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+ERROR 2024-03-30 18:47:29,419 signal 11 140441384073024 Signal handler <promise@0x7fbb0d71aa20 --> <bound method Celery._autodiscover_tasks of <Celery backend at 0x7fbb0e60a5c0>>> raised: ModuleNotFoundError("No module named 'aiohttp'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 161, in __call__
+    return self.throw()
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 692, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 701, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 696, in _autodiscover_tasks_from_names
+    return self.loader.autodiscover_tasks(
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 220, in autodiscover_tasks
+    mod.__name__ for mod in autodiscover_tasks(packages or (),
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in autodiscover_tasks
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in <listcomp>
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 278, in find_related_module
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 270, in find_related_module
+    return importlib.import_module(module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/aggregator/tasks.py", line 2, in <module>
+    from aggregator.parse import silpo, rozetka, tavria
+  File "/django_proj/aggregator/parse/silpo.py", line 2, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+ERROR 2024-03-30 18:47:37,422 signal 10 139705003165504 Signal handler <promise@0x7f0f99b76a20 --> <bound method Celery._autodiscover_tasks of <Celery backend at 0x7f0f99f8cac0>>> raised: ModuleNotFoundError("No module named 'aiohttp'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 161, in __call__
+    return self.throw()
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 692, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 701, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 696, in _autodiscover_tasks_from_names
+    return self.loader.autodiscover_tasks(
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 220, in autodiscover_tasks
+    mod.__name__ for mod in autodiscover_tasks(packages or (),
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in autodiscover_tasks
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in <listcomp>
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 278, in find_related_module
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 270, in find_related_module
+    return importlib.import_module(module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/aggregator/tasks.py", line 2, in <module>
+    from aggregator.parse import silpo, rozetka, tavria
+  File "/django_proj/aggregator/parse/silpo.py", line 2, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+ERROR 2024-03-30 18:47:37,450 signal 11 140651933439808 Signal handler <promise@0x7fec1329ea20 --> <bound method Celery._autodiscover_tasks of <Celery backend at 0x7fec1418e5c0>>> raised: ModuleNotFoundError("No module named 'aiohttp'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 161, in __call__
+    return self.throw()
+  File "/usr/local/lib/python3.10/site-packages/vine/promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 692, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 701, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+  File "/usr/local/lib/python3.10/site-packages/celery/app/base.py", line 696, in _autodiscover_tasks_from_names
+    return self.loader.autodiscover_tasks(
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 220, in autodiscover_tasks
+    mod.__name__ for mod in autodiscover_tasks(packages or (),
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in autodiscover_tasks
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 246, in <listcomp>
+    return [find_related_module(pkg, related_name) for pkg in packages]
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 278, in find_related_module
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/celery/loaders/base.py", line 270, in find_related_module
+    return importlib.import_module(module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/aggregator/tasks.py", line 2, in <module>
+    from aggregator.parse import silpo, rozetka, tavria
+  File "/django_proj/aggregator/parse/silpo.py", line 2, in <module>
+    import aiohttp
+ModuleNotFoundError: No module named 'aiohttp'
+INFO 2024-03-30 22:16:19,543 autoreload 23740 10424 Watching for file changes with StatReloader

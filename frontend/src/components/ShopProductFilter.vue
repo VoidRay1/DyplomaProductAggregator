@@ -81,6 +81,11 @@
               <q-item-section class="text-subtitle1 q-pa-none">
                 {{ __('Volume') }}
               </q-item-section>
+              <q-item-section side v-if="selectVolumes.length > 0">
+                <div class="row items-center">
+                  <q-icon name="cancel" color="orange" size="24px" @click="selectVolumes = []" />
+                </div>
+              </q-item-section>
             </template>
             <q-card class="q-px-sm">
               <q-card-section class="row justify-center">
@@ -121,10 +126,30 @@
               <q-item-section class="text-subtitle1 q-pa-none">
                 {{ __('Brands') }}
               </q-item-section>
+              <q-item-section side v-if="selectBrands.length > 0">
+                <div class="row items-center">
+                  <q-icon name="cancel" color="orange" size="24px" @click="selectBrands = []" />
+                </div>
+              </q-item-section>
             </template>
             <q-card class="q-px-sm">
               <q-card-section class="row justify-center">
-                <div v-for="filter, index in brand"
+                <q-input
+                  v-model="filterBrandText"
+                  debounce="500"
+                  outlined
+                  dense
+                  clearable
+                  clear-icon="close"
+                  class="col-12"
+                  color="orange"
+                  :placeholder="__('Search')"
+                >
+                  <template v-slot:append>
+                    <q-icon name="search" />
+                  </template>
+                </q-input>
+                <div v-for="filter, index in filteredBrands"
                   :key="filter.value"
                   class="col-12"
                 >
@@ -158,6 +183,11 @@
             <template v-slot:header>
               <q-item-section class="text-subtitle1 q-pa-none">
                 {{ __('Promotions') }}
+              </q-item-section>
+              <q-item-section side v-if="selectPromos.length > 0">
+                <div class="row items-center">
+                  <q-icon name="cancel" color="orange" size="24px" @click="selectPromos = []" />
+                </div>
               </q-item-section>
             </template>
             <q-card class="q-px-sm">
@@ -200,7 +230,7 @@
 </template>
 
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref, computed, watchEffect } from 'vue'
 
 const props = defineProps({
   filters: {
@@ -247,6 +277,14 @@ watchEffect(() => {
       }
     }
   }
+})
+
+const filterBrandText = ref('');
+const filteredBrands = computed(() => {
+  if (!filterBrandText.value) {
+    return brand.value
+  }
+  return brand.value.filter(brand => brand.value.toLowerCase().includes(filterBrandText.value.toLowerCase()))
 })
 
 const selectFilters = ref({})

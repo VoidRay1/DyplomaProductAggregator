@@ -1,13 +1,19 @@
-import logging
-import requests
-from time import sleep
+import asyncio
+import aiohttp
+import math
 from django.conf import settings
 from aggregator.models import Shop, Category, Product, Price, Promotion
 
-logger = logging.getLogger()
-
 def get_products():
     shop = Shop.objects.get(pk=settings.SILPO_ID)
+    products = asyncio.run(run(shop.api + settings.SILPO_PRODUCTS_URL))
+    print(f'🟠  Silpo get products: {len(products)}')
+    product_ids = update_data(shop, products)
+    Product.objects.filter(shop=shop).exclude(id__in=product_ids).update(available=False)
+    result = Product.objects.filter(id__in=product_ids).update(available=True)
+    print(f'🟠  Silpo available: {result}')
+
+async def run(url):
     params = {
         'limit': settings.SILPO_MAX_PRODUCTS_LIMIT,
         'offset': 0,
@@ -16,32 +22,37 @@ def get_products():
         'includeChildCategories': 'true',
         'sortBy': 'popularity',
         'sortDirection': 'desc',
-        'mustHavePromotion': 'false',
+        'mustHavePromotion': 'true',
     }
-    res = requests.get(shop.api + settings.SILPO_PRODUCTS_URL, params)
-    logger.info(res)
-    product_ids = []
-    if res.status_code == 200:
-        data = res.json()
-        product_ids += update_data(shop, data)
-        for i in range(1, round(data['total'] / params['limit'])):
-            sleep(5)
-            params['offset'] = i * params['limit']
-            res = requests.get(shop.api + settings.SILPO_PRODUCTS_URL, params)
-            logger.info(res)
-            if res.status_code == 200:
-                data = res.json()
-                product_ids += update_data(shop, data)
-        Product.objects.filter(shop=shop).exclude(id__in=product_ids).update(available=False)
-        result = Product.objects.filter(id__in=product_ids).update(available=True)
-        print(f'🟠  Silpo all: {result}')
+    data, pages = await api_request(url, params)
+    if pages > 1:
+        tasks = []
+        for i in range(1, pages):
+            params['offset'] += settings.SILPO_MAX_PRODUCTS_LIMIT
+            tasks.append(asyncio.create_task(api_request(url, params.copy())))
+        results = await asyncio.gather(*tasks)
+        data.extend([item for sublist in results for item in sublist])
+    return data
 
+async def api_request(url, params):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, params=params) as response:
+            if response.status == 200:
+                data = await response.json()
+                if params['offset'] == 0:
+                    pages = math.ceil(data['total'] / params['limit'])
+                    print(f'🟠  Silpo total: {data["total"]} pages: {pages}')
+                    return data['items'], pages
+                else:
+                    return data['items']
+            else:
+                return None
 
-def update_data(shop, data = None):
+def update_data(shop, products = None):
     items_updated = 0
     out_stock = 0
     product_ids = []
-    for item in data['items']:
+    for item in products:
         if item['sectionSlug']:
             category, created = Category.objects.get_or_create(
                 shop=shop,
@@ -105,5 +116,5 @@ def update_data(shop, data = None):
                 }
             )
             price.promotions.add(promotion)
-    print(f'🟠  pull: {len(data["items"])} updated: {items_updated} outStock: {out_stock}')
+    print(f'🟠  Silpo updated: {items_updated} outStock: {out_stock}')
     return product_ids

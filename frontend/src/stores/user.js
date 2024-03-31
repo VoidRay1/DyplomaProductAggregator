@@ -21,7 +21,7 @@ export const useUserStore = defineStore('user', () => {
       lastName: userData.profile.lastName,
       dateOfBirth: userData.profile.dateOfBirth,
       country: userData.profile.country,
-      hide: !userData.isActive,
+      telegramUsername: userData.profile.telegramUsername
     }
     localStorage.setItem('userName', user.value.username)
     localStorage.setItem('userAvatar', user.value.avatar)

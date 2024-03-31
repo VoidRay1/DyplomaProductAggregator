@@ -1,75 +1,72 @@
-# import asyncio
-import logging
-import requests
+import asyncio
+import aiohttp
 import re
 from django.conf import settings
-from aggregator.models import Shop, Category, Product, Price, Promotion
-# from asgiref.sync import sync_to_async
+from aggregator.models import Shop, Product, Price, Promotion
 from bs4 import BeautifulSoup
-
-logger = logging.getLogger()
 
 def get_products():
     shop = Shop.objects.get(pk=settings.TAVRIA_ID)
-    products = []
-    for category in shop.categories.filter(available=True):
-        print(f'🔴  {category}')
-        products += get_category_products(shop, category)
-    update_data(shop, products)
-    print(f'🔴  Tavria end')
+    categories = list(shop.categories.filter(available=True, parent__isnull=False).values('id', 'translations__name', 'category_slug'))
+    results = asyncio.run(run(shop.api, categories))
+    products = [item for sublist in results for item in sublist]
+    print(f'🔴  Tavria all products: {len(products)}')
+    product_ids = update_data(shop, products)
+    Product.objects.filter(shop=shop).exclude(id__in=product_ids).update(available=False)
+    result = Product.objects.filter(id__in=product_ids).update(available=True)
+    print(f'🔴  Tavria available: {result}')
 
-def get_category_products(shop, category):
-    url = shop.api + category.category_slug
+async def run(url, categories=None):
+    tasks = [get_category_products(url, category) for category in categories]
+    return await asyncio.gather(*tasks)
+
+async def get_category_products(url, category):
+    url += category['category_slug'] + '/catalog'
     params = {'page': 1}
-    products, pages = api_request(url, params, category)
+    products, pages = await fetch_page(url, params, category)
     for page in range(2, pages+1):
         params['page'] = page
-        prod, p = api_request(url, params, category)
-        products += prod
-    print(f'🔴  Tavria {category}: {len(products)}')
+        next, _ = await fetch_page(url, params.copy(), category)
+        products += next
+    print(f'🔴  Tavria {category["translations__name"]}: {len(products)}')
     return products
 
-def api_request(url, params, category):
-    pages = 1
-    res = requests.get(url, params)
-    logger.info(res)
-    if res.status_code == 200:
-        soup = BeautifulSoup(res.text, "html.parser")
-        pages = parse_pagination(soup.find('ul', class_='pagination'))
-        products = []
-        products_list = soup.find('div', class_='catalog-products__container').find_all('div', class_='products__item')
-        for product_element in products_list:
-            product_id = product_element.get('id')
-            if product_id:
-                product = parse_product(product_element, category)
-                products.append(product)
-    return products, pages
-
+async def fetch_page(url, params, category):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, params=params) as response:
+            if response.status == 200:
+                products = []
+                page_content = await response.text()
+                soup = BeautifulSoup(page_content, "html.parser")
+                pages = parse_pagination(soup.find('ul', class_='pagination'))
+                products_list = soup.find('div', class_='catalog-products__container').find_all('div', class_='products__item')
+                for product_element in products_list:
+                    product_id = product_element.get('id')
+                    if product_id:
+                        product = parse_product(product_element, category)
+                        products.append(product)
+                return products, pages
+            else:
+                return None
+        
 def parse_product(product_element, category):
     title = product_element.find('p', class_='product__title').find('a').text.strip()
     volume = ''
-    match = re.search(r"(?P<volume>\d+,?\d* к?г)", title)
+    match = re.search(r"(?P<volume>\d+,?\d* л)", title)
     if match:
         volume = match.group("volume")
         title = title.replace(match.group("volume"), "")
     title = re.sub(r"\s+", " ", title)
-    price_element = product_element.find('p', class_='product__price')
-    old_price = None
-    if price_element.find('span', class_='price__with_discount'):
-        price = float(price_element.find('span', class_='price__with_discount').find('span', class_='price__discount').text.strip().replace('₴', ''))
-        old_price = float(price_element.find('span', class_='price__with_discount').find('span', class_='price__old').text.strip().replace('₴', ''))
-    else:
-        price = float(price_element.find('b').text.strip().replace('₴', ''))
     product = {
         'id': product_element.get('id'),
-        'category_id': category,
-        'category_slug': category.category_slug,
+        'category_id': category['id'],
+        'category_slug': category['category_slug'],
         'brand': '',
         'title': title,
         'volume': volume,
         'image_url': product_element.find('div', class_='product__image').find('img').get('src'),
-        'price': price,
-        'old_price': old_price if old_price else price,
+        'price': float(product_element.find('span', class_='price__discount').text.strip().replace('₴', '')),
+        'old_price': float(product_element.find('span', class_='price__old').text.strip().replace('₴', '')),
     }
     discount_element = product_element.find('div', class_='product_discount')
     if discount_element:
@@ -92,12 +89,13 @@ def parse_pagination(data):
 
 def update_data(shop, products = None):
     items_updated = 0
+    product_ids = []
     for item in products:
         product, created = Product.objects.get_or_create(
             shop=shop,
             external_id=item['id'],
             defaults={
-                'category': item['category_id'],
+                'category_id': item['category_id'],
                 'name': item['title'],
                 'brand': item['brand'],
                 'product_slug': item['id'],
@@ -106,8 +104,9 @@ def update_data(shop, products = None):
                 'volume': item['volume'],
             }
         )
+        product_ids.append(product.id)
         discount = item['discount_amount']
-        percent = abs(float(item['discount_percentage'].replace('%', ''))) if item['discount_percentage'] else 0
+        percent = abs(float(item['discount_percentage'].replace('%', '')))
         price = Price.objects.filter(product=product).first() # order by DESC
         if not price or (float(price.price) != float(item['price'])) or (float(price.discount) != float(discount)):
             print(f'🔴  {product}: {float(item["price"])} ({percent}%)')
@@ -124,7 +123,7 @@ def update_data(shop, products = None):
             )
             items_updated += 1
         price.save()
-        if percent:
-            promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
-            price.promotions.add(promotion)
+        promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
+        price.promotions.add(promotion)
     print(f'🔴  pull: {len(products)} updated: {items_updated}')
+    return product_ids
