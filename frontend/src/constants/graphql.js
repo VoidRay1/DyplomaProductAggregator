@@ -127,8 +127,6 @@ export const GET_SHOPS = gql`
   query getShops ($country: String!, $language: String) {
     shops (country: $country, language: $language) {
       id
-      title
-      description
       image
       url
       active

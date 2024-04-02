@@ -69,7 +69,8 @@ const { result } = useQuery(GET_SHOPS, {
   country: userStore.user?.country ?? 'UA',
   language: language
 })
+
 const shops = computed(() => result.value?.shops ?? [])
-  
+
 const imageUrl = (path) => { return process.env.MEDIA_URI + path }
 </script>

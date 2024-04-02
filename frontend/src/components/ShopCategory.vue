@@ -26,7 +26,7 @@
       </q-btn>
       <q-btn v-for="category in categories"
         :key="category.id"
-        :outline="!isCurrent(category)"
+        :outline="!isCategoryActive(category)"
         :disable="category.countProducts == 0"
         rounded
         no-caps
@@ -36,7 +36,7 @@
         @click="onClick(category)"
       >
         <div class="q-pr-xs">{{ category.name }}</div>
-        <div :class="{ 'text-grey': !isCurrent(category) }">{{ category.countProducts }}</div> 
+        <div :class="{ 'text-grey': !isCategoryActive(category) }">{{ category.countProducts }}</div> 
       </q-btn>
     </div>
   </q-toolbar>
@@ -69,7 +69,7 @@ const isAll = () => {
   if (currentCategory.value.parent === undefined) return false
   return currentCategory.value.parent !== null 
 }
-const isCurrent = (category) => {
+const isCategoryActive = (category) => {
   return currentCategory.value.categorySlug == category.categorySlug
 }
 const onClick = (category) => {

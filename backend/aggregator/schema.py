@@ -221,11 +221,11 @@ class Query(ObjectType):
     )
  
     def resolve_shops(root, info, country=None, language=None):
-        if issubclass(Shop, TranslatableModel):
-            shops = Shop.objects.active_translations(language).all()
-            # shops.set_current_language(language)
-        else:
-            shops = Shop.objects.all()
+        # if issubclass(Shop, TranslatableModel):
+        #     shops = Shop.objects.active_translations(language).all()
+        #     # shops.set_current_language(language)
+        # else:
+        shops = Shop.objects.all()
         if country == None:
             country = 'UA'
         shops = shops.filter(country=country)

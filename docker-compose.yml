@@ -47,7 +47,7 @@ services:
 
   postgres:
     container_name: postgres14_container
-    image: postgres:14.8-alpine3.18
+    image: postgres
     environment:
       POSTGRES_DB: "aggregatordb"
       POSTGRES_USER: "aggregatoruser"

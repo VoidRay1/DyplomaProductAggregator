@@ -52,7 +52,7 @@ async def fetch_page(url, params, category):
 def parse_product(product_element, category):
     title = product_element.find('p', class_='product__title').find('a').text.strip()
     volume = ''
-    match = re.search(r"(?P<volume>\d+,?\d* л)", title)
+    match = re.search(r"(?P<volume>\d+,?\d* г|кг)", title)
     if match:
         volume = match.group("volume")
         title = title.replace(match.group("volume"), "")
