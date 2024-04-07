@@ -25,14 +25,16 @@
             style="top: -170px; right: -5px"
           />
         </div>
-            <!-- <q-btn
-              round
-              color="orange-4"
-              icon="o_shopping_bag"
-              class="q-ma-md"
-              style="top: -190px; right: -75px"
-              @click="addCart(item.node)"
-            /> -->
+      </div>
+      <div class="absolute" style="right: 0px; top: 0px;">
+        <q-btn
+          round
+          flat
+          size="md"
+          :color="product.isTracked ? 'orange' : 'grey-5'"
+          :icon="product.isTracked ? 'bookmark' : 'bookmark_outline'"
+          @click.prevent="product.isTracked ? untrackProduct() : trackProduct()"
+        />
       </div>
       <div class="text-body1 text-center text-weight-bold text-grey-8 q-mt-sm">
         {{ product.price.price }} ₴
@@ -57,11 +59,70 @@
 </template>
   
 <script setup>
+import { useQuasar } from 'quasar'
+import { useGettext } from 'vue3-gettext'
+import { useTokenStore } from 'stores/token'
+import { useMutation } from '@vue/apollo-composable'
+import { TRACK_PRODUCT, UNTRACK_PRODUCT } from '../constants/graphql'
+
 const props = defineProps({
   product: {
     type: Object,
     required: true
   }
+})
+
+const $q = useQuasar()
+const { $gettext } = useGettext()
+const token = useTokenStore()
+token.initialize()
+
+const { mutate: trackProduct, onDone, onError } = useMutation(TRACK_PRODUCT, () => ({
+  variables: {
+    product: props.product.id
+  },
+  refetchQueries: [
+    'getShopProducts',
+  ]
+}))
+
+const { mutate: untrackProduct, onDone: onDoneDel, onError: onErrorDel } = useMutation(UNTRACK_PRODUCT, () => ({
+  variables: {
+    product: props.product.id
+  },
+  refetchQueries: [
+    'getShopProducts',
+  ]
+}))
+
+onDone((response) => {
+  $q.notify({
+    type: 'positive',
+    message: $gettext('Track product successful')
+  })
+})
+
+onError((error) => {
+  console.log(error)
+  $q.notify({
+    type: 'negative',
+    message: message
+  })
+})
+
+onDoneDel((response) => {
+  $q.notify({
+    type: 'positive',
+    message: $gettext('Untrack product successful')
+  })
+})
+
+onErrorDel((error) => {
+  console.log(error)
+  $q.notify({
+    type: 'negative',
+    message: message
+  })
 })
 </script>
 

@@ -278,3 +278,15 @@ msgstr "Я - А"
 #: src/components/UserProfile.vue:137
 msgid "Telegram username"
 msgstr "Ім'я в Telegram"
+
+#: src/pages/BookmarksPage.vue:5
+msgid "Bookmarks"
+msgstr "Відстежуванне"
+
+#: src/components/NewProducts.vue:7
+msgid "New products"
+msgstr "Новинки"
+
+#: src/components/TrackProducts.vue:9
+msgid "My products"
+msgstr "Мої продукти"

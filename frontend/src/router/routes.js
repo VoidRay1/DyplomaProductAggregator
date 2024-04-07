@@ -1,5 +1,6 @@
 import IndexPage from 'pages/IndexPage.vue'
 import Shops from 'pages/ShopsPage.vue'
+import Bookmarks from 'pages/BookmarksPage.vue'
 import ErrorNotFound from 'pages/ErrorNotFound.vue'
 
 import LoginForm from '../components/LoginForm.vue'
@@ -15,6 +16,7 @@ const routes = [
     children: [
       { path: '', component: IndexPage },
       { path: 'shops', component: Shops },
+      { path: 'bookmarks', component: Bookmarks },
       { path: 'login', component: LoginForm },
       { path: 'register', component: RegisterForm },
       { path: 'forgot', component: ForgotPassword },

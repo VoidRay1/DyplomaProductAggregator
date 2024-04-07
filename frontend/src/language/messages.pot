@@ -32,39 +32,45 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: src/components/ShopProductFilter.vue:106
-#: src/components/ShopProductFilter.vue:115
-#: src/components/ShopProductFilter.vue:122
-#: src/components/ShopProductFilter.vue:73
-#: src/components/ShopProductFilter.vue:81
-#: src/components/ShopProductFilter.vue:88
+#: src/components/HeaderLayout.vue:45
+#: src/pages/BookmarksPage.vue:4
+#: src/pages/BookmarksPage.vue:5
+msgid "Bookmarks"
+msgstr ""
+
+#: src/components/ShopProductFilter.vue:111
+#: src/components/ShopProductFilter.vue:120
+#: src/components/ShopProductFilter.vue:127
+#: src/components/ShopProductFilter.vue:78
+#: src/components/ShopProductFilter.vue:86
+#: src/components/ShopProductFilter.vue:93
 msgid "Brands"
 msgstr ""
 
-#: src/components/UserProfile.vue:135
-#: src/components/UserProfile.vue:136
-#: src/components/UserProfile.vue:170
-#: src/components/UserProfile.vue:222
-#: src/components/UserProfile.vue:234
+#: src/components/UserProfile.vue:139
+#: src/components/UserProfile.vue:140
+#: src/components/UserProfile.vue:182
+#: src/components/UserProfile.vue:226
+#: src/components/UserProfile.vue:244
 msgid "Country"
 msgstr ""
 
-#: src/components/UserProfile.vue:123
-#: src/components/UserProfile.vue:147
-#: src/components/UserProfile.vue:154
-#: src/components/UserProfile.vue:88
-#: src/components/UserProfile.vue:89
+#: src/components/UserProfile.vue:134
+#: src/components/UserProfile.vue:150
+#: src/components/UserProfile.vue:157
+#: src/components/UserProfile.vue:91
+#: src/components/UserProfile.vue:92
 msgid "Date of birth"
 msgstr ""
 
 #: src/components/ForgotPassword.vue:18
 #: src/components/LoginForm.vue:32
 #: src/components/RegisterForm.vue:35
-#: src/components/UserProfile.vue:109
-#: src/components/UserProfile.vue:110
-#: src/components/UserProfile.vue:144
-#: src/components/UserProfile.vue:179
-#: src/components/UserProfile.vue:187
+#: src/components/UserProfile.vue:112
+#: src/components/UserProfile.vue:113
+#: src/components/UserProfile.vue:155
+#: src/components/UserProfile.vue:182
+#: src/components/UserProfile.vue:190
 msgid "Email"
 msgstr ""
 
@@ -78,6 +84,13 @@ msgstr ""
 #: src/components/ShopProductFilter.vue:3
 #: src/components/ShopProductFilter.vue:4
 msgid "Filters"
+msgstr ""
+
+#: src/pages/BookmarksPage.vue:26
+#: src/pages/BookmarksPage.vue:27
+#: src/pages/BookmarksPage.vue:38
+#: src/pages/BookmarksPage.vue:42
+msgid "Find your favourite products"
 msgstr ""
 
 #: src/components/ForgotPassword.vue:6
@@ -99,11 +112,11 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: src/components/UserProfile.vue:103
-#: src/components/UserProfile.vue:111
-#: src/components/UserProfile.vue:119
-#: src/components/UserProfile.vue:68
-#: src/components/UserProfile.vue:69
+#: src/components/UserProfile.vue:124
+#: src/components/UserProfile.vue:132
+#: src/components/UserProfile.vue:140
+#: src/components/UserProfile.vue:81
+#: src/components/UserProfile.vue:82
 msgid "Last name"
 msgstr ""
 
@@ -143,6 +156,13 @@ msgstr ""
 msgid "Logout successful"
 msgstr ""
 
+#: src/pages/BookmarksPage.vue:24
+#: src/pages/BookmarksPage.vue:25
+#: src/pages/BookmarksPage.vue:36
+#: src/pages/BookmarksPage.vue:40
+msgid "Looks like you don't have any product preferences?"
+msgstr ""
+
 #: src/components/SortSelect.vue:36
 msgid "Max discount"
 msgstr ""
@@ -165,11 +185,22 @@ msgstr ""
 msgid "Min price"
 msgstr ""
 
-#: src/components/UserProfile.vue:101
-#: src/components/UserProfile.vue:58
-#: src/components/UserProfile.vue:59
-#: src/components/UserProfile.vue:93
+#: src/components/TrackProducts.vue:8
+#: src/components/TrackProducts.vue:9
+msgid "My products"
+msgstr ""
+
+#: src/components/UserProfile.vue:114
+#: src/components/UserProfile.vue:122
+#: src/components/UserProfile.vue:71
+#: src/components/UserProfile.vue:72
 msgid "Name"
+msgstr ""
+
+#: src/components/NewProducts.vue:3
+#: src/components/NewProducts.vue:4
+#: src/components/NewProducts.vue:7
+msgid "New products"
 msgstr ""
 
 #: src/pages/ErrorNotFound.vue:7
@@ -182,11 +213,11 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: src/components/UserProfile.vue:122
-#: src/components/UserProfile.vue:123
-#: src/components/UserProfile.vue:157
-#: src/components/UserProfile.vue:200
-#: src/components/UserProfile.vue:209
+#: src/components/UserProfile.vue:125
+#: src/components/UserProfile.vue:126
+#: src/components/UserProfile.vue:168
+#: src/components/UserProfile.vue:203
+#: src/components/UserProfile.vue:212
 msgid "Phone number"
 msgstr ""
 
@@ -209,17 +240,17 @@ msgstr ""
 msgid "Profile"
 msgstr ""
 
-#: src/components/UserProfile.vue:402
+#: src/components/UserProfile.vue:430
 msgid "Profile update successful"
 msgstr ""
 
-#: src/components/ShopProductFilter.vue:103
 #: src/components/ShopProductFilter.vue:110
-#: src/components/ShopProductFilter.vue:128
-#: src/components/ShopProductFilter.vue:137
-#: src/components/ShopProductFilter.vue:144
-#: src/components/ShopProductFilter.vue:160
-#: src/components/ShopProductFilter.vue:95
+#: src/components/ShopProductFilter.vue:118
+#: src/components/ShopProductFilter.vue:125
+#: src/components/ShopProductFilter.vue:143
+#: src/components/ShopProductFilter.vue:152
+#: src/components/ShopProductFilter.vue:159
+#: src/components/ShopProductFilter.vue:185
 msgid "Promotions"
 msgstr ""
 
@@ -236,11 +267,12 @@ msgid "Register"
 msgstr ""
 
 #: src/components/FormGenerator.vue:19
-#: src/components/UserProfile.vue:265
+#: src/components/UserProfile.vue:275
 msgid "Save"
 msgstr ""
 
 #: src/components/SearchForm.vue:11
+#: src/components/ShopProductFilter.vue:146
 msgid "Search"
 msgstr ""
 
@@ -273,26 +305,34 @@ msgid "Shops"
 msgstr ""
 
 #: src/components/ShopProductList.vue:32
+#: src/pages/BookmarksPage.vue:23
 msgid "Show more"
 msgstr ""
 
-#: src/components/ShopProductFilter.vue:117
-#: src/components/ShopProductFilter.vue:125
-#: src/components/ShopProductFilter.vue:132
-#: src/components/ShopProductFilter.vue:150
-#: src/components/ShopProductFilter.vue:159
-#: src/components/ShopProductFilter.vue:166
-#: src/components/ShopProductFilter.vue:182
-#: src/components/ShopProductFilter.vue:191
+#: src/components/ShopProductFilter.vue:137
+#: src/components/ShopProductFilter.vue:145
+#: src/components/ShopProductFilter.vue:152
+#: src/components/ShopProductFilter.vue:170
+#: src/components/ShopProductFilter.vue:179
+#: src/components/ShopProductFilter.vue:186
+#: src/components/ShopProductFilter.vue:212
+#: src/components/ShopProductFilter.vue:221
 msgid "Submit"
 msgstr ""
 
-#: src/components/UserProfile.vue:113
-#: src/components/UserProfile.vue:129
-#: src/components/UserProfile.vue:137
+#: src/components/UserProfile.vue:43
+#: src/components/UserProfile.vue:44
 #: src/components/UserProfile.vue:78
-#: src/components/UserProfile.vue:79
+#: src/components/UserProfile.vue:86
 msgid "Telegram username"
+msgstr ""
+
+#: src/components/ShopProduct.vue:101
+msgid "Track product successful"
+msgstr ""
+
+#: src/components/ShopProduct.vue:116
+msgid "Untrack product successful"
 msgstr ""
 
 #: src/components/UserProfile.vue:16

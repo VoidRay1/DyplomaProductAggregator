@@ -22,7 +22,7 @@ async def run(url):
         'includeChildCategories': 'true',
         'sortBy': 'popularity',
         'sortDirection': 'desc',
-        'mustHavePromotion': 'true',
+        'mustHavePromotion': 'false',
     }
     data, pages = await api_request(url, params)
     if pages > 1:

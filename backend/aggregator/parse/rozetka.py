@@ -91,6 +91,9 @@ def update_data(shop, products = None):
                 'volume': volume,
             }
         )
+        product.name = name if name else item['title']
+        product.volume = volume
+        product.save()
         product_ids.append(product.id)
         if not product.category or (product.category != category):
             product.category = category
@@ -145,7 +148,7 @@ def parse_name(title):
     if match:
         slug = match.group("slug")[1:-1]
         title = title.replace(match.group("slug"), "")
-    match = re.search(r"(?P<volume>[\d\.]+\s*л)", title)
+    match = re.search(r"(?P<volume>\d+[\.,]?\d*\s*к?гp?)", title)
     if match:
         volume = match.group("volume")
         title = title.replace(match.group("volume"), "")

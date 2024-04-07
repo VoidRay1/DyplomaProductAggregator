@@ -278,3 +278,15 @@ msgstr "Z - A"
 #: src/components/UserProfile.vue:137
 msgid "Telegram username"
 msgstr "Telegram username"
+
+#: src/pages/BookmarksPage.vue:5
+msgid "Bookmarks"
+msgstr "Bookmarks"
+
+#: src/components/NewProducts.vue:7
+msgid "New products"
+msgstr "New products"
+
+#: src/components/TrackProducts.vue:9
+msgid "My products"
+msgstr "My products"

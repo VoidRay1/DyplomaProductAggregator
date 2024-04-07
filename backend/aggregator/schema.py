@@ -7,7 +7,8 @@ from graphene_django.filter import DjangoFilterConnectionField
 from backend.graphene import DjangoParlerObjectType
 from parler.models import TranslatableModel
 from parler.utils import get_active_language_choices
-from django.db.models import Q, F, Count, Min, Max
+from django.db.models import Q, F, Count, Min, Max, BooleanField, Case, When, Value
+from django.contrib.auth.models import AnonymousUser
 from graphql_jwt.decorators import login_required
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity, TrigramDistance
 
@@ -141,6 +142,7 @@ class ShopProductNode(DjangoParlerObjectType):
     category_id = graphene.String(source='category_id')
     url = graphene.String()
     price = graphene.Field(ProductPriceNode)
+    is_tracked = graphene.Boolean()
 
     def resolve_image(root, info, **kwargs):
         if root.shop.id == settings.SILPO_ID:
@@ -221,11 +223,11 @@ class Query(ObjectType):
     )
  
     def resolve_shops(root, info, country=None, language=None):
-        # if issubclass(Shop, TranslatableModel):
-        #     shops = Shop.objects.active_translations(language).all()
-        #     # shops.set_current_language(language)
-        # else:
-        shops = Shop.objects.all()
+        if issubclass(Shop, TranslatableModel):
+            shops = Shop.objects.active_translations(language).all()
+            # shops.set_current_language(language)
+        else:
+            shops = Shop.objects.all()
         if country == None:
             country = 'UA'
         shops = shops.filter(country=country)
@@ -295,6 +297,14 @@ class Query(ObjectType):
             #         translations__slug__icontains=slug
             #     )
             # ).distinct()
+        if not isinstance(info.context.user, AnonymousUser):
+            queryset = queryset.annotate(
+                is_tracked=Case(
+                    When(Q(track__user=info.context.user) & Q(track__active=True), then=Value(True)),
+                    default=Value(False),
+                    output_field=BooleanField()
+                )
+            )
         # print(queryset)
         return queryset
     
@@ -313,7 +323,12 @@ class Query(ObjectType):
         return product
 
     def resolve_new_products(root, info, language=None, **kwargs):
-        return Product.objects.filter(available=True, prices__available=True).order_by('-date_created')[:20]
+        shops = Shop.objects.all()
+        all_products = []
+        for shop in shops:
+            shop_products = shop.products.filter(available=True, prices__available=True).order_by('-date_created')[:7]
+            all_products.extend(shop_products)
+        return all_products[:20]
     
     @login_required
     def resolve_track_products(root, info, language=None, **kwargs):
@@ -326,8 +341,49 @@ class Query(ObjectType):
         ).filter(
             similarity__gt=0.2
         ).order_by('-similarity').distinct()
-        print(similar_products)
         return similar_products[:12]
-    
+
+
+class TrackProduct(graphene.Mutation):
+    class Arguments:
+        product = graphene.ID(required=True, description='Product ID')
+
+    ok = graphene.Boolean()
+
+    @staticmethod
+    @login_required
+    def mutate(root, info, product):
+        ok = True
+        user = info.context.user
+        if not user.is_authenticated:
+            raise Exception("Authentication credentials were not provided")
+        product_instance = graphene.Node.get_node_from_global_id(info, product)
+        track, created = Track.objects.get_or_create(user=user, product=product_instance)
+        track.active = True
+        track.save()
+        return TrackProduct(ok=ok)
+
+
+class UntrackProduct(graphene.Mutation):
+    class Arguments:
+        product = graphene.ID(required=True, description='Product ID')
+
+    ok = graphene.Boolean()
+
+    @staticmethod
+    @login_required
+    def mutate(root, info, product):
+        ok = True
+        user = info.context.user
+        if not user.is_authenticated:
+            raise Exception("Authentication credentials were not provided")
+        product_instance = graphene.Node.get_node_from_global_id(info, product)
+        track = Track.objects.get(user=user, product=product_instance)
+        track.active = False
+        track.save()
+        return UntrackProduct(ok=ok)
+
+
 class Mutation(ObjectType):
-    pass
+   track_product = TrackProduct.Field(description="Track product")
+   untrack_product = UntrackProduct.Field(description="Untrack product")

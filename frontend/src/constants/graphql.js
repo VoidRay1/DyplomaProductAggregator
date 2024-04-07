@@ -194,6 +194,7 @@ export const GET_SHOP_PRODUCTS = gql`
               }
             }
           }
+          isTracked
         }
       }
       pageInfo {
@@ -288,4 +289,20 @@ export const GET_SIMILAR_PRODUCTS = gql`
     }
   }
   ${productFragment}
+`;
+
+export const TRACK_PRODUCT = gql`
+  mutation trackProduct ($product: ID!) {
+    trackProduct(product: $product) {
+      ok
+    }
+  }
+`;
+
+export const UNTRACK_PRODUCT = gql`
+  mutation untrackProduct ($product: ID!) {
+    untrackProduct(product: $product) {
+      ok
+    }
+  }
 `;

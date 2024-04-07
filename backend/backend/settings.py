@@ -421,7 +421,6 @@ SILPO_IMAGES_URL = 'https://images.silpo.ua/products/300x300/webp/'
 SILPO_MAX_PRODUCTS_LIMIT = 100
 
 ROZETKA_ID = 2
-ROZETKA_CATEGORY = '4649148'
 ROZETKA_LIST_PRODUCTS_URL = 'goods/get'
 ROZETKA_PRODUCTS_URL = 'goods/getDetails'
 

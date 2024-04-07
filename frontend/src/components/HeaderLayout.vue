@@ -41,7 +41,8 @@
         class="gt-xs text-orange"
       >
         <q-route-tab name="home" :label="__('Home')" to="/" />
-       <q-route-tab v-show="token.isAuthenticated" name="shops" :label="__('Shops')" to="/shops" />
+        <q-route-tab name="shops" :label="__('Shops')" to="/shops" />
+        <q-route-tab v-show="token.isAuthenticated" name="bookmarks" :label="__('Bookmarks')" to="/bookmarks" />
       </q-tabs>
     </q-header>
   </div>

@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 def get_products():
     shop = Shop.objects.get(pk=settings.TAVRIA_ID)
-    categories = list(shop.categories.filter(available=True, parent__isnull=False).values('id', 'translations__name', 'category_slug'))
+    categories = list(shop.categories.filter(available=True).values('id', 'translations__name', 'category_slug'))
     results = asyncio.run(run(shop.api, categories))
     products = [item for sublist in results for item in sublist]
     print(f'🔴  Tavria all products: {len(products)}')
@@ -21,7 +21,7 @@ async def run(url, categories=None):
     return await asyncio.gather(*tasks)
 
 async def get_category_products(url, category):
-    url += category['category_slug'] + '/catalog'
+    url += category['category_slug'] + '/'
     params = {'page': 1}
     products, pages = await fetch_page(url, params, category)
     for page in range(2, pages+1):
@@ -57,6 +57,13 @@ def parse_product(product_element, category):
         volume = match.group("volume")
         title = title.replace(match.group("volume"), "")
     title = re.sub(r"\s+", " ", title)
+    price_element = product_element.find('p', class_='product__price')
+    old_price = None
+    if price_element.find('span', class_='price__with_discount'):
+        price = float(price_element.find('span', class_='price__with_discount').find('span', class_='price__discount').text.strip().replace('₴', ''))
+        old_price = float(price_element.find('span', class_='price__with_discount').find('span', class_='price__old').text.strip().replace('₴', ''))
+    else:
+        price = float(price_element.find('b').text.strip().replace('₴', ''))
     product = {
         'id': product_element.get('id'),
         'category_id': category['id'],
@@ -65,8 +72,8 @@ def parse_product(product_element, category):
         'title': title,
         'volume': volume,
         'image_url': product_element.find('div', class_='product__image').find('img').get('src'),
-        'price': float(product_element.find('span', class_='price__discount').text.strip().replace('₴', '')),
-        'old_price': float(product_element.find('span', class_='price__old').text.strip().replace('₴', '')),
+        'price': price,
+        'old_price': old_price if old_price else price,
     }
     discount_element = product_element.find('div', class_='product_discount')
     if discount_element:
@@ -106,7 +113,7 @@ def update_data(shop, products = None):
         )
         product_ids.append(product.id)
         discount = item['discount_amount']
-        percent = abs(float(item['discount_percentage'].replace('%', '')))
+        percent = abs(float(item['discount_percentage'].replace('%', ''))) if item['discount_percentage'] else 0
         price = Price.objects.filter(product=product).first() # order by DESC
         if not price or (float(price.price) != float(item['price'])) or (float(price.discount) != float(discount)):
             print(f'🔴  {product}: {float(item["price"])} ({percent}%)')
@@ -123,7 +130,8 @@ def update_data(shop, products = None):
             )
             items_updated += 1
         price.save()
-        promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
-        price.promotions.add(promotion)
+        if percent:
+            promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
+            price.promotions.add(promotion)
     print(f'🔴  pull: {len(products)} updated: {items_updated}')
     return product_ids

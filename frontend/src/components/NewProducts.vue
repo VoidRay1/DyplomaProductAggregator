@@ -14,7 +14,7 @@
       swipeable
       animated
       control-color="orange"
-      :autoplay="true"
+      :autoplay="false"
       :navigation="true"
       :arrows="true"
       padding
