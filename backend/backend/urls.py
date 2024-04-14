@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('graphql', csrf_exempt(FileUploadGraphQLView.as_view(graphiql=True))),
     # path('ratings/', include('star_ratings.urls', namespace='ratings')),
-    # path('tgb/', include('telegram_bot.urls')),
+    path('tgb/', include('telegram_bot.urls')),
     path('', include('users.urls')),
 ]
 

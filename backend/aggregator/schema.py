@@ -151,6 +151,11 @@ class ShopProductNode(DjangoParlerObjectType):
             return root.image
         if root.shop.id == settings.TAVRIA_ID:
             return root.image
+        if root.shop.id == settings.MAUDAU_ID:
+            return settings.MAUDAU_IMAGES_URL + root.image
+        if root.shop.id == settings.METRO_ID:
+            return root.image
+
 
     def resolve_url(root, info, **kwargs):
         if root.shop.id == settings.SILPO_ID:
@@ -159,6 +164,10 @@ class ShopProductNode(DjangoParlerObjectType):
             return root.shop.url + 'product/p' + root.external_id
         if root.shop.id == settings.TAVRIA_ID:
             return root.shop.url + 'product/' + root.product_slug
+        if root.shop.id == settings.MAUDAU_ID:
+            return root.shop.url + 'product/' + root.product_slug
+        if root.shop.id == settings.METRO_ID:
+            return root.shop.api + 'shop/pv/' + root.external_id
 
     def resolve_price(root, info, **kwargs):
         return root.prices.first()
@@ -332,7 +341,7 @@ class Query(ObjectType):
     
     @login_required
     def resolve_track_products(root, info, language=None, **kwargs):
-        return Product.objects.filter(id__in=info.context.user.tracks.all().values_list('product', flat=True))
+        return Product.objects.filter(id__in=info.context.user.tracks.filter(active=True).values_list('product', flat=True))
     
     def resolve_similar_products(root, info, product=None, language=None, **kwargs):
         product = graphene.Node.get_node_from_global_id(info, product)

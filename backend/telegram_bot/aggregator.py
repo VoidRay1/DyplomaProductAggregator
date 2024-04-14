@@ -41,3 +41,7 @@ class Aggregator:
         name = product.safe_translation_getter('name', language_code=language_code)
         
         return f'[{name}]({url})\n\n'
+    
+    def get_random_product():
+        random_product = Product.objects.order_by('?').first()
+        return (random_product.name, random_product.id, random_product.image)

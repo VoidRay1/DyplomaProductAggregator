@@ -60,75 +60,75 @@ async def get_products_data(url, product_ids):
                 return None
             
 def update_data(shop, products = None):
-    items_updated = 0
+    products_updated = 0
     out_stock = 0
     product_ids = []
-    for item in products:
-        if item['category_id']:
+    for product in products:
+        if product['category_id']:
             category, created = Category.objects.get_or_create(
                 shop=shop,
-                category_slug=item['category_id'],
+                category_slug=product['category_id'],
                 defaults={
-                    'name': item['category_id'],
+                    'name': product['category_id'],
                 }
             )
         if not category:
-            print(f'❗️  {item}')
+            print(f'❗️  {product}')
             return
-        if not item['image_main']:
-            item['image_main'] = 'goods-stub-dark-grey-big.svg'
-        (name, volume, slug) = parse_name(item['title'])
-        product, created = Product.objects.get_or_create(
+        if not product['image_main']:
+            product['image_main'] = 'goods-stub-dark-grey-big.svg'
+        (name, volume, slug) = parse_name(product['title'])
+        new_product, created = Product.objects.get_or_create(
             shop=shop,
-            external_id=item['id'],
+            external_id=product['id'],
             defaults={
                 'category': category,
-                'name': name if name else item['title'],
-                'brand': item['brand'] if item['brand'] else '',
-                'product_slug': slug if slug else item['id'],
-                'category_slug': item['category_id'] if item['category_id'] else '',
-                'image': item['image_main'],
+                'name': name if name else product['title'],
+                'brand': product['brand'] if product['brand'] else '',
+                'product_slug': slug if slug else product['id'],
+                'category_slug': product['category_id'] if product['category_id'] else '',
+                'image': product['image_main'],
                 'volume': volume,
             }
         )
-        product.name = name if name else item['title']
-        product.volume = volume
-        product.save()
-        product_ids.append(product.id)
-        if not product.category or (product.category != category):
-            product.category = category
-            product.save()
-        if item['old_price'] == None:
-            item['old_price'] = item['price']
-        discount = round(item['old_price'] - item['price'], 2)
-        percent = round(discount / item['old_price'] * 100) if item['old_price'] else 0
+        new_product.name = name if name else product['title']
+        new_product.volume = volume
+        new_product.save()
+        product_ids.append(new_product.id)
+        if not new_product.category or (new_product.category != category):
+            new_product.category = category
+            new_product.save()
+        if product['old_price'] == None:
+            product['old_price'] = product['price']
+        discount = round(product['old_price'] - product['price'], 2)
+        percent = round(discount / product['old_price'] * 100) if product['old_price'] else 0
         # if percent < 0:
         #     print(item)
         # print(percent)
         # print(item['price_pcs'])
-        price = Price.objects.filter(product=product).first() # order by DESC
-        if not price or (float(price.price) != float(item['price'])) or (float(price.discount) != float(discount)):
-            print(f'🟢  {product}: {float(item["price"])} ({percent}%)')
+        price = Price.objects.filter(product=new_product).first() # order by DESC
+        if not price or (float(price.price) != float(product['price'])) or (float(price.discount) != float(discount)):
+            print(f'🟢  {new_product}: {float(product["price"])} ({percent}%)')
             if price:
                 print(f'⚖️  old price: {float(price.price)} ({round(price.percent)}%)   {float(price.discount)} = {float(discount)}')
                 price.available = False
                 price.save()
             price = Price(
-                product=product,
-                price=item['price'],
+                product=new_product,
+                price=product['price'],
                 currency='UAH',
                 discount=discount,
                 percent=percent
             )
-            items_updated += 1
+            products_updated += 1
         # price.percent = round(price.discount / (price.price + price.discount) * 100)
-        price.available = item['sell_status'] == 'available'
-        if item['sell_status'] != 'available':
+        price.available = product['sell_status'] == 'available'
+        if product['sell_status'] != 'available':
             out_stock +=1
         price.save()
-        if item['pictograms']:
+        if product['pictograms']:
             price.promotions.clear()
-            for prom in item['pictograms']:
+            for prom in product['pictograms']:
                 promotion, created = Promotion.objects.get_or_create(
                     shop=shop,
                     slug=prom['id'],
@@ -138,7 +138,7 @@ def update_data(shop, products = None):
                     }
                 )
                 price.promotions.add(promotion)
-    print(f'🟢  Rozetka updated: {items_updated} outStock: {out_stock}')
+    print(f'🟢  Rozetka updated: {products_updated} outStock: {out_stock}')
     return product_ids
 
 def parse_name(title):

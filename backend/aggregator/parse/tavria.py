@@ -95,43 +95,43 @@ def parse_pagination(data):
     return 1
 
 def update_data(shop, products = None):
-    items_updated = 0
+    products_updated = 0
     product_ids = []
-    for item in products:
-        product, created = Product.objects.get_or_create(
+    for product in products:
+        new_product, created = Product.objects.get_or_create(
             shop=shop,
-            external_id=item['id'],
+            external_id=product['id'],
             defaults={
-                'category_id': item['category_id'],
-                'name': item['title'],
-                'brand': item['brand'],
-                'product_slug': item['id'],
-                'category_slug': item['category_slug'],
-                'image': item['image_url'],
-                'volume': item['volume'],
+                'category_id': product['category_id'],
+                'name': product['title'],
+                'brand': product['brand'],
+                'product_slug': product['id'],
+                'category_slug': product['category_slug'],
+                'image': product['image_url'],
+                'volume': product['volume'],
             }
         )
-        product_ids.append(product.id)
-        discount = item['discount_amount']
-        percent = abs(float(item['discount_percentage'].replace('%', ''))) if item['discount_percentage'] else 0
-        price = Price.objects.filter(product=product).first() # order by DESC
-        if not price or (float(price.price) != float(item['price'])) or (float(price.discount) != float(discount)):
-            print(f'🔴  {product}: {float(item["price"])} ({percent}%)')
+        product_ids.append(new_product.id)
+        discount = product['discount_amount']
+        percent = abs(float(product['discount_percentage'].replace('%', ''))) if product['discount_percentage'] else 0
+        price = Price.objects.filter(product=new_product).first() # order by DESC
+        if not price or (float(price.price) != float(product['price'])) or (float(price.discount) != float(discount)):
+            print(f'🔴  {new_product}: {float(product["price"])} ({percent}%)')
             if price:
                 print(f'⚖️  old price: {float(price.price)} ({round(price.percent)}%)   {float(price.discount)} = {float(discount)}')
                 price.available = False
                 price.save()
             price = Price(
-                product=product,
-                price=item['price'],
+                product=new_product,
+                price=product['price'],
                 currency='UAH',
                 discount=discount,
                 percent=percent
             )
-            items_updated += 1
+            products_updated += 1
         price.save()
         if percent:
             promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
             price.promotions.add(promotion)
-    print(f'🔴  pull: {len(products)} updated: {items_updated}')
+    print(f'🔴  pull: {len(products)} updated: {products_updated}')
     return product_ids

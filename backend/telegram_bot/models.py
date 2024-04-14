@@ -8,6 +8,7 @@ from django.utils.timezone import now
 from django.utils.translation import gettext_lazy as _
 from telegram_bot import utils
 from asgiref.sync import sync_to_async
+from django.conf import settings
 
 
 class BaseModel(models.Model):
@@ -42,7 +43,11 @@ class Config(BaseModel):
 
 
 class User(BaseModel):
-    user_id = models.IntegerField(primary_key=True)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL,
+                                related_name='telegram_user',
+                                on_delete=models.CASCADE,
+                                verbose_name=_('User'))
+    telegram_user_id = models.IntegerField(primary_key=True)
     username = models.CharField(max_length=32, null=True, blank=True)
     first_name = models.CharField(max_length=256)
     last_name = models.CharField(max_length=256, null=True, blank=True)

@@ -88,7 +88,7 @@ INSTALLED_APPS = [
     'users',
     'profiles',
     'aggregator',
-    # 'telegram_bot',
+    'telegram_bot',
 ]
 
 MIDDLEWARE = [
@@ -409,8 +409,8 @@ CELERY_TIMEZONE = TIME_ZONE
 CELERY_TASK_DEFAULT_QUEUE = 'default'
 
 # TELEGRAM
-TELEGRAM_TOKEN = ''
-TELEGRAM_BOT_USERNAME = ''
+TELEGRAM_TOKEN = '7120402905:AAG4Lr9CM48ztJgeGBrNlTJgkPNisudgMJo'
+TELEGRAM_BOT_USERNAME = 'ProductAggregatorBot'
 # LOGGING
 ENABLE_DECORATOR_LOGGING = False
 
@@ -426,6 +426,17 @@ ROZETKA_PRODUCTS_URL = 'goods/getDetails'
 
 TAVRIA_ID = 3
 TAVRIA_PRODUCTS_URL = 'product'
+
+MAUDAU_ID = 4
+MAUDAU_PRODUCTS_URL = 'products'
+MAUDAU_IMAGES_URL = 'https://image.maudau.com.ua/size/origin'
+MAUDAU_MAX_PRODUCTS_LIMIT = 100
+
+METRO_ID = 5 
+METRO_CATEGORY = 'category:продукти/фрукти-та-овочі/сухофрукти'
+METRO_LIST_PRODUCTS_URL = 'searchdiscover/articlesearch/search'
+METRO_PRODUCTS_URL = 'evaluate.article.v1/betty-variants'
+METRO_MAX_PRODUCTS_LIMIT = 24
 
 LOGGING = {
     'version': 1,

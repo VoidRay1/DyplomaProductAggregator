@@ -49,64 +49,64 @@ async def api_request(url, params):
                 return None
 
 def update_data(shop, products = None):
-    items_updated = 0
+    products_updated = 0
     out_stock = 0
     product_ids = []
-    for item in products:
-        if item['sectionSlug']:
+    for product in products:
+        if product['sectionSlug']:
             category, created = Category.objects.get_or_create(
                 shop=shop,
-                category_slug=item['sectionSlug'],
+                category_slug=product['sectionSlug'],
                 defaults={
-                    'name': item['sectionSlug'],
+                    'name': product['sectionSlug'],
                 }
             )
         if not category:
-            print(f'❗️  {item}')
-        product, created = Product.objects.get_or_create(
+            print(f'❗️  {product}')
+        new_product, created = Product.objects.get_or_create(
             shop=shop,
-            external_id=item['externalProductId'],
+            external_id=product['externalProductId'],
             defaults={
                 'category': category,
-                'name': item['title'],
-                'brand': item['brandTitle'] if item['brandTitle'] else '',
-                'product_slug': item['slug'],
-                'category_slug': item['sectionSlug'] if item['sectionSlug'] else '',
-                'image': item['icon'],
-                'volume': item['displayRatio'],
+                'name': product['title'],
+                'brand': product['brandTitle'] if product['brandTitle'] else '',
+                'product_slug': product['slug'],
+                'category_slug': product['sectionSlug'] if product['sectionSlug'] else '',
+                'image': settings.SILPO_IMAGES_URL + product['icon'],
+                'volume': product['displayRatio'],
             }
         )
-        product_ids.append(product.id)
-        if not product.category or (product.category != category):
-            product.category = category
-            product.save()
-        if item['oldPrice'] == None:
-            item['oldPrice'] = item['price']
-        discount = round(item['oldPrice'] - item['price'], 2)
-        percent = round(discount / item['oldPrice'] * 100)
-        price = Price.objects.filter(product=product).first() # order by DESC
-        if not price or (float(price.price) != float(item['price'])) or (float(price.discount) != float(discount)):
-            print(f'🟠  {product}: {float(item["price"])} ({percent}%)')
+        product_ids.append(new_product.id)
+        if not new_product.category or (new_product.category != category):
+            new_product.category = category
+            new_product.save()
+        if product['oldPrice'] == None:
+            product['oldPrice'] = product['price']
+        discount = round(product['oldPrice'] - product['price'], 2)
+        percent = round(discount / product['oldPrice'] * 100)
+        price = Price.objects.filter(product=new_product).first() # order by DESC
+        if not price or (float(price.price) != float(product['price'])) or (float(price.discount) != float(discount)):
+            print(f'🟠  {new_product}: {float(product["price"])} ({percent}%)')
             if price:
                 print(f'⚖️  old price: {float(price.price)} ({round(price.percent)}%)   {float(price.discount)} = {float(discount)}')
                 price.available = False
                 price.save()
             price = Price(
-                product=product,
-                price=item['price'],
+                product=new_product,
+                price=product['price'],
                 currency='UAH',
                 discount=discount,
                 percent=percent
             )
-            items_updated += 1
+            products_updated += 1
         # price.percent = round(price.discount / (price.price + price.discount) * 100)
-        price.available = item['stock'] > 0
-        if not item['stock']:
+        price.available = product['stock'] > 0
+        if not product['stock']:
             out_stock +=1
         price.save()
-        if item['promotions']:
+        if product['promotions']:
             price.promotions.clear()
-        for prom in item['promotions']:
+        for prom in product['promotions']:
             promotion, created = Promotion.objects.get_or_create(
                 shop=shop,
                 slug=prom['id'],
@@ -116,5 +116,5 @@ def update_data(shop, products = None):
                 }
             )
             price.promotions.add(promotion)
-    print(f'🟠  Silpo updated: {items_updated} outStock: {out_stock}')
+    print(f'🟠  Silpo updated: {products_updated} outStock: {out_stock}')
     return product_ids
