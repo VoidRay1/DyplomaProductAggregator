@@ -9,7 +9,7 @@ from django.utils.translation import gettext_lazy as _
 from telegram_bot import utils
 from asgiref.sync import sync_to_async
 from django.conf import settings
-
+from profiles.models import Profile
 
 class BaseModel(models.Model):
     objects = models.Manager()
@@ -73,7 +73,9 @@ class User(BaseModel):
     def get_user_and_created(cls, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """ python-telegram-bot's Update, Context --> User instance """
         data = utils.extract_user_data_from_update(update)
-        u, created = cls.objects.update_or_create(user_id=data["user_id"], defaults=data)
+        data['telegram_user_id'] = data.get('user_id')
+        data['user_id'] = Profile.objects.filter(telegram_username=data["username"]).first().user_id
+        u, created = cls.objects.update_or_create(telegram_user_id=data["telegram_user_id"], defaults=data)
 
         if created:
             if context is not None and context.args is not None and len(context.args) > 0:

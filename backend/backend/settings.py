@@ -154,7 +154,7 @@ DATABASES = {
     # }
 }
 
-REDIS_HOST = 'localhost'
+REDIS_HOST = 'c451b4247517'
 REDIS_PORT = 6379
 REDIS_DB = 0
 

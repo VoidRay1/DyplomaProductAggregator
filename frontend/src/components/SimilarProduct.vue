@@ -2,8 +2,7 @@
   <div class="flex flex-center justify-center row">
     <div class="col-7">
     <q-btn 
-      :href="product.url"
-      target="_blank"
+      @click="showProductInfoPage(product)"
       class="rounded-borders my-product q-ma-sm"
       round
     >
@@ -28,14 +27,33 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
+
 const props = defineProps({
   product: {
     type: Object,
     required: true
+  },
+  isShopProductUrl: {
+    type: Boolean,
+    required: true
   }
 })
-
+const router = useRouter()
 const imageUrl = (path) => { return process.env.MEDIA_URI + path }
+
+function showProductInfoPage(product){
+  if (props.isShopProductUrl){
+    window.open(product.url, '_blank')
+  }
+  else{
+    router.push({
+    name: 'productInfo',
+    params: {
+      productSlug: product.productSlug
+    }
+  })}
+}
 </script>
 
 <style lang="sass" scoped>

@@ -1,10 +1,6 @@
 <template>
   <q-card-section class="q-pa-none">
-    <a
-      :href="product.url"
-      target="_blank"
-      style="text-decoration: none"
-    >
+    <router-link :to="{ name: 'productInfo', params: { productSlug: product.productSlug } }" style="text-decoration: none;">
       <q-img
         :src="product.image"
         fit="scale-down"
@@ -51,7 +47,7 @@
       <div class="text-body2 text-grey text-center">
         {{ product.volume }}
       </div>
-    </a>
+    </router-link>
     <div v-show="product.promoted" class="promo">
       <img src="~assets/promoted-label.png">
     </div>
@@ -59,6 +55,7 @@
 </template>
   
 <script setup>
+import { RouterLink } from 'vue-router' 
 import { useQuasar } from 'quasar'
 import { useGettext } from 'vue3-gettext'
 import { useTokenStore } from 'stores/token'

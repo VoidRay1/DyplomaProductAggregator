@@ -11,6 +11,8 @@ from django.db.models import Q, F, Count, Min, Max, BooleanField, Case, When, Va
 from django.contrib.auth.models import AnonymousUser
 from graphql_jwt.decorators import login_required
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity, TrigramDistance
+from aggregator import signals
+import redis
 
 from .models import Shop, Category, Promotion, Product, Price, Track
 
@@ -230,6 +232,11 @@ class Query(ObjectType):
         language=graphene.String(),
         description="Get similar products"
     )
+    history_products = graphene.List(
+        ShopProductNode,
+        language=graphene.String(),
+        description="Get user history products"
+    )
  
     def resolve_shops(root, info, country=None, language=None):
         if issubclass(Shop, TranslatableModel):
@@ -323,19 +330,48 @@ class Query(ObjectType):
         else:
             return Category.objects.get(category_slug=slug)
 
-    def resolve_product(root, info, slug, language=None):
-        if issubclass(Product, TranslatableModel):
-            product = Product.objects.active_translations(language, product_slug=slug).get()
-            product.set_current_language(language)
+    def resolve_product(root, info, slug, language=None, **kwargs):
+        # if issubclass(Product, TranslatableModel):
+        #     product = Product.objects.active_translations(language, product_slug=slug).get()
+        #     product.set_current_language(language)
+        # else:
+        product = Product.objects.get(product_slug=slug)
+        if info.context.user.is_anonymous:
+            return product
         else:
+            user_history_product_key = f'user_{info.context.user.id}_history_products'
+            redis_instance = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
             product = Product.objects.get(product_slug=slug)
-        return product
+            history_products_slugs = redis_instance.lrange(user_history_product_key, 0, 20)
+            history_products_slugs = [slug.decode('utf-8') for slug in history_products_slugs]
+            if slug not in history_products_slugs:
+                if len(history_products_slugs) < 20:
+                    redis_instance.lpush(user_history_product_key, slug)
+                else:
+                    redis_instance.rpop(f'user_{info.context.user.id}_history_products')
+                    redis_instance.lpush(user_history_product_key, slug)
+            else:
+                redis_instance.lrem(user_history_product_key, 0, slug)
+                redis_instance.lpush(user_history_product_key, slug)
+            return product
+
+    @login_required
+    def resolve_history_products(root, info, language=None, **kwargs):
+        redis_instance = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
+        product_slugs = redis_instance.lrange(f'user_{info.context.user.id}_history_products', 0, 20)
+        product_slugs = [slug.decode('utf-8') for slug in product_slugs]
+        history_products = []
+        for product_slug in product_slugs:
+            history_products.append(Product.objects.get(product_slug=product_slug))
+        return history_products
+
 
     def resolve_new_products(root, info, language=None, **kwargs):
+        # signals.test_signal.send(test="test")
         shops = Shop.objects.all()
         all_products = []
         for shop in shops:
-            shop_products = shop.products.filter(available=True, prices__available=True).order_by('-date_created')[:7]
+            shop_products = shop.products.filter(available=True, prices__available=True).order_by('-date_created')[:20 / shops.count()]
             all_products.extend(shop_products)
         return all_products[:20]
     
@@ -348,7 +384,7 @@ class Query(ObjectType):
         similar_products = Product.objects.annotate(
             similarity=TrigramSimilarity('translations__name', product.name),
         ).filter(
-            similarity__gt=0.2
+            similarity__gte=0.395
         ).order_by('-similarity').distinct()
         return similar_products[:12]
 

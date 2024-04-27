@@ -32,8 +32,11 @@ def setup_application(app):
     app.add_handler(MessageHandler(filters.ANIMATION, files.show_file_id))
 
     # base buttons
+    app.add_handler(CallbackQueryHandler(hnd.send_more, pattern=f'^{md.SEND_MORE}'))
     app.add_handler(CallbackQueryHandler(hnd.add_to_fav, pattern=f'^{md.ADD_TO_FAV}'))
+    app.add_handler(CallbackQueryHandler(hnd.view_fav, pattern=f'^{md.VIEW_FAV}'))
     app.add_handler(CallbackQueryHandler(hnd.show_products, pattern=f'^{md.PRODUCT_BTN}'))
+    app.add_handler(CallbackQueryHandler(hnd.show_product_by_id, pattern=f'^{md.PRODUCT_BY_NAME}'))
 
     app.add_handler(CallbackQueryHandler(hnd.back_to_main_menu_handler, pattern=f'^{md.BUTTON_BACK_IN_PLACE}'))
 

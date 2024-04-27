@@ -14,7 +14,7 @@
       swipeable
       animated
       control-color="orange"
-      :autoplay="false"
+      :autoplay="true"
       :navigation="true"
       :arrows="true"
       padding
@@ -34,7 +34,7 @@
             fit="contain"
             style="background-color: white; cursor: pointer; border: 1px solid #e0e0e0;"
             img-class="q-pa-sm"
-            @click="showProduct(product)"
+            @click="showProductInfoPage(product)"
           >
             <q-badge
               color="orange-4"
@@ -57,12 +57,14 @@
 </template>
 
 <script setup>
+import { RouterLink, useRouter } from 'vue-router' 
 import { reactive, ref, computed } from 'vue'
 import { useQuery } from '@vue/apollo-composable'
 import { NEW_PRODUCTS } from '../constants/graphql'
 
 const slide = ref(0)
 const size = 5
+const router = useRouter()
 
 const { result, loading, error } = useQuery(NEW_PRODUCTS, {})
 const items = computed(() => result.value?.newProducts ?? [])
@@ -76,6 +78,15 @@ const newProducts = computed(() => {
 })
 
 const imageUrl = (path) => { return process.env.MEDIA_URI + path }
+
+function showProductInfoPage(product){
+  router.push({
+    name: 'productInfo',
+    params: {
+      productSlug: product.productSlug
+    }
+  })
+}
 </script>
 
 <style lang="sass" scoped>

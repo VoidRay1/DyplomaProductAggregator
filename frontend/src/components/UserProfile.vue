@@ -337,6 +337,11 @@ function filterCountries(value, update){
   })
 }
 
+function isTelegramUsernameValid(telegramUsername){
+  let telegramUsernamePattern = new RegExp('^[a-z0-9_]+$')
+  return telegramUsernamePattern.test(telegramUsername)
+}
+
 const formData = reactive(JSON.parse(localStorage.getItem('userData')) ?? {
   avatar: '',
   firstName: '',
@@ -357,7 +362,10 @@ const rules = {
   email: { required, email },
   phone: { required: false, minLength: minLength(10) },
   country: { required: false },
-  telegramUsername: {required: false},
+  telegramUsername: {required: false, minLength: minLength(5), isTelegramUsernameCorrect:{
+    $validator: isTelegramUsernameValid,
+    $message: "Incorrect username format"
+  }},
 }
 
 let defaultFormData = ref(JSON.stringify(formData))
@@ -387,6 +395,7 @@ watch(file, (file) => {
 
 const submitForm = async () => {
   const result = await v$.value.$validate()
+  console.log(result)
   if (result) {
     updateProfile()
     if (file.value) {

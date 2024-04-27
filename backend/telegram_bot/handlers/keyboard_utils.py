@@ -68,14 +68,14 @@ def make_alphabetical_keyboard(alphabet: [str], selected_char: str = None):
     return InlineKeyboardMarkup(buttons)
 
 
-def make_products_keyboard(products: [str]):
+def make_products_keyboard(products: [dict]):
     """Получает списк продуктов и делает из них клавиатуру."""
 
     buttons = []
     btn_row = []
     i = 1
-    for product in products:
-        callback_key = product
+    for id, product in products.items():
+        callback_key = id
         label = product if len(product) <= 30 else f'{product[0:27]}...'
         btn_row.append(InlineKeyboardButton(label, callback_data=f'{md.PRODUCT_BY_NAME}#{callback_key}'))
 

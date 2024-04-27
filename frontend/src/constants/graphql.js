@@ -172,6 +172,7 @@ export const GET_SHOP_PRODUCTS = gql`
         cursor
         node {
           id
+          productSlug
           url
           image
           name
@@ -231,6 +232,7 @@ query getShopFilters ($shop: ID!, $category: String, $language: String) {
 export const productFragment = gql`
   fragment CoreProductFields on ShopProductNode {
     id
+    productSlug
     name
     brand
     url
@@ -249,6 +251,15 @@ export const productFragment = gql`
 export const NEW_PRODUCTS = gql`
   query newProducts {
     newProducts {
+      ...CoreProductFields
+    }
+  }
+  ${productFragment}
+`;
+
+export const GET_PRODUCT = gql`
+  query getProduct ($slug: String!) {
+    product (slug: $slug) {
       ...CoreProductFields
     }
   }
@@ -289,6 +300,15 @@ export const GET_SIMILAR_PRODUCTS = gql`
     }
   }
   ${productFragment}
+`;
+
+export const GET_HISTORY_PRODUCTS = gql`
+query historyProducts {
+  historyProducts {
+    ...CoreProductFields
+  }
+}
+${productFragment}
 `;
 
 export const TRACK_PRODUCT = gql`

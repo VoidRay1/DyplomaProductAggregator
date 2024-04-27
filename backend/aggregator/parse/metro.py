@@ -13,8 +13,6 @@ def get_products():
         shop.categories.filter(available=True)
         .values('id', 'translations__name', 'category_slug')
     )
-    print(shop.api)
-    print(categories)
     results = asyncio.run(run(shop.api, categories))
     products = [item for sublist in results for item in sublist]
     print(f'🟡  Metro all products: {len(products)}')
@@ -38,7 +36,6 @@ async def get_category_products(url, category):
         'page': 1,
         'filter': filter,
     }
-    print(params)
     products, pages = await api_request(url, params)
     print(f'🟡  Metro {category["translations__name"]} pages: {pages}')
     for page in range(2, pages+1):
@@ -52,7 +49,6 @@ async def get_category_products(url, category):
 async def api_request(url, params):
     async with aiohttp.ClientSession() as session:
         async with session.get(url + settings.METRO_LIST_PRODUCTS_URL, params=params) as response:
-            print(response)
             if response.status == 200:
                 data = await response.json()
                 products = await get_products_data(url, data['resultIds'])
@@ -111,6 +107,9 @@ def update_data(shop, products = None):
                             'volume': volume,
                         }
                     )
+                    new_product.name = title
+                    new_product.volume = volume
+                    new_product.save()
                     product_ids.append(new_product.id)
                     new_price = store['sellingPriceInfo']['finalPricesInfo']['articleWithTaxesGross']
                     old_price = store['sellingPriceInfo']['grossStrikeThrough']
@@ -154,7 +153,7 @@ def parse_category(categories):
 
 def parse_name(title):
     volume = ''
-    match = re.search(r"(?P<volume>[\d\.,]+\s*м?л)", title)
+    match = re.search(r"(?P<volume>[\d\.,]+\s*(кг|г))", title)
     if match:
         volume = match.group("volume")
         title = title.replace(match.group("volume"), "")

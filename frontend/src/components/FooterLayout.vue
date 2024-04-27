@@ -15,7 +15,7 @@
     </div>
     <div class="text-center">
       <p>
-        <a href="https://t.me/my_bot" target="_blank">
+        <a href="https://t.me/product_aggregator_bot" target="_blank">
           <q-img width="20px" height="20px" src="~/assets/telegram.svg" class="" alt="Telegram Bot" />
         </a>
       </p>

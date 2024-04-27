@@ -110,7 +110,7 @@ def parse_name(title):
     if match:
         # slug = match.group("slug")[1:-1]
         title = title.replace(match.group("slug"), "")
-    match = re.search(r"(?P<volume>[\d\.,]+\s*кг?г)", title)
+    match = re.search(r"(?P<volume>[\d\.,]+\s*(кг|г))", title)
     if match:
         volume = match.group("volume")
         title = title.replace(match.group("volume"), "")

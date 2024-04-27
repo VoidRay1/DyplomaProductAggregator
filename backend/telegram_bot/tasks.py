@@ -35,7 +35,8 @@ def send_products():
     for user in users:
         aggregator = Aggregator(user.telegram_user)
         random_product = Product.objects.filter(id__in=user.tracks.filter(active=True).values_list('product', flat=True)).order_by('?').first()
-        product_text, product_id, image = (random_product.name, random_product.id, random_product.image) #aggregator.get_random_product() 
+        product_text = aggregator.format_product(random_product)
+        product_id, image = (random_product.id, random_product.image) #aggregator.get_random_product() 
         try:
             send_photo(
                 user_id=user.telegram_user.telegram_user_id,

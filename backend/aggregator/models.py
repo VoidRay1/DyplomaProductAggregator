@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 from django.contrib.contenttypes.fields import GenericRelation
 from django.utils.translation import gettext_lazy as _
 from parler.models import TranslatableModel, TranslatedFields
@@ -153,6 +154,32 @@ class Product(TranslatableModel):
 
     def __str__(self):
         return self.safe_translation_getter("name", super().__str__())
+
+    @property
+    def image_url(self):
+        if self.shop.id == settings.SILPO_ID:
+            return settings.SILPO_IMAGES_URL + self.image
+        if self.shop.id == settings.ROZETKA_ID:
+            return self.image
+        if self.shop.id == settings.TAVRIA_ID:
+            return self.image
+        if self.shop.id == settings.MAUDAU_ID:
+            return settings.MAUDAU_IMAGES_URL + self.image
+        if self.shop.id == settings.METRO_ID:
+            return self.image
+
+    @property
+    def url(self):
+        if self.shop.id == settings.SILPO_ID:
+            return self.shop.url + 'product/' + self.product_slug
+        if self.shop.id == settings.ROZETKA_ID:
+            return self.shop.url + 'product/p' + self.external_id
+        if self.shop.id == settings.TAVRIA_ID:
+            return self.shop.url + 'product/' + self.product_slug
+        if self.shop.id == settings.MAUDAU_ID:
+            return self.shop.url + 'product/' + self.product_slug
+        if self.shop.id == settings.METRO_ID:
+            return self.shop.api + 'shop/pv/' + self.external_id
 
     def last_price(self):
         last = self.prices.first() # order by DESC

@@ -19,6 +19,20 @@ from profiles.models import Profile
 
 logger = logging.getLogger('default')
 
+@handler_logging()
+async def send_more(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = extract_user_data_from_update(update)['user_id']
+    user = await User.get_user(update, context)
+    aggregator = Aggregator(user)
+    product_text, product_id, image = await aggregator.load_product()
+    
+    await context.bot.send_photo(
+        chat_id=user_id,
+        photo=image,
+        caption=product_text,
+        reply_markup=kb.make_keyboard_for_start_command(product_id),
+        parse_mode=telegram.constants.ParseMode.MARKDOWN,
+    )
 
 @handler_logging()
 async def add_to_fav(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -51,7 +65,7 @@ async def view_fav(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     aggregator = Aggregator(user)
     products_first_chars = await aggregator.get_products(only_first_chars=True)
-
+    
     if update.callback_query.message.text:
         await context.bot.edit_message_text(
             text=st.choose_products,
@@ -94,15 +108,15 @@ async def show_product_by_id(update: Update, context: ContextTypes.DEFAULT_TYPE)
     user = await User.get_user(update, context)
 
     query = update.callback_query
-    product_name = query.data.split('#')[1]
+    product_id = int(query.data.split('#')[1])
 
     aggregator = Aggregator(user)
-    product = await aggregator.get_product_by_name(product_name)
+    product = await aggregator.get_product_by_name(product_id)
     product_text, product_id, image = await aggregator.load_product(id=product.id)
 
     await context.bot.send_photo(
         chat_id=user_id,
-        photo=open(image, 'rb'),
+        photo=image,
         caption=product_text,
         reply_markup=kb.make_btn_keyboard(),
         parse_mode=telegram.constants.ParseMode.MARKDOWN,

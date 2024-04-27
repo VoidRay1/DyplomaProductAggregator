@@ -4,16 +4,16 @@
     <div v-else-if="error">
       Error: {{ error.message }}
     </div>
-      <q-card class="my-card">
+      <q-card class="my-card" v-if="products.length > 0">
         <q-card-section>
           <div class="text-h5">{{ __('My products') }}</div>
         </q-card-section>
         <q-separator />
         <q-card-section class="q-gutter-md">
-          <div v-for="item in products"
-            :key="item.node.id"
+          <div v-for="product in products"
+            :key="product.node.id"
           >
-            <ProductItem :product="item.node" />
+            <ProductItem :product="product.node" :isShopProductUrl="isShopProductUrl" />
             <q-separator />
           </div>
           <!-- <q-intersection
@@ -59,6 +59,14 @@ const { current } = useGettext()
 const language = localStorage.getItem('language') || current
 
 const show = ref(false)
+
+const props = defineProps({
+  isShopProductUrl: {
+    type: Boolean,
+    required: true
+  }
+})
+
 
 const {
   result,

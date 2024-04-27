@@ -3,7 +3,7 @@
     <q-card class="my-card">
       <SearchForm />
       <NewProducts />
-      <TrackProducts />
+      <TrackProducts :isShopProductUrl="false" />
     </q-card>
   </q-page>
 </template>
