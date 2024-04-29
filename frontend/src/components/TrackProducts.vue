@@ -47,7 +47,6 @@
 <script setup>
 import { useQuasar } from 'quasar'
 import { ref, computed } from 'vue'
-import { useRouter } from 'vue-router'
 import { useGettext } from 'vue3-gettext'
 import LoadingSpinner from 'components/LoadingSpinner.vue'
 import ProductItem from 'components/ProductItem.vue'
@@ -67,7 +66,6 @@ const props = defineProps({
   }
 })
 
-
 const {
   result,
   loading,
@@ -75,9 +73,6 @@ const {
 } = useQuery(GET_TRACK_PRODUCTS, () => ({}))
       
 const products = computed(() => result.value?.trackProducts.edges ?? [])
-
-const imageUrl = (path) => { return process.env.MEDIA_URI + path }
-const router = useRouter()
 </script>
     
 <style lang="sass" scoped>

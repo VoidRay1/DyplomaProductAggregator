@@ -13,7 +13,7 @@
           fit="contain"
         />
         <div class="text-subtitle1 text-center text-grey q-mt-sm">{{ product.name }}</div>
-        <!-- <q-chip outline color="orange" text-color="white">{{ Math.round(product.price.price).toLocaleString() }} ₴</q-chip> -->
+        <q-chip outline color="orange" text-color="white">{{ Math.round(product.price.price).toLocaleString() }} ₴</q-chip>
       </router-link>
         <!-- </a> -->
     </q-card-section>

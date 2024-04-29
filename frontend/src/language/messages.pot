@@ -240,7 +240,7 @@ msgstr ""
 msgid "Profile"
 msgstr ""
 
-#: src/components/UserProfile.vue:430
+#: src/components/UserProfile.vue:439
 msgid "Profile update successful"
 msgstr ""
 
@@ -327,11 +327,11 @@ msgstr ""
 msgid "Telegram username"
 msgstr ""
 
-#: src/components/ShopProduct.vue:101
+#: src/components/ShopProduct.vue:98
 msgid "Track product successful"
 msgstr ""
 
-#: src/components/ShopProduct.vue:116
+#: src/components/ShopProduct.vue:113
 msgid "Untrack product successful"
 msgstr ""
 
@@ -339,6 +339,12 @@ msgstr ""
 #: src/components/UserProfile.vue:17
 #: src/components/UserProfile.vue:23
 msgid "Upload a photo"
+msgstr ""
+
+#: src/pages/ProductInfoPage.vue:19
+#: src/pages/ProductInfoPage.vue:20
+#: src/pages/ProductInfoPage.vue:23
+msgid "User product history"
 msgstr ""
 
 #: src/components/RegisterForm.vue:18

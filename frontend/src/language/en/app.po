@@ -290,3 +290,7 @@ msgstr "New products"
 #: src/components/TrackProducts.vue:9
 msgid "My products"
 msgstr "My products"
+
+#: src/pages/ProductInfoPage.vue:23
+msgid "User product history"
+msgstr "User product history"

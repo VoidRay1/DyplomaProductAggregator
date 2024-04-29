@@ -2,10 +2,11 @@
   <div class="q-pa-md row justify-center">
     <div class="col">
       <q-form
-        :action="`/cocktails/${language}`"
+        @submit="$emit('search-products', query)"
         method="GET"
       >
         <q-input
+          @clear="$emit('cancel-search')"
           v-model="query"
           name="q"
           :label="__('Search')"
@@ -26,4 +27,5 @@ import { useGettext } from 'vue3-gettext'
 const query = ref('')
 const { current } = useGettext()
 const language = localStorage.getItem('language') || current
+
 </script>

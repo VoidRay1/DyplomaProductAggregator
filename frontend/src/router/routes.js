@@ -1,29 +1,17 @@
-import IndexPage from 'pages/IndexPage.vue'
-import ShopsPage from 'pages/ShopsPage.vue'
-import BookmarksPage from 'pages/BookmarksPage.vue'
-import ErrorNotFound from 'pages/ErrorNotFound.vue'
-
-import LoginForm from '../components/LoginForm.vue'
-import RegisterForm from '../components/RegisterForm.vue'
-import ForgotPassword from '../components/ForgotPassword.vue'
-import UserProfile from '../components/UserProfile.vue'
-import UserSettings from '../components/UserSettings.vue'
-import ProductInfoPage from 'src/pages/ProductInfoPage.vue'
-
 const routes = [
   { 
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: IndexPage },
-      { path: 'shops', component: ShopsPage },
-      { path: 'product/:productSlug', name: 'productInfo', component: ProductInfoPage },
-      { path: 'bookmarks', component: BookmarksPage },
-      { path: 'login', component: LoginForm },
-      { path: 'register', component: RegisterForm },
-      { path: 'forgot', component: ForgotPassword },
-      { path: 'profile', component: UserProfile },
-      { path: 'settings', component: UserSettings },
+      { path: '', component: () => import('src/pages/HomePage.vue') },
+      { path: 'shops', component: () => import('pages/ShopsPage.vue') },
+      { path: 'product/:productSlug', name: 'productInfo', component: () => import('src/pages/ProductInfoPage.vue') },
+      { path: 'bookmarks', component: () => import('pages/BookmarksPage.vue') },
+      { path: 'login', component: () => import('../components/LoginForm.vue') },
+      { path: 'register', component: () => import('../components/RegisterForm.vue') },
+      { path: 'forgot', component: () => import('../components/ForgotPassword.vue') },
+      { path: 'profile', component: () => import('../components/UserProfile.vue') },
+      { path: 'settings',  component: () => import('../components/UserSettings.vue') },
     ]
   },
  
@@ -33,7 +21,7 @@ const routes = [
     path: '/:catchAll(.*)*',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: ErrorNotFound }
+      { path: '', component: () => import('pages/ErrorNotFound.vue') }
     ]
   }
 ]

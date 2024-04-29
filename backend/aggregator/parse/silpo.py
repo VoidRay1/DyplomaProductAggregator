@@ -3,6 +3,8 @@ import aiohttp
 import math
 from django.conf import settings
 from aggregator.models import Shop, Category, Product, Price, Promotion
+from aggregator.signals import product_parser_end_work_signal
+import weakref
 
 def get_products():
     shop = Shop.objects.get(pk=settings.SILPO_ID)
@@ -51,6 +53,7 @@ async def api_request(url, params):
 def update_data(shop, products = None):
     products_updated = 0
     out_stock = 0
+    updated_products_ids = []
     product_ids = []
     for product in products:
         if product['sectionSlug']:
@@ -98,6 +101,7 @@ def update_data(shop, products = None):
                 discount=discount,
                 percent=percent
             )
+            updated_products_ids.append(new_product.id)
             products_updated += 1
         # price.percent = round(price.discount / (price.price + price.discount) * 100)
         price.available = product['stock'] > 0
@@ -117,4 +121,5 @@ def update_data(shop, products = None):
             )
             price.promotions.add(promotion)
     print(f'🟠  Silpo updated: {products_updated} outStock: {out_stock}')
+    product_parser_end_work_signal.send(sender=object, updated_products_ids=updated_products_ids)
     return product_ids

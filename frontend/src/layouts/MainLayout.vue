@@ -27,8 +27,7 @@
       <q-page padding class="my-content">
         
         <router-view :key="route.fullPath" />
-
-        <!-- place QPageScroller at end of page -->
+        
         <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
           <q-btn fab icon="keyboard_arrow_up" color="amber-9" />
         </q-page-scroller>

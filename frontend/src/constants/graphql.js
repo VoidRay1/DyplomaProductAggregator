@@ -326,3 +326,43 @@ export const UNTRACK_PRODUCT = gql`
     }
   }
 `;
+
+export const SEARCH_PRODUCTS = gql`
+query searchProducts ($query: String!, $first: Int, $after: String) {
+  searchProducts (query: $query, first: $first, after: $after){
+    edges {
+      cursor
+      node {
+        id
+        productSlug
+        url
+        image
+        name
+        brand
+        volume
+        price {
+          price
+          currency
+          oldPrice
+          discount
+          percent
+          available
+          promotions {
+            edges {
+              node {
+                id
+                iconUrl
+                title
+              }
+            }
+          }
+        }
+        isTracked
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}`; 

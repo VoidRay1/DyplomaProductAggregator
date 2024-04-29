@@ -5227,3 +5227,662 @@ WARNING 2024-04-26 19:11:34,203 log 892 140085674419968 Bad Request: /graphql
 WARNING 2024-04-26 19:11:39,982 log 892 140085674419968 Bad Request: /graphql
 WARNING 2024-04-26 19:19:02,310 log 912 140048262485760 Bad Request: /graphql
 WARNING 2024-04-26 19:20:44,537 log 912 140047877666560 Bad Request: /graphql
+WARNING 2024-04-27 11:13:19,119 log 13 140603539060480 Not Found: /favicon.ico
+WARNING 2024-04-27 11:14:46,391 log 13 140603492902656 Not Found: /favicon.ico
+WARNING 2024-04-27 11:15:15,245 log 13 140603887159040 Bad Request: /graphql
+WARNING 2024-04-27 11:15:21,191 log 13 140603492902656 Bad Request: /graphql
+WARNING 2024-04-27 11:46:25,508 log 13 140603492902656 Bad Request: /graphql
+WARNING 2024-04-27 11:46:35,346 log 13 140603931215616 Bad Request: /graphql
+WARNING 2024-04-27 11:46:53,716 log 13 140603136407296 Bad Request: /graphql
+WARNING 2024-04-27 11:50:29,511 log 13 140603931215616 Bad Request: /graphql
+WARNING 2024-04-27 11:55:39,741 log 13 140603895551744 Bad Request: /graphql
+WARNING 2024-04-27 11:56:09,196 log 13 140603931215616 Bad Request: /graphql
+WARNING 2024-04-27 11:56:12,367 log 13 140603931215616 Bad Request: /graphql
+WARNING 2024-04-27 11:56:19,390 log 13 140603903944448 Bad Request: /graphql
+WARNING 2024-04-27 11:56:39,104 log 13 140603931215616 Bad Request: /graphql
+WARNING 2024-04-27 11:56:45,440 log 13 140603903944448 Bad Request: /graphql
+WARNING 2024-04-27 11:59:32,696 log 13 140603931215616 Bad Request: /graphql
+WARNING 2024-04-27 12:00:23,565 log 13 140603539060480 Bad Request: /graphql
+WARNING 2024-04-27 12:11:01,682 log 13 140603887159040 Bad Request: /graphql
+WARNING 2024-04-27 12:11:17,840 log 13 140603895551744 Bad Request: /graphql
+WARNING 2024-04-27 12:11:59,353 log 13 140603903944448 Bad Request: /graphql
+WARNING 2024-04-27 12:12:06,712 log 13 140603539060480 Bad Request: /graphql
+WARNING 2024-04-27 12:12:12,096 log 13 140603887159040 Bad Request: /graphql
+WARNING 2024-04-27 12:12:14,619 log 13 140603887159040 Bad Request: /graphql
+WARNING 2024-04-27 12:16:39,712 log 13 140603887159040 Bad Request: /graphql
+WARNING 2024-04-27 12:16:49,351 log 13 140603887159040 Bad Request: /graphql
+WARNING 2024-04-27 12:18:41,517 log 13 140603539060480 Bad Request: /graphql
+WARNING 2024-04-27 12:18:46,247 log 13 140603539060480 Bad Request: /graphql
+WARNING 2024-04-27 15:04:14,708 log 216 140452170807040 Bad Request: /graphql
+WARNING 2024-04-27 15:04:18,140 log 216 140452170807040 Bad Request: /graphql
+WARNING 2024-04-27 15:04:26,745 log 216 140452187592448 Bad Request: /graphql
+WARNING 2024-04-27 15:04:26,868 log 216 140452187592448 Bad Request: /graphql
+WARNING 2024-04-27 15:04:33,004 log 216 140452187592448 Bad Request: /graphql
+WARNING 2024-04-27 17:53:05,168 log 14 140380907489024 Bad Request: /graphql
+WARNING 2024-04-27 18:45:21,898 log 165 140338213680896 Bad Request: /graphql
+WARNING 2024-04-27 18:45:25,246 log 165 140338064754432 Bad Request: /graphql
+WARNING 2024-04-27 18:45:35,484 log 165 140339115452160 Bad Request: /graphql
+WARNING 2024-04-27 19:02:29,898 log 165 140338661406464 Not Found: /favicon.ico
+WARNING 2024-04-27 19:07:39,350 log 165 140338653013760 Bad Request: /graphql
+WARNING 2024-04-27 19:07:43,549 log 165 140338653013760 Bad Request: /graphql
+WARNING 2024-04-27 19:08:01,137 log 165 140339121743616 Bad Request: /graphql
+WARNING 2024-04-27 19:08:19,361 log 165 140338746357504 Bad Request: /graphql
+WARNING 2024-04-27 19:08:23,350 log 165 140338703365888 Bad Request: /graphql
+WARNING 2024-04-27 19:09:09,057 log 546 140716763166464 Bad Request: /graphql
+WARNING 2024-04-27 19:09:31,179 log 546 140716530456320 Bad Request: /graphql
+WARNING 2024-04-27 19:25:31,120 log 566 140268657436416 Bad Request: /graphql
+WARNING 2024-04-27 19:35:43,104 log 610 139643026646784 Bad Request: /graphql
+WARNING 2024-04-27 19:35:54,546 log 610 139643026646784 Bad Request: /graphql
+WARNING 2024-04-27 19:44:50,228 log 610 139642885089024 Bad Request: /graphql
+WARNING 2024-04-27 19:46:02,855 log 610 139642885089024 Bad Request: /graphql
+WARNING 2024-04-27 19:46:55,104 log 610 139642885089024 Bad Request: /graphql
+WARNING 2024-04-27 19:47:10,630 log 610 139642885089024 Bad Request: /graphql
+WARNING 2024-04-27 19:47:10,658 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:47:47,900 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:48:01,384 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:55:08,873 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:55:58,278 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:56:34,546 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:58:11,362 log 610 139642910267136 Bad Request: /graphql
+WARNING 2024-04-27 19:58:51,160 log 610 139642271692544 Bad Request: /graphql
+WARNING 2024-04-28 14:08:39,337 log 13 140406968805120 Bad Request: /graphql
+WARNING 2024-04-28 14:08:58,809 log 13 140406935234304 Bad Request: /graphql
+WARNING 2024-04-28 14:09:06,800 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:09:11,186 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:14:51,487 log 13 140406960412416 Unauthorized: /api/v1/users/
+WARNING 2024-04-28 14:15:05,011 log 13 140406935234304 Not Found: /favicon.ico
+ERROR 2024-04-28 14:15:43,550 log 13 140406960412416 Internal Server Error: /api/v1/users/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.10/site-packages/djoser/views.py", line 140, in perform_create
+    settings.EMAIL.activation(self.request, context).send(to)
+  File "/usr/local/lib/python3.10/site-packages/templated_mail/mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 85, in open
+    self.connection = self.connection_class(
+  File "/usr/local/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.10/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+WARNING 2024-04-28 14:19:57,101 log 13 140406960412416 Not Found: /favicon.ico
+WARNING 2024-04-28 14:20:22,404 log 13 140406960412416 Not Found: /
+WARNING 2024-04-28 14:21:53,148 log 13 140406960412416 Not Found: /favicon.ico
+WARNING 2024-04-28 14:23:01,025 log 13 140406952019712 Bad Request: /graphql
+WARNING 2024-04-28 14:23:48,615 log 13 140406935234304 Bad Request: /graphql
+WARNING 2024-04-28 14:25:43,502 log 13 140406943627008 Not Found: /favicon.ico
+WARNING 2024-04-28 14:25:45,165 log 13 140406960412416 Not Found: /favicon.ico
+ERROR 2024-04-28 14:29:40,627 log 13 140406977197824 Internal Server Error: /api/v1/users/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/usr/local/lib/python3.10/site-packages/djoser/views.py", line 140, in perform_create
+    settings.EMAIL.activation(self.request, context).send(to)
+  File "/usr/local/lib/python3.10/site-packages/templated_mail/mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 85, in open
+    self.connection = self.connection_class(
+  File "/usr/local/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.10/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+WARNING 2024-04-28 14:35:00,915 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:35:16,180 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:35:16,220 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:35:18,629 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:35:25,365 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:35:36,814 log 13 140406943627008 Bad Request: /graphql
+WARNING 2024-04-28 14:41:22,826 log 13 140406952019712 Bad Request: /graphql
+WARNING 2024-04-28 14:41:48,472 log 13 140406952019712 Bad Request: /graphql
+WARNING 2024-04-28 14:42:35,146 log 13 140406952019712 Bad Request: /graphql
+WARNING 2024-04-28 14:44:53,165 log 13 140406960412416 Bad Request: /graphql
+WARNING 2024-04-28 14:44:55,611 log 13 140406968805120 Bad Request: /graphql
+WARNING 2024-04-28 14:45:07,833 log 13 140406968805120 Bad Request: /graphql
+WARNING 2024-04-28 14:45:42,865 log 13 140406968805120 Bad Request: /graphql
+WARNING 2024-04-28 14:46:01,731 log 13 140406968805120 Bad Request: /graphql
+WARNING 2024-04-28 14:46:17,316 log 13 140406968805120 Bad Request: /graphql
+WARNING 2024-04-28 15:31:46,995 log 151 140013683599104 Bad Request: /graphql
+WARNING 2024-04-28 15:47:18,195 log 285 140622790911744 Not Found: /favicon.ico
+WARNING 2024-04-28 15:47:59,398 log 285 140622790911744 Bad Request: /graphql
+WARNING 2024-04-28 17:49:27,527 log 285 140622777276160 Bad Request: /graphql
+WARNING 2024-04-28 17:53:24,736 log 285 140622777276160 Bad Request: /graphql
+WARNING 2024-04-28 17:54:25,979 log 285 140622777276160 Bad Request: /graphql
+ERROR 2024-04-28 17:55:40,475 log 327 140662350792448 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 808, in fields
+    fields = resolve_thunk(self._fields)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 300, in resolve_thunk
+    return thunk() if callable(thunk) else thunk
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 323, in create_fields_for_type
+    for arg_name, arg in field.args.items():
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 51, in args
+    return to_arguments(self._base_args or OrderedDict(), self.filtering_args)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 76, in filtering_args
+    self.filterset_class, self.node_type
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 68, in filterset_class
+    self._filterset_class = get_filterset_class(filterset_class, **meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/utils.py", line 115, in get_filterset_class
+    graphene_filterset_class = custom_filterset_factory(**meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/filterset.py", line 46, in custom_filterset_factory
+    filterset = type(
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 63, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 322, in get_filters
+    fields = cls.get_fields()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 268, in get_fields
+    assert not (fields is None and exclude is None), (
+AssertionError: Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 97, in view
+    self = cls(**initkwargs)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/backend/schema.py", line 20, in <module>
+    schema = graphene.Schema(query=Query, mutation=Mutation, types=[])
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 440, in __init__
+    self.graphql_schema = GraphQLSchema(
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 224, in __init__
+    collect_referenced_types(query)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 432, in collect_referenced_types
+    for field in named_type.fields.values():
+  File "/usr/local/lib/python3.10/functools.py", line 970, in __get__
+    val = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 811, in fields
+    raise cls(f"{self.name} fields cannot be resolved. {error}") from error
+TypeError: Query fields cannot be resolved. Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+ERROR 2024-04-28 17:55:40,478 log 327 140662359185152 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 808, in fields
+    fields = resolve_thunk(self._fields)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 300, in resolve_thunk
+    return thunk() if callable(thunk) else thunk
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 323, in create_fields_for_type
+    for arg_name, arg in field.args.items():
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 51, in args
+    return to_arguments(self._base_args or OrderedDict(), self.filtering_args)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 76, in filtering_args
+    self.filterset_class, self.node_type
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 68, in filterset_class
+    self._filterset_class = get_filterset_class(filterset_class, **meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/utils.py", line 115, in get_filterset_class
+    graphene_filterset_class = custom_filterset_factory(**meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/filterset.py", line 46, in custom_filterset_factory
+    filterset = type(
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 63, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 322, in get_filters
+    fields = cls.get_fields()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 268, in get_fields
+    assert not (fields is None and exclude is None), (
+AssertionError: Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 97, in view
+    self = cls(**initkwargs)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/backend/schema.py", line 20, in <module>
+    schema = graphene.Schema(query=Query, mutation=Mutation, types=[])
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 440, in __init__
+    self.graphql_schema = GraphQLSchema(
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 224, in __init__
+    collect_referenced_types(query)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 432, in collect_referenced_types
+    for field in named_type.fields.values():
+  File "/usr/local/lib/python3.10/functools.py", line 970, in __get__
+    val = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 811, in fields
+    raise cls(f"{self.name} fields cannot be resolved. {error}") from error
+TypeError: Query fields cannot be resolved. Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+ERROR 2024-04-28 17:57:10,677 log 327 140662350792448 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 808, in fields
+    fields = resolve_thunk(self._fields)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 300, in resolve_thunk
+    return thunk() if callable(thunk) else thunk
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 323, in create_fields_for_type
+    for arg_name, arg in field.args.items():
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 51, in args
+    return to_arguments(self._base_args or OrderedDict(), self.filtering_args)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 76, in filtering_args
+    self.filterset_class, self.node_type
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 68, in filterset_class
+    self._filterset_class = get_filterset_class(filterset_class, **meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/utils.py", line 115, in get_filterset_class
+    graphene_filterset_class = custom_filterset_factory(**meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/filterset.py", line 46, in custom_filterset_factory
+    filterset = type(
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 63, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 322, in get_filters
+    fields = cls.get_fields()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 268, in get_fields
+    assert not (fields is None and exclude is None), (
+AssertionError: Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 97, in view
+    self = cls(**initkwargs)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/backend/schema.py", line 20, in <module>
+    schema = graphene.Schema(query=Query, mutation=Mutation, types=[])
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 440, in __init__
+    self.graphql_schema = GraphQLSchema(
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 224, in __init__
+    collect_referenced_types(query)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 432, in collect_referenced_types
+    for field in named_type.fields.values():
+  File "/usr/local/lib/python3.10/functools.py", line 970, in __get__
+    val = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 811, in fields
+    raise cls(f"{self.name} fields cannot be resolved. {error}") from error
+TypeError: Query fields cannot be resolved. Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+ERROR 2024-04-28 17:57:10,730 log 327 140662359185152 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 808, in fields
+    fields = resolve_thunk(self._fields)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 300, in resolve_thunk
+    return thunk() if callable(thunk) else thunk
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 323, in create_fields_for_type
+    for arg_name, arg in field.args.items():
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 51, in args
+    return to_arguments(self._base_args or OrderedDict(), self.filtering_args)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 76, in filtering_args
+    self.filterset_class, self.node_type
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 68, in filterset_class
+    self._filterset_class = get_filterset_class(filterset_class, **meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/utils.py", line 115, in get_filterset_class
+    graphene_filterset_class = custom_filterset_factory(**meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/filterset.py", line 46, in custom_filterset_factory
+    filterset = type(
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 63, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 322, in get_filters
+    fields = cls.get_fields()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 268, in get_fields
+    assert not (fields is None and exclude is None), (
+AssertionError: Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 97, in view
+    self = cls(**initkwargs)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/backend/schema.py", line 20, in <module>
+    schema = graphene.Schema(query=Query, mutation=Mutation, types=[])
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 440, in __init__
+    self.graphql_schema = GraphQLSchema(
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 224, in __init__
+    collect_referenced_types(query)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 432, in collect_referenced_types
+    for field in named_type.fields.values():
+  File "/usr/local/lib/python3.10/functools.py", line 970, in __get__
+    val = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 811, in fields
+    raise cls(f"{self.name} fields cannot be resolved. {error}") from error
+TypeError: Query fields cannot be resolved. Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+WARNING 2024-04-28 17:57:23,841 log 331 139716913501952 Bad Request: /graphql
+WARNING 2024-04-28 17:57:32,815 log 331 139716921894656 Bad Request: /graphql
+WARNING 2024-04-28 17:58:51,734 log 331 139716921894656 Bad Request: /graphql
+WARNING 2024-04-28 18:07:01,427 log 354 140717489911552 Bad Request: /graphql
+WARNING 2024-04-28 18:07:04,749 log 354 140717475227392 Bad Request: /graphql
+WARNING 2024-04-28 18:07:04,828 log 354 140717489911552 Bad Request: /graphql
+WARNING 2024-04-28 18:07:05,301 log 354 140717489911552 Bad Request: /graphql
+WARNING 2024-04-28 18:07:12,508 log 354 140717475227392 Bad Request: /graphql
+WARNING 2024-04-28 18:07:12,646 log 354 140717699819264 Bad Request: /graphql
+WARNING 2024-04-28 18:07:13,093 log 354 140717489911552 Bad Request: /graphql
+WARNING 2024-04-28 18:07:19,239 log 354 140717456344832 Bad Request: /graphql
+WARNING 2024-04-28 18:07:19,415 log 354 140717489911552 Bad Request: /graphql
+WARNING 2024-04-28 18:07:20,120 log 354 140717489911552 Bad Request: /graphql
+WARNING 2024-04-28 18:08:02,098 log 363 140012897163008 Bad Request: /graphql
+WARNING 2024-04-28 18:08:18,920 log 363 140013306111744 Bad Request: /graphql
+WARNING 2024-04-28 18:08:25,629 log 363 140013314504448 Bad Request: /graphql
+WARNING 2024-04-28 18:08:40,543 log 363 140012905555712 Bad Request: /graphql
+WARNING 2024-04-28 18:09:50,881 log 377 140536698631936 Bad Request: /graphql
+WARNING 2024-04-28 18:09:51,152 log 377 140537248061184 Bad Request: /graphql
+WARNING 2024-04-28 18:09:52,698 log 377 140537256453888 Bad Request: /graphql
+WARNING 2024-04-28 18:09:58,074 log 377 140537302611712 Bad Request: /graphql
+WARNING 2024-04-28 18:09:58,119 log 377 140537248061184 Bad Request: /graphql
+WARNING 2024-04-28 18:09:58,575 log 377 140537256453888 Bad Request: /graphql
+WARNING 2024-04-28 18:10:07,567 log 377 140537266943744 Bad Request: /graphql
+WARNING 2024-04-28 18:10:07,658 log 377 140537248061184 Bad Request: /graphql
+WARNING 2024-04-28 18:10:08,406 log 377 140537248061184 Bad Request: /graphql
+WARNING 2024-04-28 18:12:01,689 log 377 140537275336448 Bad Request: /graphql
+WARNING 2024-04-28 18:12:02,355 log 377 140537248061184 Bad Request: /graphql
+WARNING 2024-04-28 18:12:06,919 log 377 140536672405248 Bad Request: /graphql
+WARNING 2024-04-28 18:12:08,918 log 377 140536680797952 Bad Request: /graphql
+WARNING 2024-04-28 18:14:42,539 log 398 140182674196224 Bad Request: /graphql
+WARNING 2024-04-28 18:14:42,705 log 398 140182699374336 Bad Request: /graphql
+WARNING 2024-04-28 18:14:43,279 log 398 140182682588928 Bad Request: /graphql
+WARNING 2024-04-28 18:14:50,137 log 398 140182682588928 Bad Request: /graphql
+WARNING 2024-04-28 18:14:50,693 log 398 140182690981632 Bad Request: /graphql
+WARNING 2024-04-28 18:14:57,777 log 398 140182279935744 Bad Request: /graphql
+WARNING 2024-04-28 18:14:58,100 log 398 140182690981632 Bad Request: /graphql
+WARNING 2024-04-28 18:14:59,095 log 398 140182690981632 Bad Request: /graphql
+WARNING 2024-04-28 18:15:28,711 log 413 140624468633344 Bad Request: /graphql
+WARNING 2024-04-28 18:15:29,015 log 413 140624854501120 Bad Request: /graphql
+WARNING 2024-04-28 18:15:29,767 log 413 140624477026048 Bad Request: /graphql
+WARNING 2024-04-28 18:16:14,159 log 413 140624871286528 Bad Request: /graphql
+WARNING 2024-04-28 18:16:14,227 log 413 140624477026048 Bad Request: /graphql
+WARNING 2024-04-28 18:16:14,755 log 413 140624477026048 Bad Request: /graphql
+WARNING 2024-04-28 18:16:41,072 log 413 140624477026048 Bad Request: /graphql
+WARNING 2024-04-28 18:16:41,092 log 413 140624477026048 Bad Request: /graphql
+WARNING 2024-04-28 18:17:18,474 log 413 140624871286528 Bad Request: /graphql
+WARNING 2024-04-28 18:19:56,951 log 425 140491094988544 Bad Request: /graphql
+WARNING 2024-04-28 18:20:45,528 log 431 140710989842176 Bad Request: /graphql
+WARNING 2024-04-28 18:20:51,637 log 431 140711015020288 Bad Request: /graphql
+WARNING 2024-04-28 18:21:49,586 log 442 140412309976832 Bad Request: /graphql
+WARNING 2024-04-28 18:22:07,709 log 442 140412309976832 Bad Request: /graphql
+WARNING 2024-04-28 18:22:24,840 log 442 140412309976832 Bad Request: /graphql
+WARNING 2024-04-28 18:22:59,487 log 449 140498014004992 Bad Request: /graphql
+WARNING 2024-04-28 18:23:03,558 log 449 140498014004992 Bad Request: /graphql
+WARNING 2024-04-28 18:24:27,415 log 449 140497997223680 Bad Request: /graphql
+WARNING 2024-04-28 18:24:31,396 log 449 140498030790400 Bad Request: /graphql
+WARNING 2024-04-28 18:25:35,548 log 449 140498030790400 Bad Request: /graphql
+WARNING 2024-04-28 18:26:41,517 log 449 140498039183104 Bad Request: /graphql
+WARNING 2024-04-28 18:30:32,441 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:31:55,272 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:33:12,394 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:33:33,871 log 462 140239013365504 Bad Request: /graphql
+WARNING 2024-04-28 18:35:05,423 log 462 140239013365504 Bad Request: /graphql
+WARNING 2024-04-28 18:37:56,335 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:38:01,678 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:38:08,973 log 462 140239053227776 Bad Request: /graphql
+WARNING 2024-04-28 18:38:23,924 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:38:27,140 log 462 140239053227776 Bad Request: /graphql
+WARNING 2024-04-28 18:41:04,497 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:41:10,315 log 462 140239036442368 Bad Request: /graphql
+WARNING 2024-04-28 18:41:25,076 log 462 140239053227776 Bad Request: /graphql
+WARNING 2024-04-28 18:41:27,901 log 462 140239036442368 Bad Request: /graphql
+ERROR 2024-04-28 18:42:04,722 log 481 140509511149312 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 808, in fields
+    fields = resolve_thunk(self._fields)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 300, in resolve_thunk
+    return thunk() if callable(thunk) else thunk
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 323, in create_fields_for_type
+    for arg_name, arg in field.args.items():
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 51, in args
+    return to_arguments(self._base_args or OrderedDict(), self.filtering_args)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 76, in filtering_args
+    self.filterset_class, self.node_type
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 68, in filterset_class
+    self._filterset_class = get_filterset_class(filterset_class, **meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/utils.py", line 115, in get_filterset_class
+    graphene_filterset_class = custom_filterset_factory(**meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/filterset.py", line 46, in custom_filterset_factory
+    filterset = type(
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 63, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 322, in get_filters
+    fields = cls.get_fields()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 268, in get_fields
+    assert not (fields is None and exclude is None), (
+AssertionError: Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 97, in view
+    self = cls(**initkwargs)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/backend/schema.py", line 20, in <module>
+    schema = graphene.Schema(query=Query, mutation=Mutation, types=[])
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 440, in __init__
+    self.graphql_schema = GraphQLSchema(
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 224, in __init__
+    collect_referenced_types(query)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 432, in collect_referenced_types
+    for field in named_type.fields.values():
+  File "/usr/local/lib/python3.10/functools.py", line 970, in __get__
+    val = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 811, in fields
+    raise cls(f"{self.name} fields cannot be resolved. {error}") from error
+TypeError: Query fields cannot be resolved. Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+ERROR 2024-04-28 18:42:04,772 log 481 140509519542016 Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 808, in fields
+    fields = resolve_thunk(self._fields)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 300, in resolve_thunk
+    return thunk() if callable(thunk) else thunk
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 323, in create_fields_for_type
+    for arg_name, arg in field.args.items():
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 51, in args
+    return to_arguments(self._base_args or OrderedDict(), self.filtering_args)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 76, in filtering_args
+    self.filterset_class, self.node_type
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/fields.py", line 68, in filterset_class
+    self._filterset_class = get_filterset_class(filterset_class, **meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/utils.py", line 115, in get_filterset_class
+    graphene_filterset_class = custom_filterset_factory(**meta)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/filter/filterset.py", line 46, in custom_filterset_factory
+    filterset = type(
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 63, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 322, in get_filters
+    fields = cls.get_fields()
+  File "/usr/local/lib/python3.10/site-packages/django_filters/filterset.py", line 268, in get_fields
+    assert not (fields is None and exclude is None), (
+AssertionError: Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/views/generic/base.py", line 97, in view
+    self = cls(**initkwargs)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+  File "/usr/local/lib/python3.10/site-packages/graphene_django/settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/django_proj/backend/schema.py", line 20, in <module>
+    schema = graphene.Schema(query=Query, mutation=Mutation, types=[])
+  File "/usr/local/lib/python3.10/site-packages/graphene/types/schema.py", line 440, in __init__
+    self.graphql_schema = GraphQLSchema(
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 224, in __init__
+    collect_referenced_types(query)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/schema.py", line 432, in collect_referenced_types
+    for field in named_type.fields.values():
+  File "/usr/local/lib/python3.10/functools.py", line 970, in __get__
+    val = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/graphql/type/definition.py", line 811, in fields
+    raise cls(f"{self.name} fields cannot be resolved. {error}") from error
+TypeError: Query fields cannot be resolved. Setting 'Meta.model' without either 'Meta.fields' or 'Meta.exclude' has been deprecated since 0.15.0 and is now disallowed. Add an explicit 'Meta.fields' or 'Meta.exclude' to the ShopFilterSet class.
+WARNING 2024-04-28 19:02:48,953 log 485 140660731098880 Bad Request: /graphql
+WARNING 2024-04-28 19:06:11,344 log 485 140660739491584 Bad Request: /graphql
+WARNING 2024-04-28 19:06:39,286 log 485 140660739491584 Bad Request: /graphql
+WARNING 2024-04-28 19:07:10,388 log 485 140660739491584 Bad Request: /graphql
+WARNING 2024-04-28 19:07:55,493 log 485 140660739491584 Bad Request: /graphql
+WARNING 2024-04-28 19:08:06,595 log 485 140660739491584 Bad Request: /graphql
+WARNING 2024-04-28 19:08:21,823 log 485 140660739491584 Bad Request: /graphql
+WARNING 2024-04-28 19:10:08,888 log 485 140660731098880 Bad Request: /graphql
+WARNING 2024-04-28 19:14:20,673 log 485 140660332017408 Bad Request: /graphql
+WARNING 2024-04-28 19:17:16,155 log 485 140660765714176 Not Found: /favicon.ico
+WARNING 2024-04-28 19:25:57,641 log 29 140099465963264 Not Found: /favicon.ico
+WARNING 2024-04-28 19:26:33,063 log 29 140099457570560 Not Found: /favicon.ico
+WARNING 2024-04-29 17:15:51,720 log 46 140180003481344 Not Found: /favicon.ico
+WARNING 2024-04-29 17:15:56,723 log 46 140180003481344 Not Found: /favicon.ico
+WARNING 2024-04-29 17:28:20,407 log 13 139946369038080 Not Found: /favicon.ico
+WARNING 2024-04-29 17:43:55,415 log 35 140375195256576 Not Found: /favicon.ico

@@ -1,3 +1,3 @@
 from django import dispatch
 
-test_signal = dispatch.Signal(["test"])
+product_parser_end_work_signal = dispatch.Signal(['updated_products'])

@@ -12,36 +12,18 @@
         <q-card-section class="q-gutter-md">
           <div>
             <ProductItem :product="product" :isShopProductUrl="true" />
-            <q-separator />
           </div>
-          <!-- <q-intersection
-            v-for="item in products"
-            :key="item.node.id"
-            once
-            transition="scale"
-            transition-duration="700"
-            class="product text-center"
-            @mouseenter="show = item.node.id"
-            @mouseleave="show = false"
-            @click="showProduct(item.node)"
-          >
-             -->
-            <!-- <q-img
-              :src="item.node.image"
-              fit="contain"
-              img-class="q-pa-sm"
-              style="width: 120px; height: 200px; background-color: transparent;"
-            />
-            <div class="text-subtitle2 text-grey text-center title">
-              {{ item.node.name }}
-            </div>   -->
-          <!-- </q-intersection>
-          <div v-if="products.length < 6" style="width: 960px;" /> -->
         </q-card-section>
       </q-card>
-      <q-separator />
-  </div>
-  <q-carousel v-if="historyProducts.length > 0"
+  <q-card v-if="historyProducts.length > 0"
+    bordered
+    class="my-card"
+  >
+  <q-card-section>
+      <div class="text-h5">{{ __('User product history') }}</div>
+  </q-card-section>
+  <q-separator />
+  <q-carousel
       v-model="slide"
       transition-prev="slide-right"
       transition-next="slide-left"
@@ -87,6 +69,8 @@
         </div>
       </q-carousel-slide>
     </q-carousel>
+  </q-card>
+  </div>
 </template>
   
 <script setup>

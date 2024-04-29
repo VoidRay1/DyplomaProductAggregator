@@ -49,9 +49,7 @@
 </template>
 
 <script setup>
-//import { Dark } from 'quasar'
 import { ref } from 'vue'
-import { useGettext } from 'vue3-gettext'
 import { useTokenStore } from 'stores/token'
 import LoginForm from 'components/LoginForm.vue'
 import UserMenu from 'components/UserMenu.vue'
@@ -59,17 +57,12 @@ import LanguageSelect from 'components/LanguageSelect.vue'
 
 const emit = defineEmits(['my-switchLeftDrawer'])
 
-const { current } = useGettext()
-const language = localStorage.getItem('language') || current
-
 const token = useTokenStore()
 token.initialize()
 
-const searchText = ref('')
 const loginForm = ref(false)
 
 const toggleLeftDrawer = () => { emit('my-switchLeftDrawer') }
-//const toggleDark = () => { Dark.toggle() }
 </script>
 
 <style lang="sass" scoped>

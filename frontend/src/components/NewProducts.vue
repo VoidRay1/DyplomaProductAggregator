@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { RouterLink, useRouter } from 'vue-router' 
+import { useRouter } from 'vue-router' 
 import { reactive, ref, computed } from 'vue'
 import { useQuery } from '@vue/apollo-composable'
 import { NEW_PRODUCTS } from '../constants/graphql'

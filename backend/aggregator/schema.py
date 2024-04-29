@@ -11,7 +11,6 @@ from django.db.models import Q, F, Count, Min, Max, BooleanField, Case, When, Va
 from django.contrib.auth.models import AnonymousUser
 from graphql_jwt.decorators import login_required
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity, TrigramDistance
-from aggregator import signals
 import redis
 
 from .models import Shop, Category, Promotion, Product, Price, Track
@@ -237,6 +236,12 @@ class Query(ObjectType):
         language=graphene.String(),
         description="Get user history products"
     )
+    search_products = DjangoFilterConnectionField(
+        ShopProductNode,
+        query=graphene.String(required=True),
+        language=graphene.String(),
+        description="Get search products"
+    )
  
     def resolve_shops(root, info, country=None, language=None):
         if issubclass(Shop, TranslatableModel):
@@ -335,13 +340,12 @@ class Query(ObjectType):
         #     product = Product.objects.active_translations(language, product_slug=slug).get()
         #     product.set_current_language(language)
         # else:
-        product = Product.objects.get(product_slug=slug)
+        product = Product.objects.prefetch_related('prices').get(product_slug=slug)
         if info.context.user.is_anonymous:
             return product
         else:
             user_history_product_key = f'user_{info.context.user.id}_history_products'
             redis_instance = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
-            product = Product.objects.get(product_slug=slug)
             history_products_slugs = redis_instance.lrange(user_history_product_key, 0, 20)
             history_products_slugs = [slug.decode('utf-8') for slug in history_products_slugs]
             if slug not in history_products_slugs:
@@ -365,15 +369,21 @@ class Query(ObjectType):
             history_products.append(Product.objects.get(product_slug=product_slug))
         return history_products
 
-
     def resolve_new_products(root, info, language=None, **kwargs):
-        # signals.test_signal.send(test="test")
         shops = Shop.objects.all()
         all_products = []
         for shop in shops:
             shop_products = shop.products.filter(available=True, prices__available=True).order_by('-date_created')[:20 / shops.count()]
             all_products.extend(shop_products)
         return all_products[:20]
+    
+    def resolve_search_products(root, info, query, language=None, **kwargs):
+        products = Product.objects.annotate(
+            similarity=TrigramSimilarity('translations__name', query),
+        ).filter(
+            similarity__gte=0
+        ).order_by('-similarity').distinct()
+        return products
     
     @login_required
     def resolve_track_products(root, info, language=None, **kwargs):

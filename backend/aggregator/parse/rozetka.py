@@ -3,6 +3,7 @@ import aiohttp
 import re
 from django.conf import settings
 from aggregator.models import Shop, Category, Product, Price, Promotion
+from aggregator.signals import product_parser_end_work_signal
 
 def get_products():
     shop = Shop.objects.get(pk=settings.ROZETKA_ID)

@@ -1,3 +1,4 @@
+from backend.profiles.models import Profile
 from users.models import User
 from django.db.models import Q
 from django.contrib.auth.backends import ModelBackend
@@ -19,6 +20,7 @@ class AuthBackend(object):
             user = User.objects.get(
                 Q(username=username) | Q(email=username) | Q(phone=username)
             )
+            Profile.objects.create(user=user)
 
         except User.DoesNotExist:
             return None
