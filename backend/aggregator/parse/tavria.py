@@ -4,6 +4,7 @@ import re
 from django.conf import settings
 from aggregator.models import Shop, Product, Price, Promotion
 from bs4 import BeautifulSoup
+from aggregator.signals import product_parser_end_work_signal
 
 def get_products():
     shop = Shop.objects.get(pk=settings.TAVRIA_ID)
@@ -96,6 +97,7 @@ def parse_pagination(data):
 
 def update_data(shop, products = None):
     products_updated = 0
+    updated_products_ids = []
     product_ids = []
     for product in products:
         new_product, created = Product.objects.get_or_create(
@@ -128,10 +130,12 @@ def update_data(shop, products = None):
                 discount=discount,
                 percent=percent
             )
+            updated_products_ids.append(new_product.id)
             products_updated += 1
         price.save()
         if percent:
             promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
             price.promotions.add(promotion)
     print(f'🔴  pull: {len(products)} updated: {products_updated}')
+    product_parser_end_work_signal.send(sender=object, updated_products_ids=updated_products_ids)
     return product_ids

@@ -61,9 +61,7 @@ class Aggregator:
         track.save()
 
     @staticmethod
-    def format_product(product: Product, with_description: bool = False, language_code: str = 'uk') -> str:
-        """Возвращает продукт в Markdown-ready состоянии."""
-
+    def format_product(product: Product, language_code: str = 'uk') -> str:
         name = product.safe_translation_getter('name', language_code=language_code)
         if not product.volume: 
             volume = ' не вказана на сайті'
@@ -71,6 +69,16 @@ class Aggregator:
             volume = f': {product.volume}'
         
         return f'Продукт: {name} \nВага{volume} \nЦіна: {product.last_price()} грн\nПосилання на продукт: {product.url}'
+    
+    @staticmethod
+    def format_product_with_discount(product: Product, language_code: str = 'uk') -> str:
+        name = product.safe_translation_getter('name', language_code=language_code)
+        if not product.volume: 
+            volume = ' не вказана на сайті'
+        else:
+            volume = f': {product.volume}'
+        
+        return f'На продукті: {name}, який у вас в відстежуваних, змінилася ціна.\nНова ціна: {product.last_price()} грн\nПопередня ціна: {product.get_penultimate_price()} грн\nВага{volume} \nПосилання на продукт: {product.url}'
     
     def get_random_product():
         random_product = Product.objects.order_by('?').first()

@@ -4,7 +4,6 @@ import math
 from django.conf import settings
 from aggregator.models import Shop, Category, Product, Price, Promotion
 from aggregator.signals import product_parser_end_work_signal
-import weakref
 
 def get_products():
     shop = Shop.objects.get(pk=settings.SILPO_ID)
@@ -83,20 +82,20 @@ def update_data(shop, products = None):
         if not new_product.category or (new_product.category != category):
             new_product.category = category
             new_product.save()
-        if product['oldPrice'] == None:
-            product['oldPrice'] = product['price']
-        discount = round(product['oldPrice'] - product['price'], 2)
-        percent = round(discount / product['oldPrice'] * 100)
+        if product['displayOldPrice'] == None:
+            product['displayOldPrice'] = product['displayPrice']
+        discount = round(product['displayOldPrice'] - product['displayPrice'], 2)
+        percent = round(discount / product['displayOldPrice'] * 100)
         price = Price.objects.filter(product=new_product).first() # order by DESC
-        if not price or (float(price.price) != float(product['price'])) or (float(price.discount) != float(discount)):
-            print(f'🟠  {new_product}: {float(product["price"])} ({percent}%)')
+        if not price or (float(price.price) != float(product['displayPrice'])) or (float(price.discount) != float(discount)):
+            print(f'🟠  {new_product}: {float(product["displayPrice"])} ({percent}%)')
             if price:
                 print(f'⚖️  old price: {float(price.price)} ({round(price.percent)}%)   {float(price.discount)} = {float(discount)}')
                 price.available = False
                 price.save()
             price = Price(
                 product=new_product,
-                price=product['price'],
+                price=product['displayPrice'],
                 currency='UAH',
                 discount=discount,
                 percent=percent

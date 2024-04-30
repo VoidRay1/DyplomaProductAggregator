@@ -63,6 +63,7 @@ async def get_products_data(url, product_ids):
 def update_data(shop, products = None):
     products_updated = 0
     out_stock = 0
+    updated_products_ids = []
     product_ids = []
     for product in products:
         if product['category_id']:
@@ -92,9 +93,6 @@ def update_data(shop, products = None):
                 'volume': volume,
             }
         )
-        new_product.name = name if name else product['title']
-        new_product.volume = volume
-        new_product.save()
         product_ids.append(new_product.id)
         if not new_product.category or (new_product.category != category):
             new_product.category = category
@@ -121,6 +119,7 @@ def update_data(shop, products = None):
                 discount=discount,
                 percent=percent
             )
+            updated_products_ids.append(new_product.id)
             products_updated += 1
         # price.percent = round(price.discount / (price.price + price.discount) * 100)
         price.available = product['sell_status'] == 'available'
@@ -140,6 +139,7 @@ def update_data(shop, products = None):
                 )
                 price.promotions.add(promotion)
     print(f'🟢  Rozetka updated: {products_updated} outStock: {out_stock}')
+    product_parser_end_work_signal.send(sender=object, updated_products_ids=updated_products_ids)
     return product_ids
 
 def parse_name(title):

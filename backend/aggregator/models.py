@@ -186,6 +186,13 @@ class Product(TranslatableModel):
         return last.price if last else 0
     last_price.short_description = _('Price')
 
+    def get_penultimate_price(self):
+        prices = self.prices.all()
+        if prices.count() >= 2:
+            return prices[1].price
+        return 0
+
+
     def discount(self):
         last = self.prices.first() # order by DESC
         return f'{round(last.percent) if last else 0}%'

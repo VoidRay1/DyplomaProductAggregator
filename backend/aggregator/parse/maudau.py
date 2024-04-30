@@ -4,6 +4,7 @@ import aiohttp
 import re
 from django.conf import settings
 from aggregator.models import Shop, Category, Product, Price, Promotion
+from aggregator.signals import product_parser_end_work_signal
 
 # logger = logging.getLogger()
 
@@ -56,6 +57,7 @@ async def api_request(url, params):
 
 def update_data(shop, products = None):
     products_updated = 0
+    updated_products_ids = []
     product_ids = []
     # promotion = Promotion.objects.filter(shop=shop, slug='percent').first()
     for product in products:
@@ -97,11 +99,13 @@ def update_data(shop, products = None):
                 percent=offer['discountPercent'],
                 available=offer['isAvailable'],
             )
+            updated_products_ids.append(new_product.id)
             products_updated += 1
         price.save()
         # if offer['discountValue'] > 0:
         #     price.promotions.add(promotion)
     print(f'🟣  Maudau pull: {len(products)} updated: {products_updated}')
+    product_parser_end_work_signal.send(sender=object, updated_products_ids=updated_products_ids)
     return product_ids
 
 def parse_name(title):

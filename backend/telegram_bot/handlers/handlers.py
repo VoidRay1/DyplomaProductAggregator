@@ -11,13 +11,40 @@ from telegram_bot.handlers import static_text as st
 from telegram_bot.handlers import manage_data as md
 from telegram_bot.handlers import keyboard_utils as kb
 from telegram_bot.handlers.utils import handler_logging
-from telegram_bot.models import User
+from users.models import User
+from aggregator.models import Product, Track
+from django.db.models import Q
 from ..aggregator import Aggregator
 from telegram_bot.tasks import broadcast_message
 from telegram_bot.utils import convert_2_user_time, extract_user_data_from_update, get_chat_id
-from profiles.models import Profile
+from telegram_bot.handlers.utils import send_photo
+from telegram_bot.models import (
+    User as TelegramUser
+)
 
 logger = logging.getLogger('default')
+
+def send_bookmarked_products_with_discounts(products_ids):
+    tracks = Track.objects.filter(product_id__in=products_ids, active=True)
+    users_ids = tracks.values_list('user_id', flat=True).distinct()
+    users = User.objects.filter(id__in=users_ids)
+    for user in users:
+        aggregator = Aggregator(user.telegram_user)
+        products = Product.objects.filter(id__in=user.tracks.filter(product_id__in=products_ids, active=True).values_list('product', flat=True))
+        for product in products:
+            product_text = aggregator.format_product_with_discount(product)
+            product_id, image = (product.id, product.image_url)
+            try:
+                send_photo(
+                    user_id=user.telegram_user.telegram_user_id,
+                    photo=image,
+                    caption=product_text,
+                    reply_markup=kb.make_keyboard_for_start_command(product_id),
+                    parse_mode=telegram.constants.ParseMode.MARKDOWN,
+                )
+            except Exception as e:
+                logger.error(f"Failed to send message to {user.user_id}, reason: {e}" )
+    return 'ok'
 
 @handler_logging()
 async def send_more(update: Update, context: ContextTypes.DEFAULT_TYPE):
