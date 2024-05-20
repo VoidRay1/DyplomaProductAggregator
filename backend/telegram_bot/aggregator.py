@@ -61,7 +61,9 @@ class Aggregator:
         track.save()
 
     @staticmethod
-    def format_product(product: Product, language_code: str = 'uk') -> str:
+    def format_product(product: Product, language_code: str = 'en') -> str:
+        if product == None:
+            return ''
         name = product.safe_translation_getter('name', language_code=language_code)
         if not product.volume: 
             volume = ' не вказана на сайті'
@@ -99,7 +101,7 @@ class Aggregator:
                 product = Product.objects.get(pk=randint(1, max_id))
                 with_description = True
             image = f'{product.image_url}'
-            result = self.format_product(product, with_description, self.user.language_code)
+            result = self.format_product(product, self.user.language_code)
         except Exception as ex:
             logger.error(f'Ошибка в процессе загрузки продукта: {ex}')
             result = f'{st.error}\n{ex}'

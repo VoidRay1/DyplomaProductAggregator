@@ -19,11 +19,11 @@
     </q-card-section>
 
     <q-card-section class="flex flex-top q-pa-sm">
-      <div v-for="product in similarProducts"
-        :key="product.node.id"
+      <div v-for="similarProduct in similarProducts"
+        :key="similarProduct.node.id"
         class="similar-product q-pb-md"
       >
-        <SimilarProduct :product="product.node" :isShopProductUrl="isShopProductUrl" />
+        <SimilarProduct :product="similarProduct.node" :isShopProductUrl="isShopProductUrl" />
       </div>
     </q-card-section>
   </q-card-section>

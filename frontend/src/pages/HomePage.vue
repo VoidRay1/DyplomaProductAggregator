@@ -13,7 +13,7 @@
     >
       <ShopProduct :product="product.node" />
     </q-card>
-    <div class="text-center" style="width: 100%;">
+    <div class="text-center q-pb-md" style="width: 100%;">
       <q-btn v-if="hasNextPage"
         @click="loadMore()"
         outline

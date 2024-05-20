@@ -242,6 +242,16 @@ class Query(ObjectType):
         language=graphene.String(),
         description="Get search products"
     )
+    search_shop_products = DjangoFilterConnectionField(
+        ShopProductNode,
+        shop=graphene.ID(required=True, description="Shop ID"),
+        query=graphene.String(required=True, description="Search query"),
+        filters=graphene.Argument(ShopFilterInput),
+        sort_by=graphene.String(),
+        sort_direction=graphene.String(),
+        language=graphene.String(),
+        description="Search shop products"
+    )
  
     def resolve_shops(root, info, country=None, language=None):
         if issubclass(Shop, TranslatableModel):
@@ -397,6 +407,55 @@ class Query(ObjectType):
             similarity__gte=0.395
         ).order_by('-similarity').distinct()
         return similar_products[:12]
+
+    def resolve_search_shop_products(root, info, shop, query, filters=None, sort_by=None, sort_direction=None, language=None, **kwargs):
+        if query == '':
+            return Product.objects.none()
+        if sort_by == None:
+            sort_by ='percent'
+        if sort_direction == None:
+            sort_direction = 'desc'
+        orderBy = '-' if sort_direction == 'desc' else ''
+        if sort_by == 'name':
+            orderBy += 'translations__name'
+        if sort_by == 'price':
+            orderBy += 'prices__price'
+        if sort_by == 'percent':
+            orderBy += 'prices__percent'
+        languages = get_active_language_choices()
+        languages.append('uk')
+        shop = graphene.Node.get_node_from_global_id(info, shop)
+        queryset = Product.objects.filter(shop=shop, available=True, prices__available=True)
+        # if filters.price:
+        #     queryset = queryset.filter(prices__price__range=(filters.price.min, filters.price.max), prices__available=True)
+        # if filters.volume:
+        #     queryset = queryset.filter(volume__in=filters.volume, prices__available=True)
+        # if filters.brand:
+        #     queryset = queryset.filter(translations__brand__in=filters.brand, prices__available=True)
+        # if filters.promo:
+        #     prices = Price.objects.filter(promotions__translations__title__in=filters.promo, available=True).values_list('id', flat=True)
+        #     queryset = queryset.filter(prices__in=prices, prices__available=True)
+        queryset = queryset.filter(
+            Q(
+                translations__language_code__in=languages,
+                translations__name__icontains=query
+            ) | Q(
+                translations__language_code__in=languages,
+                translations__brand__icontains=query
+            ) | Q(
+                product_slug__icontains=query
+            )
+        ).distinct().order_by(orderBy)
+        if not isinstance(info.context.user, AnonymousUser):
+           queryset = queryset.annotate(
+               is_tracked=Case(
+                   When(Q(track__user=info.context.user) & Q(track__active=True), then=Value(True)),
+                   default=Value(False),
+                   output_field=BooleanField()
+               )
+           )
+        # print(queryset.first().is_tracked)
+        return queryset
 
 
 class TrackProduct(graphene.Mutation):

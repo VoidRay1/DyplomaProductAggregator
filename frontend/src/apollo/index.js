@@ -112,10 +112,9 @@ export /* async */ function getClientOptions(/* {app, router, ...} */ options) {
     typePolicies: {
       Query: {
         fields: {
-          comments: offsetLimitPagination(['cocktailId']),
-          allCocktails: relayStylePagination(['search', 'tags']),
-          historyCocktails: relayStylePagination([]),
+          searchProducts: relayStylePagination(['query']),
           shopProducts: relayStylePagination(['shop', 'filters', 'sortBy', 'sortDirection']),
+          searchShopProducts: relayStylePagination(['shop', 'query', 'filters', 'sortBy', 'sortDirection']),
         }
       },
     },

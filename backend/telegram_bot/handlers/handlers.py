@@ -25,6 +25,7 @@ from telegram_bot.models import (
 logger = logging.getLogger('default')
 
 def send_bookmarked_products_with_discounts(products_ids):
+    print(products_ids)
     tracks = Track.objects.filter(product_id__in=products_ids, active=True)
     users_ids = tracks.values_list('user_id', flat=True).distinct()
     users = User.objects.filter(id__in=users_ids)
@@ -49,7 +50,7 @@ def send_bookmarked_products_with_discounts(products_ids):
 @handler_logging()
 async def send_more(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = extract_user_data_from_update(update)['user_id']
-    user = await User.get_user(update, context)
+    user = await TelegramUser.get_user(update, context)
     aggregator = Aggregator(user)
     product_text, product_id, image = await aggregator.load_product()
     
@@ -65,7 +66,7 @@ async def send_more(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def add_to_fav(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logger.info('Начинаем процесс добавления в избранное')
     user_id = extract_user_data_from_update(update)['user_id']
-    user = await User.get_user(update, context)
+    user = await TelegramUser.get_user(update, context)
 
     # Извлекаем ID продукта из колбека
     query = update.callback_query
@@ -88,7 +89,7 @@ async def add_to_fav(update: Update, context: ContextTypes.DEFAULT_TYPE):
 @handler_logging()
 async def view_fav(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = extract_user_data_from_update(update)['user_id']
-    user = await User.get_user(update, context)
+    user = await TelegramUser.get_user(update, context)
 
     aggregator = Aggregator(user)
     products_first_chars = await aggregator.get_products(only_first_chars=True)
@@ -112,7 +113,7 @@ async def view_fav(update: Update, context: ContextTypes.DEFAULT_TYPE):
 @handler_logging()
 async def show_products(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = extract_user_data_from_update(update)['user_id']
-    user = await User.get_user(update, context)
+    user = await TelegramUser.get_user(update, context)
     
     query = update.callback_query
     selected_char = query.data.split('#')[1]
@@ -132,7 +133,7 @@ async def show_products(update: Update, context: ContextTypes.DEFAULT_TYPE):
 @handler_logging()
 async def show_product_by_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = extract_user_data_from_update(update)['user_id']
-    user = await User.get_user(update, context)
+    user = await TelegramUser.get_user(update, context)
 
     query = update.callback_query
     product_id = int(query.data.split('#')[1])
@@ -151,7 +152,7 @@ async def show_product_by_id(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 @handler_logging()
 async def back_to_main_menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):  # callback_data: BUTTON_BACK_IN_PLACE variable from manage_data.py
-    user, created = await User.get_user_and_created(update, context)
+    user, created = await TelegramUser.get_user_and_created(update, context)
 
     payload = context.args[0] if context.args else user.deep_link  # if empty payload, check what was stored in DB
     text = st.welcome
@@ -181,8 +182,8 @@ async def secret_level(update: Update, context: ContextTypes.DEFAULT_TYPE): #cal
     text = "Congratulations! You've opened a secret room👁‍🗨. There is some information for you:\n" \
            "*Users*: {user_count}\n" \
            "*24h active*: {active_24}".format(
-            user_count = await User.count_users(),
-            active_24 = await User.active_users()
+            user_count = await TelegramUser.count_users(),
+            active_24 = await TelegramUser.active_users()
     )
 
     await context.bot.edit_message_text(
@@ -194,24 +195,4 @@ async def secret_level(update: Update, context: ContextTypes.DEFAULT_TYPE): #cal
 
 
 async def broadcast_decision_handler(update: Update, context: ContextTypes.DEFAULT_TYPE): #callback_data: CONFIRM_DECLINE_BROADCAST variable from manage_data.py
-    """ Entered /broadcast <some_text>.
-        Shows text in Markdown style with two buttons:
-        Confirm and Decline
-    """
-    broadcast_decision = update.callback_query.data[len(md.CONFIRM_DECLINE_BROADCAST):]
-    entities_for_celery = await update.callback_query.message.to_dict().get('entities')
-    entities = update.callback_query.message.entities
-    text = update.callback_query.message.text
-    if broadcast_decision == md.CONFIRM_BROADCAST:
-        admin_text = st.msg_sent,
-        user_ids = list(User.objects.all().values_list('user_id', flat=True))
-        broadcast_message.delay(user_ids=user_ids, message=text, entities=entities_for_celery)
-    else:
-        admin_text = text
-
-    await context.bot.edit_message_text(
-        text=admin_text,
-        chat_id=update.callback_query.message.chat_id,
-        message_id=update.callback_query.message.message_id,
-        entities=None if broadcast_decision == md.CONFIRM_BROADCAST else entities
-    )
+    pass

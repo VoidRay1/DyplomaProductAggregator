@@ -4,7 +4,7 @@
     <div v-else-if="error">
       Error: {{ error.message }}
     </div>
-      <q-card class="my-card">
+      <q-card class="my-card" v-if="product">
         <q-card-section>
           <div class="text-h5">{{ product.name }}</div>
         </q-card-section>
@@ -72,7 +72,7 @@
   </q-card>
   </div>
 </template>
-  
+    
 <script setup>
 import { computed, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router' 
@@ -95,7 +95,7 @@ const {
 
 const { result: getHistoryProducts } = useQuery(GET_HISTORY_PRODUCTS,  {})
 
-const product = computed(() => getProduct.value?.product ?? [])
+const product = computed(() => getProduct.value?.product ?? false)
 
 const historyProductsResult = computed(() => getHistoryProducts.value?.historyProducts ?? [])
 

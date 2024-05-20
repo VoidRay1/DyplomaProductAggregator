@@ -3,21 +3,6 @@
     <q-card class="my-card">
       <q-card-section class="flex row items-center q-py-sm">
         <div class="col-2 text-h5">{{ __('Shops') }}</div>
-        <div class="col-8 justify-end q-pl-xl">
-          <q-input
-            v-model="query"
-            clearable
-            clear-icon="close"
-            rounded
-            outlined
-            dense
-            color="orange"
-          >
-            <template v-slot:prepend>
-              <q-icon name="search" />
-            </template>
-          </q-input>
-        </div>
       </q-card-section>
       <q-separator />
       <q-card-section class="q-pa-none">

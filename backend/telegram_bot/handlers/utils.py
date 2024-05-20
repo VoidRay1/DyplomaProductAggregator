@@ -76,6 +76,7 @@ def send_message(user_id, text, parse_mode=None, reply_markup=None, reply_to_mes
 def send_photo(user_id, photo, caption=None, parse_mode=None, reply_markup=None,
                reply_to_message_id=None, caption_entities=None, tg_token=TELEGRAM_TOKEN):
     bot = telegram.Bot(tg_token)
+    print(bot)
     try:
         asyncio.run(bot.send_photo(
             chat_id=user_id,

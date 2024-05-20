@@ -6,31 +6,70 @@
       <ShopCategory :shop="shop" :filters="productFilters" :key="refreshKey" @select:Category="selectCategory" />
     </div>
 
-    <div class="col-12 row q-pt-md">
-      <div class="col-8">
+    <div class="col-12 row justify-between q-pt-md">
+      <div class="col-2">
         <ShopProductFilter :filters="filters" @select:Filters="selectFilters" />
       </div>
-      <div class="col">
+      <div class="col-6">
+        <q-form @submit.prevent="onSubmit" class="col-8 justify-end q-pl-xl">
+          <q-input
+            v-model="searchQuery"
+            clearable
+            clear-icon="close"
+            rounded
+            outlined
+            dense
+            color="orange"
+          >
+            <template v-slot:prepend>
+              <q-icon name="search" />
+            </template>
+          </q-input>
+        </q-form>
+      </div>
+      <div class="col-3">
         <SortSelect @update:model-value="onSelect" />
       </div>
     </div>
 
     <LoadingSpinner v-if="loading" />
-    <q-card v-for="product in products.edges"
-      :key="product.node.id"
-      class="product"
-      flat
-    >
-      <ShopProduct :product="product.node" />
-    </q-card>
-    <div class="text-center" style="width: 100%;">
-      <q-btn v-if="hasNextPage"
-        @click="loadMore()"
-        outline
-        rounded
-        color="orange"
-        :label="__('Show more')"
-      />
+    <div v-if="searchQuery"
+        class="q-pt-md row items-start q-gutter-xs"
+      >
+      <q-card v-for="product in searchResults"
+        :key="product.node.id"
+        class="product"
+        flat
+      >
+        <ShopProduct :product="product.node" />
+      </q-card>
+      <div class="text-center" style="width: 100%;">
+        <q-btn v-if="hasNextPageSearch"
+          @click="loadMoreSearch()"
+          outline
+          rounded
+          color="orange"
+          :label="__('Show more')"
+        />
+      </div>
+    </div>
+    <div v-else class="flex">
+      <q-card v-for="product in products.edges"
+        :key="product.node.id"
+        class="product"
+        flat
+      >
+        <ShopProduct :product="product.node" />
+      </q-card>
+      <div class="text-center" style="width: 100%;">
+        <q-btn v-if="hasNextPage"
+          @click="loadMore()"
+          outline
+          rounded
+          color="orange"
+          :label="__('Show more')"
+        />
+      </div>
     </div>
     <div v-if="error">Error: {{ error.message }}</div>
   </div>
@@ -46,7 +85,7 @@ import SortSelect from 'components/SortSelect.vue'
 import ShopProduct from 'components/ShopProduct.vue'
 import ShopProductFilter from 'components/ShopProductFilter.vue'
 import { useQuery } from '@vue/apollo-composable'
-import { GET_SHOP_FILTERS, GET_SHOP_PRODUCTS } from '../constants/graphql'
+import { GET_SHOP_FILTERS, GET_SHOP_PRODUCTS, GET_SEARCH_PRODUCTS } from '../constants/graphql'
 
 const props = defineProps({
   shop: {
@@ -74,6 +113,7 @@ const filters = computed(() => shopFilters.result.value?.shopFilters.filters ?? 
 
 const refreshKey = ref(0);
 const productFilters = ref({})
+const searchQuery = ref('')
 
 const {
   result,
@@ -132,6 +172,38 @@ const selectFilters = (filters) => {
   refetch({
     filters: productFilters.value
   })
+}
+
+const {
+  result: search,
+  refetch: refetchSearch,
+  fetchMore: fetchMoreSearch
+} = useQuery(GET_SEARCH_PRODUCTS, {
+  shop: props.shop.id,
+  query: searchQuery.value,
+  filters: productFilters,
+  sortBy: sortBy,
+  sortDirection: sortDirection,
+  language: language,
+  first: pageSizeShop,
+})
+const searchResults = computed(() => search.value?.searchShopProducts.edges ?? [])
+const hasNextPageSearch = computed(() => search.value?.searchShopProducts.pageInfo.hasNextPage ?? false);
+
+function loadMoreSearch () {
+  fetchMoreSearch({
+    variables: {
+      after: search.value?.searchShopProducts.pageInfo.endCursor
+    }
+  })
+}
+
+const onSubmit = () => {
+  if (searchQuery.value) {
+    refetchSearch({
+      query: searchQuery.value
+    })
+  }
 }
 </script>
   

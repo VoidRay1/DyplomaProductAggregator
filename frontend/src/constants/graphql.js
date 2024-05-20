@@ -366,3 +366,56 @@ query searchProducts ($query: String!, $first: Int, $after: String) {
     }
   }
 }`; 
+
+export const GET_SEARCH_PRODUCTS = gql`
+  query getSearchProducts ($shop: ID!, $query: String!, $filters: ShopFilterInput, $sortBy: String, $sortDirection: String, $language: String, $first: Int, $after: String) {
+    searchShopProducts (
+      shop: $shop, 
+      query: $query
+      filters: $filters
+      sortBy: $sortBy
+      sortDirection: $sortDirection
+      language: $language
+      first: $first
+      after: $after
+    ) {
+      edges {
+        cursor
+        node {
+          id
+          productSlug
+          url
+          image
+          name
+          brand
+          volume
+          shop {
+            image
+          }
+          price {
+            price
+            currency
+            oldPrice
+            discount
+            percent
+            available
+            promotions {
+              edges {
+                node {
+                  id
+                  iconUrl
+                  title
+                }
+              }
+            }
+          }
+          isTracked
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+`;
